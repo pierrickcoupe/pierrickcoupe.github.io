@@ -29,6 +29,8 @@ profiles:
     url: https://orcid.org/0000-0003-2709-3350
   - label: HAL
     url: https://hal.science/search/index/?q=authIdHal_s:pierrick-coupe
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/pierrick-coup%C3%A9-8415341/
 orcid: 0000-0003-2709-3350
 halId: pierrick-coupe
 in2brainUrl: https://in2brain.labri.fr
