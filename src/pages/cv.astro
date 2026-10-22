@@ -9,6 +9,9 @@ const sections = [
   { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },
   { id: 'editorial', label: 'Editorial activities' },
+  { id: 'service', label: 'Scientific service' },
+  { id: 'talks', label: 'Invited talks' },
+  { id: 'collaborations', label: 'Collaborations' },
 ];
 ---
 <Base title="CV" description={`Curriculum vitae of ${profile.name}.`} active="cv">
@@ -72,6 +75,45 @@ const sections = [
       </div>
     </section>
 
+    <section id="service">
+      <h2>Scientific service</h2>
+      <div class="rows">
+        {career.service.map((e) => (
+          <div class="row" style="padding: 14px 0">
+            <div class="row__date">{e.date}</div>
+            <div class="row__main"><strong>{e.role}</strong> <span class="org">— {e.url ? <a href={e.url}>{e.event}</a> : e.event}</span></div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="talks">
+      <h2>Invited talks</h2>
+      <p class="org" style="margin: -8px 0 16px">{career.talks.length} invited talks since 2007.</p>
+      <div class="rows">
+        {[...new Set(career.talks.map((t) => t.year))].map((y) => (
+          <div class="row" style="padding: 14px 0">
+            <div class="row__date" style="flex-basis: 64px">{y}</div>
+            <div class="row__main">
+              {career.talks.filter((t) => t.year === y).map((t, i, arr) => (
+                <span>{t.url ? <a href={t.url}>{t.event}</a> : t.event} <span class="org">({t.place})</span>{i < arr.length - 1 ? ' · ' : ''}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="collaborations">
+      <h2>Collaborations</h2>
+      <h3 class="sub">International</h3>
+      <ul class="collab">{career.collaborations.international.map((c) => <li>{c}</li>)}</ul>
+      <h3 class="sub">National</h3>
+      <ul class="collab">{career.collaborations.national.map((c) => <li>{c}</li>)}</ul>
+      <h3 class="sub">Industrial</h3>
+      <p class="org">{career.collaborations.industrial.join(' · ')}</p>
+    </section>
+
   </div>
 </Base>
 
@@ -85,6 +127,9 @@ const sections = [
   .notes { color: var(--subtle); font-size: 14px; margin-top: 4px; }
   .row__date { flex-basis: 130px; }
   .plain { list-style: none; margin: 0; padding: 0; }
+  .sub { font-size: 18px; margin: 24px 0 8px; }
+  .collab { margin: 0; padding-left: 18px; color: var(--ink-2); }
+  .collab li { margin-bottom: 6px; }
   .plain li + li { margin-top: 4px; }
   details { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; }
   summary { cursor: pointer; padding: 16px 20px; font-weight: 600; min-height: 44px; }

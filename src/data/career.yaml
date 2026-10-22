@@ -17,3 +17,99 @@ editorial:
   - {year: 2017, title: Patch-MI workshop — proceedings co-editor, venue: "LNCS 10530"}
   - {year: 2016, title: Patch-MI workshop — proceedings co-editor, venue: "LNCS 9993"}
   - {year: 2015, title: Patch-MI workshop — proceedings co-editor, venue: "LNCS 9467"}
+# Scientific service: conference organisation and committees
+service:
+  - {date: "2026", role: Organization committee, event: "OHBM 2026 (Organization for Human Brain Mapping), Bordeaux", url: "https://congres.bordeaux-tourisme.com/evenements/ohbm-annual-meeting-organization-human-brain-mapping-3500-participants.html"}
+  - {date: "2025", role: Scientific committee, event: "IABM 2025, Nice", url: "https://iabm2025.sciencesconf.org/resource/page/id/7"}
+  - {date: "2024", role: Program chair, event: "MIDL 2024 (Medical Imaging with Deep Learning), Paris", url: "https://2024.midl.io/organization"}
+  - {date: "2024", role: Program committee, event: "RFIA 2024, Lille", url: "https://caprfiap2024.sciencesconf.org"}
+  - {date: "2024", role: Scientific committee, event: "IABM 2024, Grenoble", url: "https://iabm2024.sciencesconf.org/resource/page/id/11"}
+  - {date: "2023", role: Chair, event: "RFMASA 2023, Bordeaux", url: "https://rfmasa23.sciencesconf.org"}
+  - {date: "2023", role: Area chair, event: "MIDL 2023, Nashville", url: "https://2023.midl.io"}
+  - {date: "2023", role: Scientific committee, event: "IABM 2023, Paris", url: "https://iabm2023.sciencesconf.org/resource/page/id/7"}
+  - {date: "2022", role: Technical committee, event: "MIDL 2022, Zurich", url: "https://2022.midl.io"}
+  - {date: "2022", role: Program committee, event: "RFIA 2022, Vannes", url: "https://caprfiap2022.sciencesconf.org"}
+  - {date: "2021", role: Area chair, event: "MIDL 2021, Lübeck", url: "https://2021.midl.io"}
+  - {date: "2020", role: Area chair, event: "MIDL 2020, Montréal", url: "https://2020.midl.io"}
+  - {date: "2020", role: Co-organizer, event: "National day on health and AI (CNRS), Paris", url: "http://www.cnrs.fr/en/node/4310"}
+  - {date: "2019", role: Chair, event: "Medical informatics & big data session, Bordeaux"}
+  - {date: "2018", role: Co-organizer, event: "Patch-MI workshop at MICCAI 2018, Granada", url: "https://www.springer.com/us/book/9783030004996"}
+  - {date: "2017", role: Co-organizer, event: "Patch-MI workshop at MICCAI 2017, Québec", url: "http://www.springer.com/us/book/9783319674339"}
+  - {date: "2017", role: Program committee, event: "MLMI workshop at MICCAI 2017, Québec", url: "http://mlmi2017.web.unc.edu/organization/"}
+  - {date: "2016", role: Co-organizer, event: "Patch-MI workshop at MICCAI 2016, Athens", url: "https://link.springer.com/book/10.1007/978-3-319-47118-1"}
+  - {date: "2016", role: Program committee, event: "MLMI workshop at MICCAI 2016, Munich", url: "http://mlmi2016.web.unc.edu"}
+  - {date: "2015", role: Co-organizer, event: "Patch-MI workshop at MICCAI 2015, Munich", url: "http://www.springer.com/gp/book/9783319281933"}
+  - {date: "2014", role: Program committee and chair, event: "MLMI workshop at MICCAI 2014, MIT, Boston", url: "http://mlmi2014.web.unc.edu/program/"}
+  - {date: "2012–2015", role: Co-organizer and co-chair, event: "Image processing workshops, LaBRI / IMB / IMS, Bordeaux"}
+  - {date: "2011–2013", role: Co-organizer and co-chair, event: "Inverse problem seminars, LaBRI / IMB / IMS, Bordeaux"}
+  - {date: "2011–2012", role: Organizer and chair, event: "Medical imaging workshops, LaBRI, Bordeaux"}
+  - {date: "2004", role: Organization committee, event: "MICCAI 2004, Saint-Malo"}
+# Invited talks (newest first)
+talks:
+  - {year: 2025, event: IBIO seminar, place: Bordeaux}
+  - {year: 2024, event: "Shaping the Future of AI and Health (France–Québec–Oxford workshop)", place: "Oxford, UK", url: "https://uk.ambafrance.org/Oxford-Quebec-France-trilateral-workshop-Shaping-the-future-of-AI-and-health-in"}
+  - {year: 2024, event: IABM, place: Grenoble, url: "https://iabm2024.sciencesconf.org/resource/page/id/4"}
+  - {year: 2024, event: "Journée scientifique de Bordeaux INP", place: Bordeaux, url: "https://www.bordeaux-inp.fr/fr/journee-scientifique-de-bordeaux-inp-2"}
+  - {year: 2024, event: Hackafond, place: Pessac}
+  - {year: 2023, event: Biomedical Imaging School, place: Cargèse, url: "https://www.univ-amu.fr/system/files/2023-10/IMAGING%20-%20BIOMEDICAL%20SCHOOL%202023%20-%20Program_0.pdf"}
+  - {year: 2023, event: "Journées Francophones de Radiologie (JFR)", place: Paris}
+  - {year: 2022, event: CRNL, place: Lyon}
+  - {year: 2022, event: McGill University, place: "Montréal, Canada"}
+  - {year: 2022, event: Universitat Politècnica de València, place: "Valencia, Spain"}
+  - {year: 2021, event: "Journées Francophones de Radiologie (JFR)", place: Paris}
+  - {year: 2021, event: Universitat Politècnica de València, place: "Valencia, Spain"}
+  - {year: 2020, event: GDR ISIS, place: Paris}
+  - {year: 2020, event: CNRS INS2I, place: Rennes}
+  - {year: 2019, event: Grenoble Institut des Neurosciences, place: Grenoble}
+  - {year: 2018, event: Universitat Pompeu Fabra, place: "Barcelona, Spain"}
+  - {year: 2018, event: Workshop France Life Imaging (FLI), place: Paris}
+  - {year: 2018, event: ISPED U897, place: Bordeaux}
+  - {year: 2018, event: Aarhus University, place: Denmark}
+  - {year: 2018, event: MONC Inria team, place: Bordeaux}
+  - {year: 2017, event: Universitat Politècnica de València, place: "Valencia, Spain"}
+  - {year: 2016, event: GSO international workshop, place: Bordeaux}
+  - {year: 2016, event: GIN UMR 5293, place: Bordeaux}
+  - {year: 2016, event: CATI / ICM, place: Paris}
+  - {year: 2015, event: BCAM international workshop, place: "Bilbao, Spain"}
+  - {year: 2015, event: "Journée du département Sciences et Technologies", place: Bordeaux}
+  - {year: 2015, event: ICube UMR 7357, place: Strasbourg}
+  - {year: 2014, event: Journée Multimad, place: Bordeaux}
+  - {year: 2014, event: ClustEx CPU, place: Bordeaux}
+  - {year: 2013, event: Universitat Politècnica de València, place: "Valencia, Spain"}
+  - {year: 2013, event: Imperial College London, place: UK}
+  - {year: 2013, event: "Children's National Medical Center", place: USA}
+  - {year: 2012, event: Journée RIBS2, place: Bordeaux}
+  - {year: 2012, event: GDR ISIS, place: Paris}
+  - {year: 2012, event: McGill University, place: "Montréal, Canada"}
+  - {year: 2012, event: JBMIA, place: Bordeaux}
+  - {year: 2007, event: Montreal Neurological Institute, place: "Montréal, Canada"}
+# Collaborations (as listed on the former website)
+collaborations:
+  international:
+    - "Collins, Fonov, Arnold, Ruthazer, Stifani (Montreal Neurological Institute, Canada)"
+    - "Pruessner (Douglas Institute, Canada)"
+    - "Chakravarty (McGill University, Canada)"
+    - "Descoteaux (University of Sherbrooke, Canada)"
+    - "Limperopoulos, Clouchoux (Children's National Medical Center, USA)"
+    - "Guttmann (Harvard Medical School, USA)"
+    - "Chien (Indiana University Indianapolis, USA)"
+    - "Oguz (Vanderbilt University, USA)"
+    - "Wu (Chapel Hill, USA)"
+    - "Öz (University of Minnesota, USA)"
+    - "Concha (University of Mexico, Mexico)"
+    - "Manjón, Robles (Universitat Politècnica de València, Spain)"
+    - "Lanuza (Universitat de València, Spain)"
+    - "Gaser (University of Jena, Germany)"
+    - "Sanroma (DZNE, Germany)"
+    - "Eskildsen, Østergaard (Aalborg University, Denmark)"
+    - "Rueckert, Wolz (Imperial College London, UK)"
+    - "Moonen (UMC Utrecht, Netherlands)"
+    - "Huhtaniska (University of Oulu, Finland)"
+    - "Salvado (CSIRO, Australia)"
+  national:
+    - "Bordeaux — Tourdias, Dousset, Brochet, Lamargue (Neurocentre Magendie / CHU); Allard, Catheline (INCIA / CHU); Planche (IMN); Thiebaut de Schotten (INM); de Senneville, Papadakis, Dossal, Deledalle (IMB); Giraud (IMS); Clément, Ta, Bugeau, Domenger (LaBRI); Hiba (RMSB)"
+    - "Paris — Colliot (ICM); Mangin (CATI); Houenou (CEA); Laidi (NeuroSpin); Buades (Université Paris Descartes); Lepetit (ENPC)"
+    - "Grenoble — Dojat (Inserm); Attyé, Renard (GIN)"
+    - "Rennes — Barillot, Hellier, Kervrann, Prima, Jannin, Wiest-Daesslé (IRISA); Morandi, Haegelen (CHU); Bézy-Wendling (LTSI)"
+    - "Strasbourg — Collet (LSIIT), Armspach (IPB) · Tours — Ossant (CHU)"
+  industrial: [GE Healthcare, Canon Medical Systems, Qynapse, True Positive Medical Devices, Artificial Insight, GeodAIsics, Raidium]
