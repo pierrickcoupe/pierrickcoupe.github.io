@@ -1,7 +1,7 @@
 # role: pi | wp | co      period: "start–end"      featured: shown on home page
 - {role: pi, name: ChatvolBrain, title: AI-powered companion for neurological diagnostics, partners: LaBRI, funder: CNRS Prematuration, period: 2025–2026, featured: true, text: An AI-powered companion for neurological diagnostics.}
 - {role: pi, name: HoliBrain, title: Holistic brain anatomy analysis, funder: ANR PRC, period: 2024–2028, partners: LaBRI · IMB UMR 5152 · Neurocentre Magendie U1215 · UPV (Spain), featured: true, text: "Holistic analysis of brain anatomy across structures and scales, with an ensemble of collaborating deep networks."}
-- {role: pi, name: TumorBrain, title: Deep learning for brain tumor analysis, funder: University of Bordeaux, period: 2023–2026, partners: LaBRI · IMB UMR 5152}
+- {role: pi, name: TumorBrain, title: Deep learning for brain tumor analysis, funder: University of Bordeaux, period: 2023–2025, partners: LaBRI · IMB UMR 5152}
 - {role: pi, name: DeepvolBrain, title: Deep learning for neuroimaging, funder: ANR JCJC, period: 2019–2023, partners: LaBRI · UPV (Spain) · McGill (Canada) · INCIA · Neurocentre Magendie, featured: true, text: Deep learning for neuroimaging, powering the next generation of volBrain.}
 - {role: pi, name: DeepMultiBrain, title: Deep learning for multiscale brain analysis, funder: CNRS, period: "2019", partners: LaBRI · INSERM U1215}
 - {role: pi, name: BigDataBrain, title: Towards big data in neuroscience, funder: LabEX TRAIL, period: 2018–2019, partners: LaBRI · INCIA UMR 5287 · Neurocentre Magendie U862}
