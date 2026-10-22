@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-22T14:09:25.469Z",
-  "count": 221,
+  "updated": "2026-10-22T14:21:14.758Z",
+  "count": 222,
   "publications": [
     {
       "title": "AI-Based Differential Diagnosis of Neurodegenerative Diseases Using Structural MRI: A Systematic Review",
@@ -1554,6 +1554,25 @@
       "link": "https://doi.org/10.1109/isbi45749.2020.9098692"
     },
     {
+      "authors": [
+        "J. V. Manjón",
+        "J. E. Romero",
+        "R. Vivo-Hernando",
+        "G. Rubio-Navarro",
+        "M. De la Iglesia-Vaya",
+        "F. Aparici-Robles",
+        "P. Coupé"
+      ],
+      "venue": "arXiv:2001.05720",
+      "doi": "",
+      "hal": "",
+      "type": "preprint",
+      "year": 2020,
+      "title": "Deep ICE: A Deep learning approach for MRI Intracranial Cavity Extraction",
+      "url": "https://arxiv.org/abs/2001.05720",
+      "link": "https://arxiv.org/abs/2001.05720"
+    },
+    {
       "title": "Cerebellar parcellation in schizophrenia and bipolar disorder",
       "year": 2019,
       "venue": "Acta Psychiatrica Scandinavica",
@@ -1757,6 +1776,20 @@
       "type": "conference",
       "halPage": "https://hal.science/hal-02354367",
       "link": "https://doi.org/10.1016/j.jalz.2019.06.2775"
+    },
+    {
+      "authors": [
+        "J. V. Manjón",
+        "P. Coupé"
+      ],
+      "venue": "arXiv:1911.04798",
+      "doi": "",
+      "hal": "",
+      "type": "preprint",
+      "year": 2019,
+      "title": "MRI denoising using Deep Learning and Non-local averaging",
+      "url": "https://arxiv.org/abs/1911.04798",
+      "link": "https://arxiv.org/abs/1911.04798"
     },
     {
       "title": "Adaptive fusion of texture-based grading for Alzheimer's disease classification",
@@ -2103,17 +2136,23 @@
       "link": "https://doi.org/10.1016/j.neuroimage.2017.04.018"
     },
     {
-      "title": "Abstracts from the Fifth Conference of the International Multiple Sclerosis Cognition Society : New York Academy of Sciences • New York, New York, USA • June 23 & 24, 2016",
-      "year": 2017,
-      "venue": "International Journal of MS Care",
+      "authors": [
+        "N. Tustison",
+        "B. Avants",
+        "H. Wang",
+        "L. Xie",
+        "P. Coupé",
+        "P. Yushkevich",
+        "J. V. Manjón"
+      ],
+      "venue": "Insight Journal",
       "doi": "",
-      "authors": [],
       "hal": "",
-      "arxiv": "",
-      "pmid": "",
-      "url": "http://europepmc.org/abstract/PMC/PMC5315324",
       "type": "journal",
-      "link": "http://europepmc.org/abstract/PMC/PMC5315324"
+      "year": 2017,
+      "title": "A patch-based framework for new ITK functionality: Joint fusion, denoising, and non-local super-resolution",
+      "url": "https://www.insight-journal.org/browse/publication/982",
+      "link": "https://www.insight-journal.org/browse/publication/982"
     },
     {
       "title": "CERES: A new cerebellum lobule segmentation method",
@@ -2999,19 +3038,6 @@
       "title": "volBrain: An online MRI brain volumetry system (OHBM)",
       "url": "https://hal.science/hal-01180069",
       "link": "https://hal.science/hal-01180069"
-    },
-    {
-      "title": "Effect of automated drug distribution systems on medication error rates in a short-stay geriatric unit",
-      "year": 2014,
-      "venue": "Journal of Evaluation in Clinical Practice",
-      "doi": "10.1111/jep.12202",
-      "authors": [],
-      "hal": "",
-      "arxiv": "",
-      "pmid": "24917185",
-      "url": "http://europepmc.org/abstract/med/24917185",
-      "type": "journal",
-      "link": "https://doi.org/10.1111/jep.12202"
     },
     {
       "title": "NICE: Non-local Intracranial Cavity Extraction",
