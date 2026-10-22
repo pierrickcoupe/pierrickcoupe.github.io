@@ -18,7 +18,7 @@ phd:
   - {name: Shiyan Hu, start: 2008, end: 2013, place: McGill / MNI, co: "D. L. Collins"}
 engineers:
   - {name: Etoile Galé, start: 2025, end: "", place: LaBRI UMR 5800}
-  - {name: Sarra Jbeli, start: 2025, end: "", place: LaBRI UMR 5800}
+  - {name: Sarra Jbeli, start: 2025, end: 2026, place: LaBRI UMR 5800}
   - {name: Léo Gallot, start: 2024, end: 2025, place: LaBRI UMR 5800}
   - {name: Hermann Courteille, start: 2023, end: 2024, place: PNRIA / LaBRI UMR 5800}
   - {name: Xavier Amorena, start: 2019, end: 2021, place: LaBRI UMR 5800}
@@ -38,6 +38,7 @@ masters:
   - {name: Maxime Flocard, year: 2012, duration: 6 months, place: "LaBRI UMR 5800 (funded by GE Healthcare)"}
 # Master projects (IPCV Erasmus Mundus master, LaBRI)
 projects:
+  - {year: 2025, names: "Muhammad Muqsit Islam, Gloria Garc´ ıa Cuenco"}
   - {year: 2025, names: "Arathy Jeevan, Regina Zelei"}
   - {year: 2024, names: "Monika Vajay, Balazs Formanek"}
   - {year: 2022, names: "Eduardo Herreros Fraile, Jaime Corton Gonzales"}
