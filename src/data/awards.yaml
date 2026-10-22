@@ -10,7 +10,7 @@
       links: [{label: Certificate, url: "docs/top2-2026.pdf"}, {label: Dataset, url: "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw"}]
     - text: "Top 0.5% researchers worldwide — ScholarGPS (lifetime, no self-citations)"
       detail: "Top 0.53% over all fields (rank 152,776 of 28.9 million) · top 0.11% in Medical imaging · top 0.13% in Magnetic resonance imaging · top 0.24% in Image analysis · top 0.4% in Medical image computing."
-      links: [{label: Profile, url: "https://scholargps.com/scholars/25764210955239/pierrick-coupe"}]
+      links: [{label: Report, url: "https://drive.google.com/file/d/1bjQFQjRuOhHFQRHd5vg_GtJu46cNk637/view"}, {label: Profile, url: "https://scholargps.com/scholars/25764210955239/pierrick-coupe"}]
 - year: 2025
   items:
     - text: "Top 2% most influential scientists worldwide — Stanford University / Elsevier list"
