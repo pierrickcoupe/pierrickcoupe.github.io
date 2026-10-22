@@ -1,0 +1,21 @@
+current:
+  - {name: Chris Foulon, role: Postdoc, since: 2025}
+  - {name: Eloi Navet, role: PhD student, since: 2024}
+  - {name: Andrew Zamai, role: PhD student, since: 2024}
+  - {name: Corentin Seutin, role: PhD student, since: 2025}
+alumni:
+  postdocs:
+    - {name: Trinh Dong, period: 2024–2025}
+    - {name: José Enrique Romero, period: 2018–2021}
+    - {name: Thach Thao Duong, period: 2014–2015}
+  phd:
+    - {name: Edern Le Bot, period: 2022–2025}
+    - {name: Huy-Dung Nguyen, period: 2020–2023}
+    - {name: Reda Abdellah Kamraoui, period: 2019–2022}
+    - {name: Kilian Hett, period: 2015–2019}
+    - {name: José Enrique Romero, period: 2014–2018}
+    - {name: Nicolas Guizard, period: 2008–2015}
+    - {name: Shiyan Hu, period: 2008–2013}
+# Open positions. Leave the list empty to show the "spontaneous application" message.
+positions: []
+#  - {title: "PhD — Medical imaging and AI for differential diagnosis", period: 2027–2030, url: "https://..."}

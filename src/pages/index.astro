@@ -1,0 +1,205 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PubItem from '../components/PubItem.astro';
+import { load, url } from '../lib/data.js';
+
+const profile = load('profile.yaml');
+const news = load('news.yaml').slice(0, 3);
+const research = load('research.yaml');
+const projects = load('projects.yaml').filter((p) => p.featured).slice(0, 3);
+const { publications } = load('publications.json');
+const featured = publications.filter((p) => p.featured);
+const software = load('software.yaml');
+const team = load('team.yaml');
+const alumniCount = team.alumni.postdocs.length + team.alumni.phd.length;
+const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
+---
+<Base>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">{profile.position} · LaBRI, University of Bordeaux</p>
+        <h1>{profile.hero.title}</h1>
+        <p class="hero__lead">{profile.hero.text}</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href={url('research/')}>Explore my research</a>
+          <a class="btn btn--ghost" href={url('publications/')}>Publications</a>
+        </div>
+        <div class="hero__profiles">
+          {profile.profiles.map((p) => <a href={p.url}>{p.label}</a>)}
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card">
+        <div class="hero__photo">
+          {profile.portrait
+            ? <img src={url('images/portrait.jpg')} alt={`Portrait of ${profile.name}`} width="300" height="375" />
+            : <span>Portrait</span>}
+        </div>
+        <div class="hero__id">
+          <div class="hero__name">{profile.name}</div>
+          <div class="hero__roles">{profile.roles.join(' · ')}</div>
+          <a class="hero__vb" href={url('software/')}>
+            <img src={url('images/volbrain-light.svg')} alt="" aria-hidden="true" width="46" height="43" />
+            <span>Co-developer of the <strong>volBrain</strong> platform</span>
+          </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="container section news" aria-labelledby="news-h">
+    <div class="section-head"><h2 id="news-h" class="h2">Latest news</h2></div>
+    <div class="grid">
+      {news.map((n) => (
+        <article class="card">
+          <div class="card-meta"><span>{n.date} · {n.category}</span></div>
+          <h3>{n.title}</h3>
+          <p>{n.text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="container section" aria-labelledby="research-h" style="padding-top: 24px">
+    <p class="eyebrow">Research</p>
+    <h2 id="research-h" class="h2">Three complementary axes</h2>
+    <p class="lead">From new network architectures to tens of thousands of scans and tools used by clinicians and researchers worldwide.</p>
+    <div class="grid">
+      {research.map((r) => (
+        <article class="card card--soft">
+          <div class="icon-tile"><Icon name={r.icon} color="#2B455D" /></div>
+          <h3>{r.title}</h3>
+          <p style="margin-bottom: 16px">{r.short}</p>
+          <a class="more" href={url(`research/#${r.id}`)}>Learn more →</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- FLAGSHIP PROJECTS -->
+  <section class="section section--dark" aria-labelledby="proj-h">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="proj-h" class="h2">Flagship projects</h2>
+        <a class="more" href={url('projects/')}>All projects →</a>
+      </div>
+      <div class="grid">
+        {projects.map((p) => (
+          <article class="card card--dark">
+            <div class="card-meta"><span>{p.funder} · {roleLabel[p.role]}</span><span>{p.period}</span></div>
+            <h3 style="font-size: 21px">{p.name}</h3>
+            <p>{p.text || p.title}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED PAPERS -->
+  <section class="container section" aria-labelledby="pub-h">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Publications</p>
+        <h2 id="pub-h" class="h2" style="margin: 0">Selected papers</h2>
+      </div>
+      <a class="more" href={url('publications/')}>All publications →</a>
+    </div>
+    <div style="border-top: 1px solid var(--line)">
+      {featured.map((p) => <PubItem pub={p} showYear />)}
+    </div>
+  </section>
+
+  <!-- SOFTWARE -->
+  <section class="section section--soft" aria-labelledby="sw-h">
+    <div class="container">
+      <p class="eyebrow">Software &amp; platforms</p>
+      <h2 id="sw-h" class="h2" style="margin-bottom: 32px">Open tools for the community</h2>
+      <div class="sw">
+        <article class="sw__main">
+          <img src={url('images/volbrain-light.svg')} alt="" aria-hidden="true" width="64" height="60" />
+          <div class="card-meta" style="color: var(--on-navy-accent); margin-bottom: 0">Online platform</div>
+          <h3>{software.platform.name}</h3>
+          <p>{software.platform.text}</p>
+          <a class="btn btn--light" href={software.platform.url}>Open volBrain</a>
+        </article>
+        <div class="grid grid--sm sw__list">
+          {software.pipelines.slice(0, 4).map((s) => (
+            <a class="card" href={url('software/')}>
+              <div style="font-weight: 600; margin-bottom: 4px">{s.name}</div>
+              <div style="font-size: 14px; color: var(--muted)">{s.text}</div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="container section" aria-labelledby="team-h">
+    <div class="team">
+      <div class="team__intro">
+        <p class="eyebrow">Team</p>
+        <h2 id="team-h" class="h2">The in2brain group</h2>
+        <p class="lead" style="margin-bottom: 24px">We welcome motivated PhD candidates, postdocs and interns in deep learning and neuroimaging.</p>
+        <a class="btn btn--primary" href={url('team/')}>Meet the team</a>
+      </div>
+      <div class="grid grid--sm team__list">
+        {team.current.map((m) => (
+          <div class="card" style="padding: 16px 18px">
+            <div style="font-weight: 600">{m.name}</div>
+            <div style="font-size: 14px; color: var(--muted)">{m.role} · since {m.since}</div>
+          </div>
+        ))}
+        <a class="card alumni" href={url('team/#alumni')}>+ {alumniCount} alumni →</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
+  .hero__visual { flex: 1 1 280px; max-width: 360px; position: relative; }
+  .hero__inner { display: flex; flex-wrap: wrap; gap: 56px; align-items: center; padding-block: 96px 104px; position: relative; }
+  .hero__text { flex: 999 1 560px; min-width: 0; }
+  .hero__eyebrow { margin: 0 0 20px; font-size: 14px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--on-navy-accent); }
+  .hero h1 { margin: 0 0 24px; font-family: var(--serif); font-weight: 600; font-size: clamp(36px, 5vw, 56px); line-height: 1.1; letter-spacing: -.5px; max-width: 760px; }
+  .hero__lead { margin: 0 0 36px; font-size: 19px; color: var(--on-navy); max-width: 640px; }
+  .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+  .hero__profiles { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; font-weight: 500; }
+  .hero__profiles a { color: var(--on-navy-accent); }
+  .hero__card { position: relative; background: #273D52; border: 1px solid var(--navy-line); border-radius: 16px; padding: 16px; }
+  .hero__photo { aspect-ratio: 4 / 5; border-radius: 10px; background: #33495E; display: flex; align-items: center; justify-content: center; color: #9FB1C2; font-size: 14px; overflow: hidden; }
+  .hero__photo img { width: 100%; height: 100%; object-fit: cover; }
+  .hero__id { padding: 16px 4px 4px; }
+  .hero__name { font-weight: 600; font-size: 17px; }
+  .hero__roles { font-size: 14px; color: #B8C5D2; line-height: 1.5; }
+  .hero__vb { display: flex; align-items: center; gap: 12px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--navy-line); color: #CBD5DF !important; font-size: 14px; text-decoration: none !important; }
+  .hero__vb img { flex: 0 0 46px; }
+  .hero__vb strong { color: #fff; }
+  .hero__vb:hover strong { text-decoration: underline; }
+  @media (max-width: 640px) {
+    .hero__inner { padding-block: 56px 64px; gap: 40px; }
+    .hero__lead { font-size: 17px; }
+    .hero__visual { max-width: none; }
+      .hero__card { display: flex; gap: 16px; align-items: center; }
+    .hero__photo { width: 96px; flex: 0 0 96px; }
+    .hero__id { padding: 0; }
+  }
+  .news { padding-bottom: 24px; }
+  .sw { display: flex; flex-wrap: wrap; gap: 24px; }
+  .sw__main { flex: 1 1 340px; background: var(--navy); color: #fff; border-radius: var(--radius); padding: 32px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+  .sw__main h3 { margin: 0; font-size: 24px; }
+  .sw__main p { margin: 0 0 8px; font-size: 15px; color: var(--on-navy); }
+  .sw__main .btn { margin-top: auto; }
+  .sw__list { flex: 2 1 480px; }
+  .team { display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; }
+  .team__intro { flex: 1 1 320px; }
+  .team__list { flex: 2 1 480px; }
+  .alumni { border-style: dashed; border-color: #C5CCD8; color: var(--muted) !important; display: flex !important; align-items: center; padding: 16px 18px; }
+</style>

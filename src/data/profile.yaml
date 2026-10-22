@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------
+#  Identity & contact — used in header, footer, SEO and home page
+# ---------------------------------------------------------------
+name: Pierrick Coupé
+tagline: AI for large-scale brain MRI analysis
+description: >-
+  Pierrick Coupé is a CNRS Research Director at LaBRI (University of Bordeaux),
+  developing deep learning and big-data methods for brain MRI analysis.
+position: CNRS Research Director
+affiliation: LaBRI UMR 5800, CNRS · University of Bordeaux · Bordeaux INP
+lab: LaBRI UMR 5800
+group: in2brain
+roles:
+  - Head of the in2brain group
+  - Co-lead of LaBRI's Digital Health axis
+institutions: CNRS · Université de Bordeaux · Bordeaux INP
+email: pierrick.coupe@labri.fr
+phone: +33 5 40 00 35 38
+address:
+  - Office 253, LaBRI
+  - 351 cours de la Libération
+  - 33405 Talence cedex, France
+# Portrait: public/images/portrait.jpg (4:5 ratio). Set to false to hide it.
+portrait: true
+profiles:
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=fKuAndgAAAAJ&hl=en
+  - label: ORCID
+    url: https://orcid.org/0000-0003-2709-3350
+  - label: HAL
+    url: https://hal.science/search/index/?q=authIdHal_s:pierrick-coupe
+orcid: 0000-0003-2709-3350
+halId: pierrick-coupe
+
+hero:
+  title: Artificial intelligence for large-scale brain MRI analysis
+  text: >-
+    I develop deep learning and big-data methods to measure the human brain
+    across the lifespan, detect disease early and bring quantitative
+    neuroimaging to clinicians — through open platforms like volBrain.
+
+bio: >-
+  Pierrick Coupé received an M.Eng. in biomedical engineering from the University of
+  Technology of Compiègne (2003), an M.Sc. in image and signal processing (2004) and a
+  Ph.D. in image processing (2008) from the University of Rennes I, under the supervision
+  of Christian Barillot and Pierre Hellier; his thesis received the IEEE France best thesis
+  prize. He was then a postdoctoral fellow at the Montreal Neurological Institute (McGill
+  University) with D. Louis Collins from 2008 to 2011. He joined CNRS as a researcher at
+  LaBRI in 2011 and became CNRS Research Director in 2019. He led the PICTURA group from
+  2013 to 2023; since 2023 he co-leads the Digital Health axis of LaBRI and leads the
+  in2brain group.
