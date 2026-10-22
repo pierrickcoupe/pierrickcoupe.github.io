@@ -6,6 +6,7 @@ experience:
   - {period: 2011–2019, title: "CNRS Researcher (CR) — Imaging biomarkers for early diagnosis of Alzheimer's disease", org: LaBRI UMR 5800, notes: "Invited researcher: Montreal Neurological Institute (2012)"}
   - {period: 2008–2011, title: Postdoctoral fellow, org: "Montreal Neurological Institute, McGill University (D. L. Collins)"}
 education:
+  - {period: 2018, title: "Habilitation à diriger des recherches (HDR)", org: University of Bordeaux, notes: "Patch-based MRI analysis: from voxel to knowledge"}
   - {period: 2004–2008, title: Ph.D. in image processing, org: "University of Rennes I, IRISA / INRIA (C. Barillot, P. Hellier)", notes: Brain shift compensation in image-guided neurosurgery}
   - {period: 2004, title: M.Sc. in image and signal processing, org: University of Rennes I}
   - {period: 2003, title: M.Eng. in biomedical engineering, org: University of Technology of Compiègne}
