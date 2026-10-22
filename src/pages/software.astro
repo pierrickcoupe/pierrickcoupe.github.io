@@ -10,7 +10,7 @@ const sw = load('software.yaml');
     <div class="container">
       <p class="eyebrow">Software &amp; platforms</p>
       <h1>Open tools for the community</h1>
-      <p class="intro">Methods developed in my group are made available as an online platform and as downloadable research code.</p>
+      <p class="intro">Methods developed in my group are made available to the community through the volBrain online platform.</p>
     </div>
   </section>
 
@@ -31,18 +31,7 @@ const sw = load('software.yaml');
       </div>
     </div>
 
-    <h2 class="h2" style="margin-top: 72px">Research code</h2>
-    <p class="lead" style="margin-bottom: 24px">Classic methods for MRI enhancement and segmentation, mostly as Matlab / C-MEX code.</p>
-    <div class="grid grid--sm">
-      {sw.toolboxes.map((t) => (
-        <a class="card" href={t.url}>
-          <div style="font-weight: 600; margin-bottom: 4px">{t.name}</div>
-          <div style="font-size: 14px; color: var(--muted)">{t.text}</div>
-        </a>
-      ))}
-    </div>
-    <p class="note">{sw.license}</p>
-    <p style="margin-top: 8px"><a href={url('publications/#software')}>List of registered software (APP) →</a></p>
+    <p style="margin-top: 32px"><a href={url('publications/#software')}>List of registered software (APP) →</a></p>
   </section>
 </Base>
 
