@@ -38,7 +38,7 @@ masters:
   - {name: Maxime Flocard, year: 2012, duration: 6 months, place: "LaBRI UMR 5800 (funded by GE Healthcare)"}
 # Master projects (IPCV Erasmus Mundus master, LaBRI)
 projects:
-  - {year: 2025, names: "Muhammad Muqsit Islam, Gloria Garcia Cuenco"}
+  - {year: 2026, names: "Muhammad Muqsit Islam, Gloria Garcia Cuenco"}
   - {year: 2025, names: "Arathy Jeevan, Regina Zelei"}
   - {year: 2024, names: "Monika Vajay, Balazs Formanek"}
   - {year: 2022, names: "Eduardo Herreros Fraile, Jaime Corton Gonzales"}
