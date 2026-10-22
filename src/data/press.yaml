@@ -8,7 +8,7 @@
     type: tv
     lang: es
     url: https://hokcab01.almacen.api.auditmedia.es//api/Recortes/845ebcce-6bd8-4376-9552-de246a5264cc/tv.mp4
-  - date: '2019'
+  - date: '2019-10'
     outlet: CNRS INS2I
     title: Une assemblée d'intelligences artificielles au service de la médecine
     type: article
@@ -26,7 +26,7 @@
     type: article
     lang: fr
     url: https://lejournal.cnrs.fr/articles/les-irm-cerebrales-ont-leur-traducteur-automatique
-  - date: '2015'
+  - date: '2015-11'
     outlet: Medical Physics Web (review, issue 3)
     title: Automatic brain image analysis
     type: article
