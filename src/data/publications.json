@@ -1,6 +1,6 @@
 {
-  "updated": "2026-10-22T13:03:50.037Z",
-  "count": 200,
+  "updated": "2026-10-22T13:11:10.694Z",
+  "count": 221,
   "publications": [
     {
       "title": "AI-Based Differential Diagnosis of Neurodegenerative Diseases Using Structural MRI: A Systematic Review",
@@ -82,6 +82,22 @@
       "halPage": "https://hal.science/hal-05560922",
       "pdf": "https://hal.science/hal-05560922/document",
       "link": "https://doi.org/10.1038/s41598-026-40186-2"
+    },
+    {
+      "authors": [
+        "E. Navet",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Medical Imaging with Deep Learning (MIDL 2026)",
+      "doi": "",
+      "hal": "hal-05739121",
+      "type": "conference",
+      "year": 2026,
+      "title": "On the Stability and Robustness of Vision Transformers for Neurodegenerative Disease Classification",
+      "halPage": "https://hal.science/hal-05739121",
+      "pdf": "https://hal.science/hal-05739121/document",
+      "link": "https://hal.science/hal-05739121"
     },
     {
       "title": "Anatomical progression of genetic frontotemporal lobar degeneration across the lifespan",
@@ -238,6 +254,37 @@
       "halPage": "https://hal.science/hal-05232296",
       "pdf": "https://hal.science/hal-05232296/document",
       "link": "https://doi.org/10.1162/imag.a.116"
+    },
+    {
+      "authors": [
+        "P. Sörös",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "OHBM 2025",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2025,
+      "title": "Age-related volume loss in thalamic nuclei: sex-specific patterns and blood pressure associations",
+      "link": ""
+    },
+    {
+      "authors": [
+        "E. Le Bot",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Medical Imaging with Deep Learning (MIDL)",
+      "doi": "",
+      "hal": "hal-05213598",
+      "type": "conference",
+      "year": 2025,
+      "title": "FLAIRBrainSeg: Fine-grained brain segmentation using FLAIR MRI only",
+      "url": "https://arxiv.org/abs/2504.03376",
+      "halPage": "https://hal.science/hal-05213598",
+      "pdf": "https://hal.science/hal-05213598/document",
+      "link": "https://arxiv.org/abs/2504.03376"
     },
     {
       "title": "The link between gender inequality and the distribution of brain regions’ relative sizes across the lifespan and the world",
@@ -440,6 +487,51 @@
       "link": "https://doi.org/10.1212/nxi.0000000000200222"
     },
     {
+      "authors": [
+        "A. Longuefosse",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "SASHIMI workshop, MICCAI 2024",
+      "doi": "10.1007/978-3-031-73281-2_3",
+      "hal": "hal-04903826",
+      "type": "conference",
+      "year": 2024,
+      "title": "Adapted nnU-Net: A Robust Baseline for Cross-Modality Synthesis and Medical Image Inpainting",
+      "halPage": "https://hal.science/hal-04903826",
+      "pdf": "https://hal.science/hal-04903826/document",
+      "link": "https://doi.org/10.1007/978-3-031-73281-2_3"
+    },
+    {
+      "authors": [
+        "S. Morell-Ortega",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Medical Imaging with Deep Learning (MIDL 2024)",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2024,
+      "title": "REMIX: Resolution Enhancement through Mixture of Experts",
+      "url": "https://openreview.net/forum?id=PGtCMchmdy",
+      "link": "https://openreview.net/forum?id=PGtCMchmdy"
+    },
+    {
+      "authors": [
+        "M. Perez-Caballero",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Medical Imaging with Deep Learning (MIDL 2024)",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2024,
+      "title": "Unsupervised Deep Learning Method for Bias Correction",
+      "link": ""
+    },
+    {
       "title": "Anatomical MRI staging of frontotemporal dementia variants",
       "year": 2023,
       "venue": "Alzheimer's & Dementia",
@@ -608,6 +700,37 @@
       "halPage": "https://hal.science/hal-04423198",
       "pdf": "https://hal.science/hal-04423198/document",
       "link": "https://doi.org/10.1186/s13229-023-00551-8"
+    },
+    {
+      "authors": [
+        "H. D. Nguyen",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Machine Learning in Medical Imaging (MLMI 2023), pp. 53-63",
+      "doi": "",
+      "hal": "hal-04201135",
+      "type": "conference",
+      "year": 2023,
+      "title": "3D Transformer based on deformable patch location for differential diagnosis between Alzheimer's disease and Frontotemporal dementia",
+      "halPage": "https://hal.science/hal-04201135",
+      "pdf": "https://hal.science/hal-04201135/document",
+      "link": "https://hal.science/hal-04201135"
+    },
+    {
+      "authors": [
+        "D. A. Di Giovanni",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Medical Imaging with Deep Learning (MIDL 2023), short paper",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2023,
+      "title": "Image Entropy and Numeric Representation for MRI Semantic Segmentation",
+      "url": "https://openreview.net/pdf?id=rfZokeg6UMV",
+      "link": "https://openreview.net/pdf?id=rfZokeg6UMV"
     },
     {
       "title": "A novel deep learning based hippocampus subfield segmentation method",
@@ -1385,28 +1508,6 @@
       "link": "https://doi.org/10.1088/1361-6560/abb6be"
     },
     {
-      "title": "Tensor-based grading: a novel patch-based grading approach for the analysis of deformation fields in huntington's disease",
-      "year": 2020,
-      "venue": "Proceedings. IEEE International Symposium on Biomedical Imaging",
-      "doi": "10.1109/isbi45749.2020.9098692",
-      "authors": [
-        "K. Hett",
-        "H. Johnson",
-        "P. Coupé",
-        "J. S. Paulsen",
-        "J. D. Long",
-        "I. Oguz"
-      ],
-      "hal": "hal-02450401",
-      "arxiv": "",
-      "pmid": "34873434",
-      "url": "http://europepmc.org/abstract/med/34873434",
-      "type": "journal",
-      "halPage": "https://hal.science/hal-02450401",
-      "pdf": "https://hal.science/hal-02450401/document",
-      "link": "https://doi.org/10.1109/isbi45749.2020.9098692"
-    },
-    {
       "title": "Blind MRI Brain Lesion Inpainting Using Deep Learning",
       "year": 2020,
       "venue": "",
@@ -1429,6 +1530,28 @@
       "halPage": "https://hal.science/hal-02966536",
       "pdf": "https://hal.science/hal-02966536/document",
       "link": "https://doi.org/10.1007/978-3-030-59520-3_5"
+    },
+    {
+      "title": "Tensor-based grading: a novel patch-based grading approach for the analysis of deformation fields in huntington's disease",
+      "year": 2020,
+      "venue": "Proceedings. IEEE International Symposium on Biomedical Imaging",
+      "doi": "10.1109/isbi45749.2020.9098692",
+      "authors": [
+        "K. Hett",
+        "H. Johnson",
+        "P. Coupé",
+        "J. S. Paulsen",
+        "J. D. Long",
+        "I. Oguz"
+      ],
+      "hal": "hal-02450401",
+      "arxiv": "",
+      "pmid": "34873434",
+      "url": "http://europepmc.org/abstract/med/34873434",
+      "type": "conference",
+      "halPage": "https://hal.science/hal-02450401",
+      "pdf": "https://hal.science/hal-02450401/document",
+      "link": "https://doi.org/10.1109/isbi45749.2020.9098692"
     },
     {
       "title": "Cerebellar parcellation in schizophrenia and bipolar disorder",
@@ -1535,25 +1658,6 @@
       "link": "https://doi.org/10.1038/s41598-019-49970-9"
     },
     {
-      "title": "Structural connectivity mapping in the human hippocampal subfields using super-resolution hydi",
-      "year": 2019,
-      "venue": "Alzheimer's & Dementia",
-      "doi": "10.1016/j.jalz.2019.06.2775",
-      "authors": [
-        "N. M. H. Elsaid",
-        "P. Coupé",
-        "A. Saykin",
-        "Y.-C. Wu"
-      ],
-      "hal": "hal-02354367",
-      "arxiv": "",
-      "pmid": "",
-      "url": "https://hal.archives-ouvertes.fr/hal-02354367",
-      "type": "journal",
-      "halPage": "https://hal.science/hal-02354367",
-      "link": "https://doi.org/10.1016/j.jalz.2019.06.2775"
-    },
-    {
       "title": "AssemblyNet: A Novel Deep Decision-Making Process for Whole Brain MRI Segmentation",
       "year": 2019,
       "venue": "",
@@ -1634,6 +1738,25 @@
       "halPage": "https://hal.science/hal-02426273",
       "pdf": "https://inria.hal.science/hal-02426273/document",
       "link": "https://doi.org/10.3233/shti190225"
+    },
+    {
+      "title": "Structural connectivity mapping in the human hippocampal subfields using super-resolution hydi",
+      "year": 2019,
+      "venue": "Alzheimer's & Dementia",
+      "doi": "10.1016/j.jalz.2019.06.2775",
+      "authors": [
+        "N. M. H. Elsaid",
+        "P. Coupé",
+        "A. Saykin",
+        "Y.-C. Wu"
+      ],
+      "hal": "hal-02354367",
+      "arxiv": "",
+      "pmid": "",
+      "url": "https://hal.archives-ouvertes.fr/hal-02354367",
+      "type": "conference",
+      "halPage": "https://hal.science/hal-02354367",
+      "link": "https://doi.org/10.1016/j.jalz.2019.06.2775"
     },
     {
       "title": "Adaptive fusion of texture-based grading for Alzheimer's disease classification",
@@ -1905,6 +2028,20 @@
       "halPage": "https://hal.science/hal-01918437",
       "pdf": "https://hal.science/hal-01918437/document",
       "link": "https://doi.org/10.1007/978-3-030-00500-9_2"
+    },
+    {
+      "authors": [
+        "G. Adan",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Epilepsia 59, S131 (abstract)",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2018,
+      "title": "Quantitative MRI of the Brain in Patients with Neurocysticercosis and Epilepsy",
+      "link": ""
     },
     {
       "title": "SuperPatchMatch : Un algorithme de correspondances robustes de patchs de superpixels",
@@ -2196,6 +2333,20 @@
       "link": "https://doi.org/10.1002/hbm.23743"
     },
     {
+      "authors": [
+        "A. Morin",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "Alzheimer's & Dementia 13(7), 772-774 (AAIC 2017)",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2017,
+      "title": "Accuracy of MRI classification algorithms in a tertiary memory center clinical routine cohort (abstract)",
+      "link": ""
+    },
+    {
       "title": "Adaptive fusion of texture-based grading: Application to alzheimer’s disease detection",
       "year": 2017,
       "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
@@ -2256,6 +2407,35 @@
       "halPage": "https://hal.science/hal-01626265",
       "pdf": "https://hal.science/hal-01626265/document",
       "link": "https://doi.org/10.1007/978-3-319-67434-6_4"
+    },
+    {
+      "authors": [
+        "I. Koubiyr",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "ECTRIMS 2017",
+      "doi": "",
+      "hal": "hal-02192442",
+      "type": "conference",
+      "year": 2017,
+      "title": "Microstructural alterations precede subcortical deep grey matter volume loss in patients with clinically isolated syndrome",
+      "halPage": "https://hal.science/hal-02192442",
+      "link": "https://hal.science/hal-02192442"
+    },
+    {
+      "authors": [
+        "I. Koubiyr",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "ECTRIMS 2017",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2017,
+      "title": "Relationships between reorganization of functional brain network topology and cognition in clinically isolated syndrome",
+      "link": ""
     },
     {
       "title": "An Optimized PatchMatch for multi-scale and multi-feature label fusion",
@@ -2425,6 +2605,20 @@
       "halPage": "https://hal.science/hal-01398773",
       "pdf": "https://hal.science/hal-01398773/document",
       "link": "https://doi.org/10.1007/978-3-319-47118-1_12"
+    },
+    {
+      "authors": [
+        "S. Huhtaniska",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "European Psychiatry 33, S102-S103 (abstract)",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2016,
+      "title": "Lifetime antipsychotic use and brain structures in schizophrenia and other psychoses",
+      "link": ""
     },
     {
       "title": "Non-local MRI library-based super-resolution: Application to hippocampus subfield segmentation",
@@ -2706,6 +2900,50 @@
       "link": "https://doi.org/10.1016/j.neurobiolaging.2014.04.034"
     },
     {
+      "authors": [
+        "A. Zandifar",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "AAIC 2015, Alzheimer's & Dementia 11, 797",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2015,
+      "title": "A quantitative comparison between two manual hippocampal segmentation protocols",
+      "link": ""
+    },
+    {
+      "authors": [
+        "A. Moroso",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "ECTRIMS 2015, Multiple Sclerosis Journal 21, 365",
+      "doi": "",
+      "hal": "hal-01290690",
+      "type": "conference",
+      "year": 2015,
+      "title": "Cerebellar sub-structures in cognitive impairment: volumetric and microstructural analyses at different stages of multiple sclerosis",
+      "halPage": "https://hal.science/hal-01290690",
+      "link": "https://hal.science/hal-01290690"
+    },
+    {
+      "authors": [
+        "V. Planche",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "ECTRIMS 2015, Multiple Sclerosis Journal 21, 363",
+      "doi": "",
+      "hal": "hal-01294835",
+      "type": "conference",
+      "year": 2015,
+      "title": "Hippocampal microstructural damage and memory impairment in clinically isolated syndrome",
+      "halPage": "https://hal.science/hal-01294835",
+      "link": "https://hal.science/hal-01294835"
+    },
+    {
       "title": "Patch-based segmentation from MP2RAGE images: Comparison to conventional techniques",
       "year": 2015,
       "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
@@ -2749,24 +2987,18 @@
       "link": "https://doi.org/10.1007/978-3-319-28194-0"
     },
     {
-      "title": "A unified assessment of fully automated hippocampus segmentation methods",
-      "year": 2014,
-      "venue": "Alzheimer's and Dementia",
-      "doi": "10.1016/j.jalz.2014.05.156",
       "authors": [
-        "A. Zandifar",
-        "V. Fonov",
-        "P. Coupé",
-        "J. C. Pruessner",
-        "D. L. Collins"
+        "J. V. Manjón",
+        "P. Coupé"
       ],
-      "hal": "hal-01178552",
-      "arxiv": "",
-      "pmid": "",
-      "url": "https://hal.archives-ouvertes.fr/hal-01178552",
-      "type": "journal",
-      "halPage": "https://hal.science/hal-01178552",
-      "link": "https://doi.org/10.1016/j.jalz.2014.05.156"
+      "venue": "OHBM 2015",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2015,
+      "title": "volBrain: An online MRI brain volumetry system (OHBM)",
+      "url": "https://hal.science/hal-01180069",
+      "link": "https://hal.science/hal-01180069"
     },
     {
       "title": "Effect of automated drug distribution systems on medication error rates in a short-stay geriatric unit",
@@ -2844,24 +3076,24 @@
       "link": "https://doi.org/10.1002/hbm.22183"
     },
     {
-      "title": "Optimized patchMatch for near real time and accurate label fusion",
+      "title": "A unified assessment of fully automated hippocampus segmentation methods",
       "year": 2014,
-      "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
+      "venue": "Alzheimer's and Dementia",
+      "doi": "10.1016/j.jalz.2014.05.156",
       "authors": [
-        "V. T. Ta",
-        "R. Giraud",
-        "D. L. Collins",
-        "P. Coupé"
+        "A. Zandifar",
+        "V. Fonov",
+        "P. Coupé",
+        "J. C. Pruessner",
+        "D. L. Collins"
       ],
-      "hal": "hal-01006329",
+      "hal": "hal-01178552",
       "arxiv": "",
-      "pmid": "25320788",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84909629656&partnerID=MN8TOARS",
-      "type": "journal",
-      "halPage": "https://hal.science/hal-01006329",
-      "pdf": "https://hal.science/hal-01006329/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84909629656&partnerID=MN8TOARS"
+      "pmid": "",
+      "url": "https://hal.archives-ouvertes.fr/hal-01178552",
+      "type": "conference",
+      "halPage": "https://hal.science/hal-01178552",
+      "link": "https://doi.org/10.1016/j.jalz.2014.05.156"
     },
     {
       "title": "Anatomically constrained weak classifier fusion for early detection of Alzheimer’s disease",
@@ -2886,6 +3118,20 @@
       "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84921772921&partnerID=MN8TOARS"
     },
     {
+      "authors": [
+        "S. F. Eskildsen",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "CADDementia challenge, MICCAI 2014",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2014,
+      "title": "Detecting Alzheimer's disease by morphological MRI using hippocampal grading and cortical thickness",
+      "link": ""
+    },
+    {
       "title": "Impact of DWI denoising on Track-Density Imaging",
       "year": 2014,
       "venue": "",
@@ -2905,6 +3151,22 @@
       "halPage": "https://hal.science/hal-00961150",
       "pdf": "https://hal.science/hal-00961150/document",
       "link": "https://hal.archives-ouvertes.fr/hal-00961150"
+    },
+    {
+      "authors": [
+        "P. Coupé",
+        "…"
+      ],
+      "venue": "OHBM 2014",
+      "doi": "",
+      "hal": "hal-00961150",
+      "type": "conference",
+      "year": 2014,
+      "title": "Impact of DWI denoising on Track-Density Imaging",
+      "url": "https://hal.science/hal-00961150",
+      "halPage": "https://hal.science/hal-00961150",
+      "pdf": "https://hal.science/hal-00961150/document",
+      "link": "https://hal.science/hal-00961150"
     },
     {
       "title": "Non Local Spatial and Angular Matching : a new denoising technique for diffusion MRI",
@@ -2941,6 +3203,26 @@
       "type": "conference",
       "halPage": "https://hal.science/hal-00961154",
       "link": "https://hal.archives-ouvertes.fr/hal-00961154"
+    },
+    {
+      "title": "Optimized PatchMatch for near real time and accurate label fusion",
+      "year": 2014,
+      "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "doi": "10.1007/978-3-319-10443-0_14",
+      "authors": [
+        "V. T. Ta",
+        "R. Giraud",
+        "D. L. Collins",
+        "P. Coupé"
+      ],
+      "hal": "hal-01006329",
+      "arxiv": "",
+      "pmid": "25320788",
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84906969159&partnerID=MN8TOARS",
+      "type": "conference",
+      "halPage": "https://hal.science/hal-01006329",
+      "pdf": "https://hal.science/hal-01006329/document",
+      "link": "https://doi.org/10.1007/978-3-319-10443-0_14"
     },
     {
       "title": "A new method for structural volume analysis of longitudinal brain MRI data and its application in studying the growth trajectories of anatomical brain structures in childhood",
@@ -3134,6 +3416,37 @@
       "halPage": "https://hal.science/hal-00829320",
       "pdf": "https://hal.science/hal-00829320/document",
       "link": "https://hal.archives-ouvertes.fr/hal-00829320"
+    },
+    {
+      "authors": [
+        "N. Guizard",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "endMS conference 2013",
+      "doi": "",
+      "hal": "",
+      "type": "conference",
+      "year": 2013,
+      "title": "Non-local MS MRI lesion inpainting method for image processing",
+      "link": ""
+    },
+    {
+      "authors": [
+        "M. Paquette",
+        "…",
+        "P. Coupé"
+      ],
+      "venue": "ISBI 2013 HARDI Reconstruction Challenge",
+      "doi": "",
+      "hal": "hal-00829323",
+      "type": "conference",
+      "year": 2013,
+      "title": "Particle Swarm Optimization in Multi-Tensor Imaging",
+      "url": "https://hal.science/hal-00829323",
+      "halPage": "https://hal.science/hal-00829323",
+      "pdf": "https://hal.science/hal-00829323/document",
+      "link": "https://hal.science/hal-00829323"
     },
     {
       "title": "3D rigid registration of intraoperative ultrasound and preoperative MR brain images based on hyperechogenic structures",
@@ -3607,28 +3920,6 @@
       "link": "https://doi.org/10.1007/s11554-010-0158-5"
     },
     {
-      "title": "Simultaneous segmentation and grading of hippocampus for patient classification with Alzheimer's disease",
-      "year": 2011,
-      "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
-      "authors": [
-        "P. Coupé",
-        "S. F. Eskildsen",
-        "J. V. Manjón",
-        "V. Fonov",
-        "D. L. Collins",
-        "Alzheimer's Disease Neuroimaging Initiative"
-      ],
-      "hal": "hal-00639151",
-      "arxiv": "",
-      "pmid": "22013614",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-82255185775&partnerID=MN8TOARS",
-      "type": "journal",
-      "halPage": "https://hal.science/hal-00639151",
-      "pdf": "https://hal.science/hal-00639151/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-82255185775&partnerID=MN8TOARS"
-    },
-    {
       "title": "Atrophy specific MRI brain template for Alzheimer's disease and Mild Cognitive Impairment",
       "year": 2011,
       "venue": "",
@@ -3718,7 +4009,7 @@
     {
       "title": "MRI denoising based on Sparseness and Self-Similarity",
       "year": 2011,
-      "venue": "",
+      "venue": "OHBM 2011",
       "doi": "",
       "authors": [
         "J. V. Manjón",
@@ -3796,6 +4087,27 @@
       "halPage": "https://hal.science/hal-00645486",
       "pdf": "https://hal.science/hal-00645486/document",
       "link": "https://hal.archives-ouvertes.fr/hal-00645486"
+    },
+    {
+      "title": "Simultaneous segmentation and grading of hippocampus for patient classification with Alzheimer's disease",
+      "year": 2011,
+      "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "doi": "10.1007/978-3-642-23626-6_19",
+      "authors": [
+        "P. Coupé",
+        "S. F. Eskildsen",
+        "J. V. Manjón",
+        "V. Fonov",
+        "D. L. Collins"
+      ],
+      "hal": "hal-00639151",
+      "arxiv": "",
+      "pmid": "22013614",
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-80053484021&partnerID=MN8TOARS",
+      "type": "conference",
+      "halPage": "https://hal.science/hal-00639151",
+      "pdf": "https://hal.science/hal-00639151/document",
+      "link": "https://doi.org/10.1007/978-3-642-23626-6_19"
     },
     {
       "title": "Validation of appearance-model based segmentation with patch-based refinement on medial temporal lobe structures",
@@ -3918,28 +4230,6 @@
       "link": "https://doi.org/10.1016/j.media.2010.05.010"
     },
     {
-      "title": "Nonlocal patch-based label fusion for hippocampus segmentation",
-      "year": 2010,
-      "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
-      "authors": [
-        "P. Coupé",
-        "J. V. Manjón",
-        "V. Fonov",
-        "J. Pruessner",
-        "M. Robles",
-        "D. L. Collins"
-      ],
-      "hal": "inserm-00524011",
-      "arxiv": "",
-      "pmid": "20879392",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883845354&partnerID=MN8TOARS",
-      "type": "journal",
-      "halPage": "https://hal.science/inserm-00524011",
-      "pdf": "https://inserm.hal.science/inserm-00524011/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883845354&partnerID=MN8TOARS"
-    },
-    {
       "title": "Robust Rician noise estimation for MR images",
       "year": 2010,
       "venue": "Medical Image Analysis",
@@ -4025,6 +4315,28 @@
       "link": "https://doi.org/10.1109/isbi.2010.5490261"
     },
     {
+      "title": "Nonlocal patch-based label fusion for hippocampus segmentation",
+      "year": 2010,
+      "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "doi": "10.1007/978-3-642-15711-0_17",
+      "authors": [
+        "P. Coupé",
+        "J. V. Manjón",
+        "V. Fonov",
+        "J. Pruessner",
+        "M. Robles",
+        "D. L. Collins"
+      ],
+      "hal": "inserm-00524011",
+      "arxiv": "",
+      "pmid": "20879392",
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-78349260831&partnerID=MN8TOARS",
+      "type": "conference",
+      "halPage": "https://hal.science/inserm-00524011",
+      "pdf": "https://inserm.hal.science/inserm-00524011/document",
+      "link": "https://doi.org/10.1007/978-3-642-15711-0_17"
+    },
+    {
       "title": "Robust 3D reconstruction and mean-shift clustering of motoneurons from serial histological images",
       "year": 2010,
       "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
@@ -4066,28 +4378,6 @@
       "link": "https://hal.archives-ouvertes.fr/hal-00645471"
     },
     {
-      "title": "An object-based method for Rician noise estimation in MR images",
-      "year": 2009,
-      "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
-      "authors": [
-        "P. Coupé",
-        "J. V. Manjón",
-        "E. Gedamu",
-        "D. Arnold",
-        "M. Robles",
-        "D. L. Collins"
-      ],
-      "hal": "inserm-00515408",
-      "arxiv": "",
-      "pmid": "20426161",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883843897&partnerID=MN8TOARS",
-      "type": "journal",
-      "halPage": "https://hal.science/inserm-00515408",
-      "pdf": "https://inserm.hal.science/inserm-00515408/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883843897&partnerID=MN8TOARS"
-    },
-    {
       "title": "Nonlocal means-based speckle filtering for ultrasound images",
       "year": 2009,
       "venue": "IEEE Transactions on Image Processing",
@@ -4126,6 +4416,28 @@
       "halPage": "https://hal.science/hal-00645467",
       "pdf": "https://hal.science/hal-00645467/document",
       "link": "https://doi.org/10.1016/s1053-8119(09)70119-3"
+    },
+    {
+      "title": "An object-based method for Rician noise estimation in MR images",
+      "year": 2009,
+      "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "doi": "10.1007/978-3-642-04271-3_73",
+      "authors": [
+        "P. Coupé",
+        "J. V. Manjón",
+        "E. Gedamu",
+        "D. Arnold",
+        "M. Robles",
+        "D. L. Collins"
+      ],
+      "hal": "inserm-00515408",
+      "arxiv": "",
+      "pmid": "20426161",
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-77952256780&partnerID=MN8TOARS",
+      "type": "conference",
+      "halPage": "https://hal.science/inserm-00515408",
+      "pdf": "https://inserm.hal.science/inserm-00515408/document",
+      "link": "https://doi.org/10.1007/978-3-642-04271-3_73"
     },
     {
       "title": "Evaluation de la précision d'une méthode de recalage automatique échographie 3D intra-opératoire - IRM pré-opératoire en neurochirurgie",
@@ -4236,27 +4548,6 @@
       "link": "https://doi.org/10.1109/tmi.2007.906087"
     },
     {
-      "title": "Rician noise removal by non-Local Means filtering for low signal-to-noise ratio MRI: applications to DT-MRI",
-      "year": 2008,
-      "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
-      "authors": [
-        "N. Wiest-Daesslé",
-        "S. Prima",
-        "P. Coupé",
-        "S. P. Morrissey",
-        "C. Barillot"
-      ],
-      "hal": "inserm-00332388",
-      "arxiv": "",
-      "pmid": "18982603",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883838668&partnerID=MN8TOARS",
-      "type": "journal",
-      "halPage": "https://hal.science/inserm-00332388",
-      "pdf": "https://inserm.hal.science/inserm-00332388/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883838668&partnerID=MN8TOARS"
-    },
-    {
       "title": "Acoustic shadows detection, application to accurate reconstruction of 3D intraoperative ultrasound",
       "year": 2008,
       "venue": "2008 5th IEEE International Symposium on Biomedical Imaging",
@@ -4298,6 +4589,27 @@
       "link": "https://doi.org/10.1109/isbi.2008.4541240"
     },
     {
+      "title": "Rician noise removal by non-local means filtering for low signal-to-noise ratio MRI: Applications to DT-MRI",
+      "year": 2008,
+      "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "doi": "10.1007/978-3-540-85990-1-21",
+      "authors": [
+        "N. Wiest-Daesslé",
+        "S. Prima",
+        "P. Coupé",
+        "S. P. Morrissey",
+        "C. Barillot"
+      ],
+      "hal": "inserm-00332388",
+      "arxiv": "",
+      "pmid": "18982603",
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-58849096709&partnerID=MN8TOARS",
+      "type": "conference",
+      "halPage": "https://hal.science/inserm-00332388",
+      "pdf": "https://inserm.hal.science/inserm-00332388/document",
+      "link": "https://doi.org/10.1007/978-3-540-85990-1-21"
+    },
+    {
       "title": "Brain shift compensation in image-guided neurosurgery based on 3-D ultrasound",
       "year": 2008,
       "venue": "",
@@ -4313,27 +4625,6 @@
       "halPage": "https://hal.science/tel-00328179",
       "pdf": "https://theses.hal.science/tel-00328179/document",
       "link": "https://theses.hal.science/tel-00328179"
-    },
-    {
-      "title": "Non-local means variants for denoising of diffusion-weighted and diffusion tensor MRI",
-      "year": 2007,
-      "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
-      "authors": [
-        "N. Wiest-Daesslé",
-        "S. Prima",
-        "P. Coupé",
-        "S. P. Morrissey",
-        "C. Barillot"
-      ],
-      "hal": "inserm-00193788",
-      "arxiv": "",
-      "pmid": "18044587",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-80055055757&partnerID=MN8TOARS",
-      "type": "journal",
-      "halPage": "https://hal.science/inserm-00193788",
-      "pdf": "https://inserm.hal.science/inserm-00193788/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-80055055757&partnerID=MN8TOARS"
     },
     {
       "title": "Probe trajectory interpolation for 3D reconstruction of freehand ultrasound",
@@ -4440,10 +4731,31 @@
       "link": "https://doi.org/10.1109/isbi.2007.357037"
     },
     {
+      "title": "Non-local means variants for denoising of diffusion-weighted and diffusion tensor MRI",
+      "year": 2007,
+      "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "doi": "",
+      "authors": [
+        "N. Wiest-Daesslé",
+        "S. Prima",
+        "P. Coupé",
+        "S. P. Morrissey",
+        "C. Barillot"
+      ],
+      "hal": "inserm-00193788",
+      "arxiv": "",
+      "pmid": "18044587",
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-38349033348&partnerID=MN8TOARS",
+      "type": "conference",
+      "halPage": "https://hal.science/inserm-00193788",
+      "pdf": "https://inserm.hal.science/inserm-00193788/document",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-38349033348&partnerID=MN8TOARS"
+    },
+    {
       "title": "Fast non local means denoising for 3D MR images",
       "year": 2006,
-      "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
+      "venue": "Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "doi": "10.1007/11866763_5",
       "authors": [
         "P. Coupé",
         "P. Yger",
@@ -4452,17 +4764,17 @@
       "hal": "inria-00131287",
       "arxiv": "",
       "pmid": "17354753",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883843392&partnerID=MN8TOARS",
-      "type": "journal",
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-33750269394&partnerID=MN8TOARS",
+      "type": "conference",
       "halPage": "https://hal.science/inria-00131287",
       "pdf": "https://inria.hal.science/inria-00131287/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883843392&partnerID=MN8TOARS"
+      "link": "https://doi.org/10.1007/11866763_5"
     },
     {
-      "title": "3D freehand ultrasound reconstruction based on probe trajectory",
+      "title": "3D Freehand Ultrasound Reconstruction based on Probe Trajectory",
       "year": 2005,
       "venue": "Medical Image Computing and Computer-assisted Intervention",
-      "doi": "",
+      "doi": "10.1007/11566465_74",
       "authors": [
         "P. Coupé",
         "P. Hellier",
@@ -4472,11 +4784,11 @@
       "hal": "inria-00131284",
       "arxiv": "",
       "pmid": "16685895",
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883836531&partnerID=MN8TOARS",
-      "type": "journal",
+      "url": "https://hal.inria.fr/inria-00131284",
+      "type": "conference",
       "halPage": "https://hal.science/inria-00131284",
       "pdf": "https://inria.hal.science/inria-00131284/document",
-      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84883836531&partnerID=MN8TOARS"
+      "link": "https://doi.org/10.1007/11566465_74"
     },
     {
       "title": "High frequency ultrasound characterization of the coagulation process of whole blood",
