@@ -8,4 +8,6 @@ export default defineConfig({
   site: process.env.SITE_URL || 'https://example.github.io',
   base: process.env.BASE_PATH || '/',
   trailingSlash: 'always',
+  // Old URLs kept working after renaming pages
+  redirects: { '/team/': '/supervision/' },
 });

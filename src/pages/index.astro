@@ -11,8 +11,9 @@ const projects = load('projects.yaml').filter((p) => p.featured).slice(0, 3);
 const { publications } = load('publications.json');
 const featured = publications.filter((p) => p.featured);
 const software = load('software.yaml');
-const team = load('team.yaml');
-const alumniCount = team.alumni.postdocs.length + team.alumni.phd.length;
+const sup = load('supervision.yaml');
+const current = [...sup.postdocs.filter((m) => !m.end).map((m) => ({ ...m, role: 'Postdoc' })), ...sup.phd.filter((m) => !m.end).map((m) => ({ ...m, role: 'PhD student' }))];
+const alumniCount = sup.postdocs.filter((m) => m.end).length + sup.phd.filter((m) => m.end).length;
 const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
 ---
 <Base>
@@ -40,7 +41,7 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
         </div>
         <div class="hero__id">
           <div class="hero__name">{profile.name}</div>
-          <div class="hero__roles">{profile.roles.join(' · ')}</div>
+          <div class="hero__roles">{profile.roles.map((r) => <div>{r}</div>)}</div>
           <a class="hero__vb" href={url('software/')}>
             <img src={url('images/volbrain-light.svg')} alt="" aria-hidden="true" width="46" height="43" />
             <span>Co-founder of the <strong>volBrain</strong> platform</span>
@@ -144,19 +145,22 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
   <section class="container section" aria-labelledby="team-h">
     <div class="team">
       <div class="team__intro">
-        <p class="eyebrow">Team</p>
-        <h2 id="team-h" class="h2">The in2brain group</h2>
-        <p class="lead" style="margin-bottom: 24px">We welcome motivated PhD candidates, postdocs and interns in deep learning and neuroimaging.</p>
-        <a class="btn btn--primary" href={url('team/')}>Meet the team</a>
+        <p class="eyebrow">Supervision</p>
+        <h2 id="team-h" class="h2">Students and researchers</h2>
+        <p class="lead" style="margin-bottom: 24px">I lead the in2brain group at LaBRI. We welcome motivated PhD candidates, postdocs and interns in deep learning and neuroimaging.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px">
+          <a class="btn btn--primary" href={url('supervision/')}>Supervision</a>
+          <a class="btn btn--outline" href={profile.in2brainUrl}>in2brain team <Icon name="external" size={16} /></a>
+        </div>
       </div>
       <div class="grid grid--sm team__list">
-        {team.current.map((m) => (
+        {current.map((m) => (
           <div class="card" style="padding: 16px 18px">
             <div style="font-weight: 600">{m.name}</div>
-            <div style="font-size: 14px; color: var(--muted)">{m.role} · since {m.since}</div>
+            <div style="font-size: 14px; color: var(--muted)">{m.role} · since {m.start}</div>
           </div>
         ))}
-        <a class="card alumni" href={url('team/#alumni')}>+ {alumniCount} alumni →</a>
+        <a class="card alumni" href={url('supervision/')}>+ {alumniCount} former PhD students &amp; postdocs →</a>
       </div>
     </div>
   </section>
@@ -164,7 +168,7 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
 
 <style>
   .hero { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
-  .hero__visual { flex: 1 1 280px; max-width: 360px; position: relative; }
+  .hero__visual { flex: 0 1 340px; position: relative; }
   .hero__inner { display: flex; flex-wrap: wrap; gap: 56px; align-items: center; padding-block: 96px 104px; position: relative; }
   .hero__text { flex: 999 1 560px; min-width: 0; }
   .hero__eyebrow { margin: 0 0 20px; font-size: 14px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--on-navy-accent); }
@@ -186,7 +190,7 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
   @media (max-width: 640px) {
     .hero__inner { padding-block: 56px 64px; gap: 40px; }
     .hero__lead { font-size: 17px; }
-    .hero__visual { max-width: none; }
+    .hero__visual { flex: 1 1 100%; }
       .hero__card { display: flex; gap: 16px; align-items: center; }
     .hero__photo { width: 96px; flex: 0 0 96px; }
     .hero__id { padding: 0; }
@@ -198,6 +202,8 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
   .sw__main p { margin: 0 0 8px; font-size: 15px; color: var(--on-navy); }
   .sw__main .btn { margin-top: auto; }
   .sw__list { flex: 2 1 480px; }
+  .btn--outline { color: var(--accent); border-color: var(--line-2); background: #fff; gap: 8px; }
+  .btn--outline:hover { border-color: var(--accent); color: var(--accent-hover); }
   .team { display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; }
   .team__intro { flex: 1 1 320px; }
   .team__list { flex: 2 1 480px; }

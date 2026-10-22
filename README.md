@@ -15,7 +15,7 @@ site is rebuilt automatically within ~2 minutes.
 | `research.yaml` | The three research axes |
 | `projects.yaml` | Research projects |
 | `software.yaml` | volBrain, pipelines, research code, registered software |
-| `team.yaml` | Current members, alumni, open positions |
+| `supervision.yaml` | Supervised postdocs, PhD students, engineers, master students, open positions |
 | `career.yaml` | Experience, education, editorial activities |
 | `awards.yaml` | Awards and distinctions |
 | `jury.yaml` | Thesis committees |

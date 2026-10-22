@@ -5,8 +5,7 @@ import Base from '../layouts/Base.astro';
 import { load } from '../lib/data.js';
 
 const jury = load('jury.yaml');
-const team = load('team.yaml');
-const supervised = team.alumni.phd.length + team.current.filter((m) => /PhD/.test(m.role)).length;
+const supervised = load('supervision.yaml').phd.length;
 ---
 <Base title="Thesis committees" description="Thesis committees of Pierrick Coupé." hidden>
   <section class="page-head">

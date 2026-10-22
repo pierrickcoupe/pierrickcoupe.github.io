@@ -1,0 +1,108 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { load } from '../lib/data.js';
+
+const profile = load('profile.yaml');
+const sup = load('supervision.yaml');
+const period = (m) => `${m.start}–${m.end || ''}`;
+const groups = [
+  { id: 'postdocs', title: 'Postdoctoral fellows', items: sup.postdocs },
+  { id: 'phd', title: 'PhD students', items: sup.phd },
+  { id: 'engineers', title: 'Research engineers', items: sup.engineers },
+];
+const ongoing = [...sup.postdocs, ...sup.phd].filter((m) => !m.end).length;
+---
+<Base title="Supervision" description={`PhD students, postdocs, engineers and master students supervised by ${profile.name}.`} active="supervision">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Supervision</p>
+      <h1>Students and researchers</h1>
+      <p class="intro">{sup.phd.length} PhD students, {sup.postdocs.length} postdoctoral fellows, {sup.engineers.length} research engineers and {sup.masters.length + sup.projects.reduce((n, p) => n + p.names.split(',').length, 0)} master students supervised since 2008.</p>
+      <div class="head-actions">
+        <a class="btn btn--primary" href={profile.in2brainUrl}>Meet the in2brain team <Icon name="external" size={16} /></a>
+        <a class="btn btn--outline" href="#positions">Open positions</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container section" style="padding-top: 48px; max-width: 1000px">
+    {groups.map((g) => (
+      <section id={g.id} class="group">
+        <h2 class="h2">{g.title}</h2>
+        <div class="rows">
+          {g.items.map((m) => (
+            <div class="row">
+              <div class="row__date">{period(m)}</div>
+              <div class="row__main">
+                <div class="title-line">
+                  <h3>{m.name}</h3>
+                  {!m.end && <span class="tag tag--ok">Ongoing</span>}
+                </div>
+                <div class="meta">{m.place}{m.co && <> · co-supervision with {m.co}</>}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <section id="masters" class="group">
+      <h2 class="h2">Master theses</h2>
+      <div class="rows">
+        {sup.masters.map((m) => (
+          <div class="row" style="padding: 14px 0">
+            <div class="row__date">{m.year}</div>
+            <div class="row__main"><strong>{m.name}</strong> <span class="meta">· {m.duration} · {m.place}</span></div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="projects" class="group">
+      <h2 class="h2">Master projects</h2>
+      <p class="meta" style="margin: -4px 0 16px">IPCV Erasmus Mundus master (Image Processing and Computer Vision), LaBRI UMR 5800.</p>
+      <div class="rows">
+        {sup.projects.map((p) => (
+          <div class="row" style="padding: 14px 0">
+            <div class="row__date">{p.year}</div>
+            <div class="row__main">{p.names}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <section id="positions" class="section section--soft">
+    <div class="container" style="max-width: 1000px">
+      <p class="eyebrow">Join us</p>
+      <h2 class="h2">Open positions</h2>
+      {sup.positions.length ? (
+        <div class="rows" style="margin-top: 24px">
+          {sup.positions.map((p) => (
+            <div class="row">
+              <div class="row__date">{p.period}</div>
+              <div class="row__main"><h3>{p.title}</h3></div>
+              <div class="row__side"><a href={p.url}>Position description →</a></div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p class="lead" style="margin-bottom: 0">There is no open position at the moment. Motivated candidates for PhD, postdoc or internship positions in deep learning and neuroimaging are welcome to send a CV and a short statement of interest to <a href={`mailto:${profile.email}`}>{profile.email}</a>.</p>
+      )}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .head-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .head-actions .btn { gap: 8px; }
+  .btn--outline { color: var(--accent); border-color: var(--line-2); background: #fff; }
+  .btn--outline:hover { border-color: var(--accent); color: var(--accent-hover); }
+  .group { margin-bottom: 56px; scroll-margin-top: 24px; }
+  .group .h2 { font-size: 26px; margin-bottom: 12px; }
+  .row__date { flex-basis: 110px; }
+  .title-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 2px; }
+  .title-line h3 { margin: 0; font-size: 17px; }
+  .meta { color: var(--muted); font-size: 15px; }
+</style>

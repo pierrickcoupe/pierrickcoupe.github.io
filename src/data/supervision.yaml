@@ -1,0 +1,49 @@
+# Supervision record. "end" left empty = ongoing.
+# The current team of the in2brain group is presented on the group website (profile.yaml > in2brainUrl).
+postdocs:
+  - {name: Chris Foulon, start: 2025, end: "", place: LaBRI UMR 5800, co: "T. Tourdias, R. Thiébaut"}
+  - {name: Trinh Dong, start: 2024, end: 2025, place: ISPED / LaBRI UMR 5800, co: "C. Proust-Lima"}
+  - {name: José Enrique Romero, start: 2018, end: 2021, place: UPV / ITACA, co: "J. V. Manjón"}
+  - {name: Thach Thao Duong, start: 2014, end: 2015, place: LaBRI UMR 5800}
+phd:
+  - {name: Corentin Seutin, start: 2025, end: "", place: LaBRI UMR 5800, co: "M. Clément"}
+  - {name: Eloi Navet, start: 2024, end: "", place: LaBRI UMR 5800 / IMS, co: "R. Giraud"}
+  - {name: Andrew Zamai, start: 2024, end: "", place: LaBRI UMR 5800, co: "L. Simon"}
+  - {name: Edern Le Bot, start: 2022, end: 2025, place: LaBRI UMR 5800}
+  - {name: Huy-Dung Nguyen, start: 2020, end: 2023, place: LaBRI UMR 5800}
+  - {name: Reda Abdellah Kamraoui, start: 2019, end: 2022, place: LaBRI UMR 5800}
+  - {name: Kilian Hett, start: 2015, end: 2019, place: LaBRI UMR 5800}
+  - {name: José Enrique Romero, start: 2014, end: 2018, place: UPV / ITACA, co: "J. V. Manjón"}
+  - {name: Nicolas Guizard, start: 2008, end: 2015, place: McGill / MNI, co: "D. L. Collins"}
+  - {name: Shiyan Hu, start: 2008, end: 2013, place: McGill / MNI, co: "D. L. Collins"}
+engineers:
+  - {name: Etoile Galé, start: 2025, end: "", place: LaBRI UMR 5800}
+  - {name: Sarra Jbeli, start: 2025, end: "", place: LaBRI UMR 5800}
+  - {name: Léo Gallot, start: 2024, end: 2025, place: LaBRI UMR 5800}
+  - {name: Hermann Courteille, start: 2023, end: 2024, place: PNRIA / LaBRI UMR 5800}
+  - {name: Xavier Amorena, start: 2019, end: 2021, place: LaBRI UMR 5800}
+  - {name: Mary Mondino, start: 2015, end: 2016, place: LaBRI UMR 5800}
+  - {name: Aurélien Gibiat, start: 2014, end: 2015, place: LaBRI UMR 5800}
+masters:
+  - {name: Fabien Pelletier, year: 2023, duration: 4 months, place: LaBRI}
+  - {name: Kylian Dessier, year: 2022, duration: 4 months, place: IMB / LaBRI}
+  - {name: Lukas Uzolas, year: 2021, duration: 6 months, place: Harvard}
+  - {name: Fanny Compaire, year: 2020, duration: 6 months, place: IMB / LaBRI}
+  - {name: Manuel Guevara Garban, year: 2019, duration: 1 month, place: LaBRI UMR 5800}
+  - {name: Benjamin Dos Santos, year: 2017, duration: 3 months, place: LaBRI UMR 5800}
+  - {name: Jérémy Hitier, year: 2014, duration: 6 months, place: LaBRI UMR 5800}
+  - {name: Samuel St Jean, year: 2013, duration: 3 months, place: "SCIL / LaBRI (funded by MELS, Québec)"}
+  - {name: Rémi Giraud, year: 2013, duration: 3 months, place: LaBRI UMR 5800}
+  - {name: Xingyu Pan, year: 2013, duration: 6 months, place: LaBRI UMR 5800}
+  - {name: Maxime Flocard, year: 2012, duration: 6 months, place: "LaBRI UMR 5800 (funded by GE Healthcare)"}
+# Master projects (IPCV Erasmus Mundus master, LaBRI)
+projects:
+  - {year: 2025, names: "Arathy Jeevan, Regina Zelei"}
+  - {year: 2024, names: "Monika Vajay, Balazs Formanek"}
+  - {year: 2022, names: "Eduardo Herreros Fraile, Jaime Corton Gonzales"}
+  - {year: 2021, names: "Laura Valeria Pérez Herrera, María Fernanda Herrera Pérez"}
+  - {year: 2020, names: "Anne-Claire Fouchier, Hunor Laczko, Smriti Joshi, Meghna Parameswaran Ayyar, Mohammad Mohaiminul Islam, Tushar Zahid Hassan, Iuliia Alekseenko, Meaza Eyakem Gebreamlak, Lukas Uzolas, Javier Rico Reche"}
+  - {year: 2019, names: "Andrija Gajic, Nadja Janjatovic"}
+# Open positions. Leave empty to show the "spontaneous application" message.
+positions: []
+#  - {title: "PhD — Medical imaging and AI", period: 2027–2030, url: "https://..."}

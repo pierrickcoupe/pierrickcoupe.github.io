@@ -14,7 +14,8 @@ const nav = [
   { id: 'software', label: 'Software', href: 'software/' },
   { id: 'publications', label: 'Publications', href: 'publications/' },
   { id: 'projects', label: 'Projects', href: 'projects/' },
-  { id: 'team', label: 'Team', href: 'team/' },
+  { id: 'supervision', label: 'Supervision', href: 'supervision/' },
+  { id: 'team', label: 'Team ↗', href: profile.in2brainUrl, external: true },
   { id: 'cv', label: 'CV', href: 'cv/' },
 ];
 const year = new Date().getFullYear();
@@ -57,7 +58,7 @@ const year = new Date().getFullYear();
       </button>
       <nav id="main-nav" class="main-nav" aria-label="Main">
         {nav.map((n) => (
-          <a href={url(n.href)} aria-current={active === n.id ? 'page' : undefined}>{n.label}</a>
+          <a href={url(n.href)} aria-current={active === n.id ? 'page' : undefined} title={n.external ? 'in2brain group website' : undefined}>{n.label}</a>
         ))}
         <a href="#contact" class="btn btn--primary nav-cta">Contact</a>
       </nav>
