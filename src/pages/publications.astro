@@ -115,7 +115,7 @@ const scholarUrl = profile.profiles.find((p) => p.label === 'Google Scholar')?.u
   .year-h { margin: 32px 0 0; padding-bottom: 10px; border-bottom: 2px solid var(--navy); font-family: var(--serif); font-size: 26px; font-weight: 600; }
   .year-group:first-of-type .year-h { margin-top: 8px; }
   .status { font-size: 14px; color: var(--muted); margin: 0 0 8px; }
-  .block-h { margin: 72px 0 16px; }
+  .block-h { margin: 72px 0 16px; scroll-margin-top: 24px; }
   .jump { display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
   .sync { background: var(--bg-soft); border-radius: 12px; padding: 18px; font-size: 14px; color: var(--muted); }
   .sync__title { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
@@ -137,6 +137,7 @@ const scholarUrl = profile.profiles.find((p) => p.label === 'Google Scholar')?.u
   if (params.get('year')) yearSel.value = params.get('year')!;
   if (params.get('q')) search.value = params.get('q')!;
 
+  let initial = true;
   function apply() {
     const q = search.value.trim().toLowerCase();
     const y = yearSel.value;
@@ -154,10 +155,13 @@ const scholarUrl = profile.profiles.find((p) => p.label === 'Google Scholar')?.u
     if (type !== 'journal') p.set('type', type);
     if (y) p.set('year', y);
     if (q) p.set('q', q);
-    history.replaceState(null, '', p.toString() ? `?${p}` : location.pathname);
+    if (!initial) history.replaceState(null, '', (p.toString() ? `?${p}` : location.pathname) + location.hash);
   }
   typeBtns.forEach((b) => b.addEventListener('click', () => { type = b.dataset.value || ''; apply(); }));
   search.addEventListener('input', apply);
   yearSel.addEventListener('change', apply);
   apply();
+  initial = false;
+  // Filtering changes the page height: re-scroll to #patents / #software if requested.
+  if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
 </script>

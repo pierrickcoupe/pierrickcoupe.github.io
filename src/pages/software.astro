@@ -54,8 +54,8 @@ const sw = load('software.yaml');
   .platform__text .btn { gap: 8px; }
   .platform__list { flex: 1 1 380px; }
   .platform__list ul { list-style: none; margin: 0; padding: 0; }
-  .platform__list li { display: flex; flex-wrap: wrap; gap: 2px 12px; padding: 10px 0; border-bottom: 1px solid var(--navy-line); font-size: 15px; }
-  .platform__list li strong { min-width: 175px; }
+  .platform__list li { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 2px 16px; padding: 10px 0; border-bottom: 1px solid var(--navy-line); font-size: 15px; }
+  @media (max-width: 520px) { .platform__list li { grid-template-columns: 1fr; } }
   .platform__list li span { color: var(--on-navy); }
   @media (max-width: 640px) { .platform { padding: 24px; } }
   .note { margin-top: 24px; font-size: 14px; color: var(--muted); max-width: 760px; }

@@ -7,14 +7,14 @@ platform:
     volBrain has processed more than 800,000 MRI scans worldwide.
 # Pipelines available on volBrain
 pipelines:
-  - {name: AssemblyNet, text: Whole-brain segmentation with a large ensemble of CNNs}
+  - {name: AssemblyNet, text: Whole-brain segmentation (ensemble of CNNs)}
   - {name: vol2Brain, text: Complete brain MRI analysis pipeline}
   - {name: DeepLesionBrain, text: White matter lesion segmentation}
   - {name: HIPS, text: Hippocampal subfield segmentation}
   - {name: CERES / DeepCERES, text: Cerebellar lobule segmentation}
   - {name: DeepTHALAMUS, text: Thalamic nuclei segmentation}
   - {name: pBrain, text: Segmentation of Parkinson's-related structures}
-  - {name: petBrain, text: "Amyloid, tau and neurodegeneration quantification from PET and MRI"}
+  - {name: petBrain, text: "A/T/N quantification from PET and MRI"}
 # Downloadable research code (links point to the legacy pages until migrated)
 toolboxes:
   - {name: MRI denoising, text: Optimized blockwise non-local means and related filters for 3D MRI, url: "https://sites.google.com/site/pierrickcoupe/softwares/denoising/mri-denoising/mri-denoising-software"}
