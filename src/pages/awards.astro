@@ -1,0 +1,34 @@
+---
+// HIDDEN PAGE: not linked from the menu and marked "noindex" for search engines.
+// Reachable only through its URL: /awards/
+import Base from '../layouts/Base.astro';
+import { load } from '../lib/data.js';
+
+const awards = load('awards.yaml');
+---
+<Base title="Awards and distinctions" description="Awards and distinctions of Pierrick Coupé." hidden>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Curriculum vitae</p>
+      <h1>Awards and distinctions</h1>
+    </div>
+  </section>
+
+  <div class="container section" style="padding-top: 48px; max-width: 960px">
+    <div class="rows">
+      {awards.map((a) => (
+        <div class="row" style="padding: 14px 0">
+          <div class="row__date" style="flex-basis: 64px">{a.year}</div>
+          <div class="row__main">
+            <ul class="plain">{a.items.map((i) => <li>{i}</li>)}</ul>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .plain { list-style: none; margin: 0; padding: 0; }
+  .plain li + li { margin-top: 4px; }
+</style>

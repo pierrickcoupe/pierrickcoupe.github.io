@@ -3,7 +3,7 @@ platform:
   url: https://volbrain.net
   text: >-
     Automated brain MRI analysis in the cloud: upload a scan from your browser and receive a
-    full structural report. Co-developed with the Universitat Politècnica de València,
+    full structural report. Co-founded with the Universitat Politècnica de València,
     volBrain has processed more than 800,000 MRI scans worldwide.
 # Pipelines available on volBrain
 pipelines:

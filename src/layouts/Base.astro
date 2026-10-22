@@ -2,8 +2,8 @@
 import '../styles/global.css';
 import { load, url } from '../lib/data.js';
 
-interface Props { title?: string; description?: string; active?: string; }
-const { title, description, active = '' } = Astro.props;
+interface Props { title?: string; description?: string; active?: string; hidden?: boolean; }
+const { title, description, active = '', hidden = false } = Astro.props;
 const profile = load('profile.yaml');
 const fullTitle = title ? `${title} · ${profile.name}` : `${profile.name} — ${profile.tagline}`;
 const desc = description || profile.description;
@@ -27,6 +27,7 @@ const year = new Date().getFullYear();
   <title>{fullTitle}</title>
   <meta name="description" content={desc} />
   <link rel="canonical" href={canonical} />
+  {hidden && <meta name="robots" content="noindex, nofollow" />}
   <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={fullTitle} />

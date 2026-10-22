@@ -49,3 +49,10 @@ npm run build    # static site in dist/
 3. Settings → Actions → General → Workflow permissions: **Read and write permissions**.
 4. (Optional) custom domain: Settings → Pages → Custom domain, then add the DNS records
    given by GitHub at your registrar.
+
+## Hidden (unlisted) pages
+
+`/awards/` and `/jury/` are not linked anywhere and carry a `noindex` tag, so search engines
+skip them; they are reachable only by their URL. To hide another page, pass `hidden` to the
+layout (`<Base title="…" hidden>`) and do not link to it. Note that the repository is public,
+so hidden pages are not confidential.

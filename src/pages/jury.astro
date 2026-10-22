@@ -1,0 +1,55 @@
+---
+// HIDDEN PAGE: not linked from the menu and marked "noindex" for search engines.
+// Reachable only through its URL: /jury/
+import Base from '../layouts/Base.astro';
+import { load } from '../lib/data.js';
+
+const jury = load('jury.yaml');
+const team = load('team.yaml');
+const supervised = team.alumni.phd.length + team.current.filter((m) => /PhD/.test(m.role)).length;
+---
+<Base title="Thesis committees" description="Thesis committees of Pierrick Coupé." hidden>
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Curriculum vitae</p>
+      <h1>Thesis committees</h1>
+      <p class="intro">{jury.phd.length} PhD juries, {jury.habilitation.length} habilitation, {jury.midterm.length} PhD monitoring committees · {supervised} PhD students supervised.</p>
+    </div>
+  </section>
+
+  <div class="container section" style="padding-top: 48px; max-width: 960px">
+    <h2 class="h2">PhD juries</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Year</th><th scope="col">Candidate</th><th scope="col">Role</th><th scope="col">Institution</th></tr></thead>
+        <tbody>{jury.phd.map((j) => <tr><td>{j.year}</td><td>{j.name}</td><td>{j.role}</td><td>{j.inst}</td></tr>)}</tbody>
+      </table>
+    </div>
+
+    <h2 class="h2">Habilitation juries</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Year</th><th scope="col">Candidate</th><th scope="col">Role</th><th scope="col">Institution</th></tr></thead>
+        <tbody>{jury.habilitation.map((j) => <tr><td>{j.year}</td><td>{j.name}</td><td>{j.role}</td><td>{j.inst}</td></tr>)}</tbody>
+      </table>
+    </div>
+
+    <h2 class="h2">PhD monitoring committees</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Years</th><th scope="col">PhD student</th><th scope="col">Institution</th></tr></thead>
+        <tbody>{jury.midterm.map((j) => <tr><td>{j.years}</td><td>{j.name}</td><td>{j.inst}</td></tr>)}</tbody>
+      </table>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .h2 { margin-top: 48px; margin-bottom: 16px; font-size: 26px; }
+  .h2:first-child { margin-top: 0; }
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 20px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-size: 13px; color: var(--ink-2); font-weight: 600; background: var(--bg-soft); }
+  tr:last-child td { border-bottom: 0; }
+</style>

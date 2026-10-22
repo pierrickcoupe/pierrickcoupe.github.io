@@ -38,7 +38,7 @@
   intro: >-
     MRI pipelines usually require complex installation, dedicated hardware and expertise,
     which limits their use in clinics and by non-specialists. With colleagues at the
-    Universitat Politècnica de València, I co-develop volBrain, a software-as-a-service
+    Universitat Politècnica de València, I co-founded volBrain, a software-as-a-service
     platform where analyses run fully automatically from a web browser.
   points:
     - title: Cloud infrastructure

@@ -4,18 +4,12 @@ import { load } from '../lib/data.js';
 
 const profile = load('profile.yaml');
 const career = load('career.yaml');
-const awards = load('awards.yaml');
-const jury = load('jury.yaml');
-const team = load('team.yaml');
 const sections = [
   { id: 'bio', label: 'Biography' },
   { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },
-  { id: 'awards', label: 'Awards' },
   { id: 'editorial', label: 'Editorial activities' },
-  { id: 'juries', label: 'Thesis committees' },
 ];
-const supervised = team.alumni.phd.length + team.current.filter((m) => /PhD/.test(m.role)).length;
 ---
 <Base title="CV" description={`Curriculum vitae of ${profile.name}.`} active="cv">
   <section class="page-head">
@@ -65,17 +59,6 @@ const supervised = team.alumni.phd.length + team.current.filter((m) => /PhD/.tes
       </div>
     </section>
 
-    <section id="awards">
-      <h2>Awards and distinctions</h2>
-      <div class="rows">
-        {awards.map((a) => (
-          <div class="row" style="padding: 14px 0">
-            <div class="row__date" style="flex-basis: 64px">{a.year}</div>
-            <div class="row__main"><ul class="plain">{a.items.map((i) => <li>{i}</li>)}</ul></div>
-          </div>
-        ))}
-      </div>
-    </section>
 
     <section id="editorial">
       <h2>Editorial activities</h2>
@@ -89,40 +72,6 @@ const supervised = team.alumni.phd.length + team.current.filter((m) => /PhD/.tes
       </div>
     </section>
 
-    <section id="juries">
-      <h2>Thesis committees</h2>
-      <p class="org" style="margin: -8px 0 20px">{jury.phd.length} PhD juries, {jury.habilitation.length} habilitation, {jury.midterm.length} PhD monitoring committees · {supervised} PhD students supervised (see <a href="../team/">Team</a>).</p>
-
-      <details open>
-        <summary>PhD juries</summary>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th scope="col">Year</th><th scope="col">Candidate</th><th scope="col">Role</th><th scope="col">Institution</th></tr></thead>
-            <tbody>
-              {jury.phd.map((j) => <tr><td>{j.year}</td><td>{j.name}</td><td>{j.role}</td><td>{j.inst}</td></tr>)}
-            </tbody>
-          </table>
-        </div>
-      </details>
-      <details>
-        <summary>Habilitation juries</summary>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th scope="col">Year</th><th scope="col">Candidate</th><th scope="col">Role</th><th scope="col">Institution</th></tr></thead>
-            <tbody>{jury.habilitation.map((j) => <tr><td>{j.year}</td><td>{j.name}</td><td>{j.role}</td><td>{j.inst}</td></tr>)}</tbody>
-          </table>
-        </div>
-      </details>
-      <details>
-        <summary>PhD monitoring committees</summary>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th scope="col">Years</th><th scope="col">PhD student</th><th scope="col">Institution</th></tr></thead>
-            <tbody>{jury.midterm.map((j) => <tr><td>{j.years}</td><td>{j.name}</td><td>{j.inst}</td></tr>)}</tbody>
-          </table>
-        </div>
-      </details>
-    </section>
   </div>
 </Base>
 
