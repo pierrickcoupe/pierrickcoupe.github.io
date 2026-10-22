@@ -2,7 +2,8 @@
 import Base from '../layouts/Base.astro';
 import { load } from '../lib/data.js';
 
-const topics = load('press.yaml');
+// Items are sorted newest first, whatever their order in press.yaml.
+const topics = load('press.yaml').map((t) => ({ ...t, items: [...t.items].sort((a, b) => String(b.date).localeCompare(String(a.date))) }));
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const fmt = (d) => {
   const [y, m] = String(d).split('-');
