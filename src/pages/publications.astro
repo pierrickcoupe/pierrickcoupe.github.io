@@ -87,11 +87,12 @@ const scholarUrl = profile.profiles.find((p) => p.label === 'Google Scholar')?.u
       <div class="rows">
         {patents.map((p) => (
           <div class="row">
+            <div class="row__date" style="flex-basis: 64px">{p.year}</div>
             <div class="row__main">
-              <h3>{p.title}</h3>
+              <h3>{p.url ? <a href={p.url} style="color: var(--ink)">{p.title}</a> : p.title}</h3>
               <div style="font-size: 14px; color: var(--muted)">{p.inventors}</div>
             </div>
-            <div class="row__side"><span class="tag tag--neutral" style="align-self: flex-start">{p.number}</span>{p.year && <span>{p.year}</span>}</div>
+            <div class="row__side"><span class="tag tag--neutral" style="align-self: flex-start">{p.number}</span><span>{p.status}</span></div>
           </div>
         ))}
       </div>
@@ -102,7 +103,11 @@ const scholarUrl = profile.profiles.find((p) => p.label === 'Google Scholar')?.u
         {software.registered.map((s) => (
           <div class="row" style="padding: 14px 0">
             <div class="row__date" style="flex-basis: 64px">{s.year}</div>
-            <div class="row__main"><strong>{s.name}</strong> <span style="color: var(--muted)">— {s.text}</span></div>
+            <div class="row__main">
+              <div><strong>{s.name}</strong> <span style="color: var(--muted)">— {s.text}</span></div>
+              <div style="font-size: 14px; color: var(--muted)">{s.authors}</div>
+              <div style="font-size: 13px; color: var(--subtle); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere">{s.iddn}</div>
+            </div>
           </div>
         ))}
       </div>

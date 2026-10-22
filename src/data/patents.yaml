@@ -1,5 +1,6 @@
-- {title: "Method for generating a multibranch tree defining a reference frame for positioning a predictive biomedical marker", number: FR 2501423, year: 2025, inventors: "P. Coupé, B. Mansencal, J. V. Manjón, V. Planche"}
-- {title: Grading of structures for state determination, number: US11928827B2, inventors: "D. L. Collins, P. Coupé"}
-- {title: Segmentation of structures for state determination, number: US11335015B2, inventors: "D. L. Collins, P. Coupé, J. V. Manjón"}
-- {title: Image processing device for matching MR and ultrasound images of the same body portion, number: US8755581B2, inventors: "P. Coupé, P. Hellier, X. Morandi, C. Barillot"}
-- {title: Improved image processing device (Dispositif de traitement d'images amélioré), number: EP2294552B1, inventors: "P. Coupé, P. Hellier, C. Kervrann, C. Barillot"}
+# year = deposit year for pending applications, grant year for granted patents
+- {year: 2025, status: Filed (Feb. 2025), title: "Procédé de génération d'un arbre multibranche définissant un référentiel destiné à positionner un marqueur biomédical prédictif, procédé d'exploitation d'un tel arbre, et système associé", number: FR 2501423, inventors: "P. Coupé, B. Mansencal, J. V. Manjón, V. Planche"}
+- {year: 2024, status: Granted, title: Grading of structures for state determination, number: US11928827B2, url: "https://patents.google.com/patent/US11928827B2/en", inventors: "D. L. Collins, P. Coupé"}
+- {year: 2022, status: Granted, title: Segmentation of structures for state determination, number: US11335015B2, url: "https://patents.google.com/patent/US11335015B2/en", inventors: "D. L. Collins, P. Coupé, J. V. Manjón"}
+- {year: 2014, status: Granted, title: "Dispositif de traitement d'images pour la mise en correspondance d'images d'une même portion d'un corps obtenues par résonance magnétique et par ultrasons", number: US8755581B2, url: "https://patents.google.com/patent/US8755581B2/en", inventors: "P. Coupé, P. Hellier, X. Morandi, C. Barillot"}
+- {year: 2011, status: Granted, title: "Dispositif de traitement d'images amélioré", number: EP2294552B1, url: "https://patents.google.com/patent/EP2294552B1/fr", inventors: "P. Coupé, P. Hellier, C. Kervrann, C. Barillot"}

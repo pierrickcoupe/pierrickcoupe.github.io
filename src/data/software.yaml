@@ -31,28 +31,28 @@ license: >-
   contact me.
 # Software registered with the APP (Agence pour la Protection des Programmes)
 registered:
-  - {year: 2025, name: petBrain, text: "AI-based estimation of A/T/N biomarker status"}
-  - {year: 2025, name: DeepCERES, text: Deep learning segmentation of cerebellar lobules}
-  - {year: 2025, name: DeepTHALAMUS, text: Segmentation of thalamic nuclei}
-  - {year: 2025, name: DiagnosticTree, text: Differential diagnosis of neurological disorders}
-  - {year: 2025, name: volBrain platform, text: Cloud platform for brain MRI analysis}
-  - {year: 2024, name: BrainDiseasisDiagnosis, text: Differential diagnosis using brain structure age estimation}
-  - {year: 2024, name: BrainStructureAges, text: Age estimation of brain structures}
-  - {year: 2024, name: AssemblyNet-AD-FTD, text: Differential diagnosis of dementia}
-  - {year: 2022, name: AssemblyNet-DB, text: Lifespan brain database}
-  - {year: 2022, name: vol2Brain, text: Complete brain MRI analysis pipeline}
-  - {year: 2022, name: AssemblyNet-AD, text: Automatic diagnosis of dementia}
-  - {year: 2022, name: DeepLesionBrain, text: Brain lesion segmentation}
-  - {year: 2021, name: Deep ICE, text: Deep learning brain extraction}
-  - {year: 2021, name: AssemblyNet, text: Whole-brain segmentation}
-  - {year: 2021, name: pBrain, text: "Segmentation for Parkinson's disease"}
-  - {year: 2021, name: RegQCNet, text: Automatic quality control of brain MRI registration}
-  - {year: 2021, name: volBrain v1.1, text: MRI processing platform}
-  - {year: 2021, name: LesionBrain, text: Brain lesion segmentation}
-  - {year: 2021, name: HIPS, text: Hippocampal subfield segmentation}
-  - {year: 2017, name: CERES, text: Cerebellar lobule segmentation}
-  - {year: 2016, name: dtiBrain, text: Diffusion tensor imaging processing}
-  - {year: 2015, name: volBrain v1.0, text: MRI processing platform}
-  - {year: 2008, name: INRIABrainshift, text: Brain shift compensation in image-guided neurosurgery}
-  - {year: 2007, name: MONADE, text: Multimodal image denoising using optimized non-local means}
-  - {year: 2006, name: TULIPE, text: 3D ultrasound reconstruction using probe trajectory}
+  - {year: 2025, name: petBrain, text: "AI-based A/T/N status estimation", authors: "P. Coupé, J. V. Manjón, B. Mansencal", iddn: IDDN.FR.001.290015.000.S.P.2025.000.31230}
+  - {year: 2025, name: DeepCERES, text: Fast and accurate cerebellar lobules segmentation, authors: "P. Coupé, J. V. Manjón, S. M. Ortega", iddn: IDDN.FR.001.290017.000.S.P.2025.000.31230}
+  - {year: 2025, name: DeepTHALAMUS, text: Fast and accurate thalamic nuclei segmentation, authors: "P. Coupé, J. V. Manjón, M. Ruiz Pérez", iddn: IDDN.FR.001.290016.000.S.P.2025.000.31230}
+  - {year: 2025, name: DiagnosticTree, text: Differential diagnosis of neurological disorders, authors: "P. Coupé, J. V. Manjón, B. Mansencal", iddn: IDDN.FR.001.140033.000.S.C.2025.000.31230}
+  - {year: 2025, name: volBrain platform, text: Cloud platform for brain MRI analysis, authors: "F. Morandat, P. Coupé, J. V. Manjón, B. Mansencal", iddn: IDDN.FR.001.150017.000.S.P.2025.000.31230}
+  - {year: 2024, name: BrainDiseasisDiagnosis, text: Differential diagnosis using age estimation, authors: "P. Coupé, J. V. Manjón, H.-D. Nguyen, B. Mansencal, M. Clément", iddn: IDDN.FR.001.210017.000.S.C.2024.000.31230}
+  - {year: 2024, name: BrainStructureAges, text: Age estimation of brain structures, authors: "P. Coupé, J. V. Manjón, H.-D. Nguyen, B. Mansencal, M. Clément", iddn: IDDN.FR.001.210016.000.S.C.2024.000.31230}
+  - {year: 2024, name: AssemblyNet-AD-FTD, text: Differential diagnosis of dementia, authors: "P. Coupé, J. V. Manjón, H.-D. Nguyen, B. Mansencal, M. Clément", iddn: IDDN.FR.001.210015.000.S.C.2024.000.31230}
+  - {year: 2022, name: AssemblyNet-DB, text: Lifespan database, authors: "P. Coupé, J. V. Manjón, B. Mansencal", iddn: IDDN.FR.001.200013.000.S.P.2022.000.31230}
+  - {year: 2022, name: vol2Brain, text: Complete brain MRI analysis pipeline, authors: "P. Coupé, J. V. Manjón, J. E. Romero, B. Mansencal", iddn: IDDN.FR.001.070031.000.S.C.2022.000.31230}
+  - {year: 2022, name: AssemblyNet-AD, text: Automatic diagnosis of dementia, authors: "P. Coupé, J. V. Manjón, H.-D. Nguyen, B. Mansencal, M. Clément", iddn: IDDN.FR.001.190026.000.S.C.2022.000.31230}
+  - {year: 2022, name: DeepLesionBrain, text: Brain lesion segmentation, authors: "P. Coupé, J. V. Manjón, R. A. Kamraoui, B. Mansencal", iddn: IDDN.FR.001.190024.000.S.C.2022.000.31230}
+  - {year: 2021, name: Deep ICE, text: Deep brain extraction, authors: "J. V. Manjón, P. Coupé", iddn: FR.001.360009.000.S.P.2021.000.31230}
+  - {year: 2021, name: AssemblyNet, text: Full brain segmentation, authors: "P. Coupé, B. Mansencal, J. V. Manjón", iddn: FR.001.360008.000.S.C.2021.000.31230}
+  - {year: 2021, name: pBrain, text: "Segmentation for Parkinson's disease", authors: "J. V. Manjón, P. Coupé", iddn: FR.001.360010.000.S.P.2021.000.31230}
+  - {year: 2021, name: RegQCNet, text: Automatic quality control for brain MRI, authors: "B. Denis de Senneville, P. Coupé, J. V. Manjón", iddn: FR.001.360011.000.S.P.2021.000.31230}
+  - {year: 2021, name: volBrain v1.1, text: MRI processing, authors: "J. V. Manjón, P. Coupé", iddn: IDDN.FR.001.050027.000.S.C.2021.000.31230}
+  - {year: 2021, name: LesionBrain, text: Brain lesion segmentation, authors: "P. Coupé, J. V. Manjón, T. Tourdias", iddn: IDDN.FR.001.050026.000.S.C.2021.000.31230}
+  - {year: 2021, name: HIPS, text: Hippocampus subfields segmentation, authors: "J. V. Manjón, P. Coupé, J. E. Romero", iddn: IDDN.FR.001.050029.000.S.C.2021.000.31230}
+  - {year: 2017, name: CERES, text: Cerebellum lobules segmentation, authors: "J. V. Manjón, P. Coupé, J. E. Romero, R. Giraud, V.-T. Ta", iddn: IDDN.FR.001.470006.000.S.C.2017.000.21000}
+  - {year: 2016, name: dtiBrain, text: DTI processing, authors: "P. Coupé, J. V. Manjón", iddn: IDDN.FR.001.310013.000.S.C.2016.000.21000}
+  - {year: 2015, name: volBrain v1.0, text: MRI processing, authors: "J. V. Manjón, P. Coupé", iddn: IDDN.FR.001.470008.000.S.P.2015.000.21000}
+  - {year: 2008, name: INRIABrainshift, text: Brain shift compensation, authors: "P. Coupé, P. Hellier, C. Barillot", iddn: IDDN.FR.001.110024.000.S.P.2008.000.21000}
+  - {year: 2007, name: MONADE, text: Multimodal and optimized non-local means denoising, authors: "P. Coupé, P. Yger, S. Prima, P. Hellier, C. Kervrann, C. Barillot", iddn: IDDN.FR.001.070033.000.S.P.2007.000.21000}
+  - {year: 2006, name: TULIPE, text: 3D ultrasound reconstruction incorporating probe trajectory, authors: "P. Coupé, P. Hellier, C. Barillot", iddn: IDDN.FR.001.120034.000.A.2006.000.21000}
