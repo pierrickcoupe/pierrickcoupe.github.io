@@ -20,7 +20,20 @@ const awards = load('awards.yaml');
         <div class="row" style="padding: 14px 0">
           <div class="row__date" style="flex-basis: 64px">{a.year}</div>
           <div class="row__main">
-            <ul class="plain">{a.items.map((i) => <li>{i}</li>)}</ul>
+            <ul class="plain">
+              {a.items.map((i) => {
+                const it = typeof i === 'string' ? { text: i } : i;
+                return (
+                  <li>
+                    <div class="a-title">{it.text}</div>
+                    {it.detail && <div class="a-detail">{it.detail}</div>}
+                    {it.links && (
+                      <div class="a-links">{it.links.map((l) => <a class="tag tag--neutral" href={l.url}>{l.label}</a>)}</div>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       ))}
@@ -30,5 +43,8 @@ const awards = load('awards.yaml');
 
 <style>
   .plain { list-style: none; margin: 0; padding: 0; }
-  .plain li + li { margin-top: 4px; }
+  .plain li + li { margin-top: 14px; }
+  .a-title { font-weight: 600; }
+  .a-detail { font-size: 15px; color: var(--muted); margin-top: 2px; }
+  .a-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
 </style>

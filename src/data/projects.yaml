@@ -16,6 +16,7 @@
 - {role: wp, name: HL-MRI, title: New hippocampus biomarkers for multiple sclerosis, funder: IDEX Bordeaux, period: 2015–2017, partners: RMSB UMR 5536 · Neurocentre Magendie U862}
 - {role: wp, name: LaBRI imaging platform, title: Image processing platform of LaBRI UMR 5800, funder: CNRS, period: 2013–2015, partners: LaBRI UMR 5800}
 - {role: wp, name: HR-DTI, title: Super-resolution for diffusion-weighted images, funder: LabEX TRAIL, period: 2013–2015, partners: RMSB UMR 5536}
+- {role: co, name: MSAPROG, title: Personalized prediction of multiple system atrophy progression, funder: INSERM, period: 2026–203, partners: CHU Bordeaux · IMNc · BPH · ToNIC · CHU Toulouse · CRMR AMS}
 - {role: co, name: "Sex, risk factors & AD", title: "Sex, risk factors and Alzheimer's disease pathology", funder: CIHR (Canada), period: 2026–2031, partners: McGill University (Canada)}
 - {role: co, name: clinicBRAIN, title: Multimodal ultra-high-resolution brain MRI analysis software, funder: Spanish national grant, period: 2024–2027, partners: UPV (Spain)}
 - {role: co, name: IHU VBHI, title: Precision and global Vascular Brain Health Institute, funder: ANR (France 2030), period: 2023–2033, partners: Bordeaux Population Health}

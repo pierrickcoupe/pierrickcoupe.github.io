@@ -1,18 +1,84 @@
-# Awards & distinctions (CV page). Rankings are kept out of the home page on purpose.
-- {year: 2026, items: ["Top-viewed article — Human Brain Mapping"]}
-- {year: 2025, items: ["Top 2% scientists worldwide (Stanford University list)", "Top 1.5% researchers (ScholarGPS)"]}
-- {year: 2024, items: ["Top 2% scientists worldwide (Stanford University list)", "Top 1.5% researchers (ScholarGPS)"]}
-- {year: 2023, items: ["CNRS Scientific Excellence Award (RIPEC)", "Top-viewed articles — Alzheimer's & Dementia and Human Brain Mapping", "Top 2% scientists worldwide (Stanford University list)"]}
-- {year: 2022, items: ["Top 2% scientists worldwide (Stanford University list)"]}
-- {year: 2021, items: ["Winner — MICCAI Lesion Detection Challenge", "Editor's choice — Scientific Reports", "Top 2% scientists worldwide (Stanford University list)"]}
-- {year: 2020, items: ["Top 2% scientists worldwide (Stanford University list)"]}
-- {year: 2019, items: ["Top 5% most influential papers of 2019 (Altmetric)"]}
-- {year: 2018, items: ["NVIDIA GPU Grant"]}
-- {year: 2017, items: ["CNRS Scientific Excellence Award (PEDR)", "Winner — MICCAI Cerebellum Segmentation Challenge"]}
-- {year: 2013, items: ["Winner — ISBI 2013 HARDI Reconstruction Challenge (HARDI and DTI categories)"]}
-- {year: 2012, items: ["CNRS Scientific Excellence Award (PES)"]}
-- {year: 2011, items: ["2nd place — Young Investigator Award, 15th Nordic-Baltic Conference on Biomedical Engineering and Medical Physics"]}
-- {year: 2010, items: ["Best paper award — MIAR 2010 (MICCAI workshop)"]}
-- {year: 2008, items: ["Best PhD award in biomedical engineering — IEEE France (EMBS, SFGBM, AGBM)", "CECR postdoctoral research fellowship (Canada)"]}
-- {year: 2004, items: ["PhD scholarship — French Ministry of Research"]}
-- {year: 2003, items: ["MSc award — French Ministry of Research"]}
+# Awards & distinctions (shown on the hidden page /awards/).
+# Each item: text, optional detail, optional links [{label, url}].
+- year: 2026
+  items:
+    - text: "Top Cited Article — Human Brain Mapping (Wiley)"
+      detail: "“Brain structure ages — A new biomarker for multi-disease classification”, among work published in Human Brain Mapping in 2024."
+      links: [{label: Certificate, url: "https://drive.google.com/file/d/1EqXJQpuMTC8ATrPYR63caAiuQABrao1-/view"}]
+- year: 2025
+  items:
+    - text: "Top 2% most influential scientists worldwide — Stanford University / Elsevier list"
+      detail: "Clinical Medicine · Neurology & Neurosurgery: rank 3,647 out of 360,881 authors in the subfield. Listed in 2021, 2022, 2023, 2024 and 2025."
+      links: [{label: Certificate, url: "https://drive.google.com/file/d/1M-tkog_w3vH2_Po_7gaJXpjdyQNqAKev/view"}, {label: Dataset, url: "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/7"}]
+    - text: "Top 1.5% researchers worldwide — ScholarGPS (lifetime, no self-citations)"
+      detail: "Top 1.35% over all fields · top 0.28% in Medical imaging · top 0.58% in Magnetic resonance imaging."
+      links: [{label: Report, url: "https://drive.google.com/file/d/1cWVK-U55q3yUFqU3V9ZUfthYnG8rPSdd/view"}, {label: Profile, url: "https://scholargps.com/scholars/25764210955239/pierrick-coupe"}]
+- year: 2024
+  items:
+    - text: "Top 2% most influential scientists worldwide — Stanford University / Elsevier list"
+      detail: "Clinical Medicine · Neurology & Neurosurgery: rank 3,806 in the subfield."
+      links: [{label: Certificate, url: "https://drive.google.com/file/d/1S0LfoGhM5o9jaB7yhxQLqrv5qOM2wwKV/view"}, {label: Dataset, url: "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/7"}]
+    - text: "Top 1.5% researchers worldwide — ScholarGPS (lifetime, no self-citations)"
+      detail: "Top 1.41% over all fields · top 0.31% in Medical imaging · top 0.64% in Magnetic resonance imaging · top 1.21% in Medical image computing."
+      links: [{label: Report, url: "https://drive.google.com/file/d/16xhdL0mOJs4xyQXJPK8g-9EQNvng92lt/view"}, {label: Profile, url: "https://scholargps.com/scholars/25764210955239/pierrick-coupe"}]
+- year: 2023
+  items:
+    - text: "CNRS Scientific Excellence Award (RIPEC)"
+    - text: "Top Viewed Article — Alzheimer's & Dementia (Wiley)"
+      detail: "“Anatomical MRI staging of frontotemporal dementia variants”, among work published in 2023, up to 12 months after publication."
+      links: [{label: Certificate, url: "https://drive.google.com/file/d/1dH2VD1GYhW0xlVGpMo6TyH-VZ8cHL_T6/view"}]
+    - text: "Top Viewed Article — Human Brain Mapping (Wiley)"
+      detail: "“Lifespan neurodegeneration of the human brain in multiple sclerosis”, among work published in 2023, up to 12 months after publication."
+      links: [{label: Certificate, url: "https://drive.google.com/file/d/19y5QiXPiQba-gSI98CXOEwbwuu7WT2pM/view"}]
+    - text: "Top 2% most influential scientists worldwide — Stanford University / Elsevier list"
+      links: [{label: Dataset, url: "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/6"}]
+- year: 2022
+  items:
+    - text: "Top 2% most influential scientists worldwide — Stanford University / Elsevier list"
+      links: [{label: Dataset, url: "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/5"}]
+- year: 2021
+  items:
+    - text: "Winner — MICCAI 2021 Lesion Detection Challenge"
+    - text: "Editor's choice — Scientific Reports, collection “Ageing”"
+      detail: "“Lifespan changes of the human brain in Alzheimer's disease” (Scientific Reports, 2019)."
+      links: [{label: Collection, url: "https://www.nature.com/collections/nwscjhpmpq"}]
+    - text: "Top 2% most influential scientists worldwide — Stanford University / Elsevier list"
+      links: [{label: Dataset, url: "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/3"}]
+- year: 2020
+  items:
+    - text: "Top 2% most influential scientists worldwide — Stanford University / Elsevier list"
+      links: [{label: Dataset, url: "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/2"}]
+- year: 2019
+  items:
+    - text: "Top 5% of all research outputs scored by Altmetric"
+      detail: "“Lifespan changes of the human brain in Alzheimer's disease” (Scientific Reports): Altmetric score 114, 10 news outlets."
+      links: [{label: Certificate, url: "https://drive.google.com/file/d/1225_HXmR1Zr7LE-zdU4fKSLbqGcezPO6/view"}, {label: Altmetric, url: "https://nature.altmetric.com/details/56717382/news"}]
+- year: 2018
+  items:
+    - text: "NVIDIA GPU Grant"
+- year: 2017
+  items:
+    - text: "CNRS Scientific Excellence Award (PEDR)"
+    - text: "Winner — MICCAI 2017 Cerebellum Segmentation Challenge"
+- year: 2013
+  items:
+    - text: "Winner — ISBI 2013 HARDI Reconstruction Challenge (HARDI and DTI categories)"
+- year: 2012
+  items:
+    - text: "CNRS Scientific Excellence Award (PES)"
+- year: 2011
+  items:
+    - text: "2nd place — Young Investigator Award, 15th Nordic-Baltic Conference on Biomedical Engineering and Medical Physics"
+- year: 2010
+  items:
+    - text: "Best paper award — MIAR 2010 (MICCAI workshop)"
+- year: 2008
+  items:
+    - text: "Best PhD award in biomedical engineering — IEEE France (EMBS, SFGBM, AGBM)"
+    - text: "CECR postdoctoral research fellowship (Canada)"
+- year: 2004
+  items:
+    - text: "PhD scholarship — French Ministry of Research"
+- year: 2003
+  items:
+    - text: "MSc award — French Ministry of Research"

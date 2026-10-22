@@ -22,7 +22,9 @@ corrections:
     featured: true
 
   # --- Hidden entries ---
-  - title: "Abstracts from the Fifth Conference of the International Multiple Sclerosis Cognition Society"
+  - title: "Abstracts from the Fifth Conference of the International Multiple Sclerosis Cognition Society : New York Academy of Sciences • New York, New York, USA • June 23 & 24, 2016"
+    hide: true
+  - doi: 10.1111/jep.12202                 # pharmacy paper not on the former publication list (homonym?)
     hide: true
 
   # --- Conference abstracts indexed as journal articles ---
@@ -42,6 +44,10 @@ corrections:
 
 # Entries missing from ORCID can be added by hand:
 additions:
+  # Journal papers / preprints listed on the former Google Sites page but absent from ORCID
+  - {type: preprint, year: 2020, title: "Deep ICE: A Deep learning approach for MRI Intracranial Cavity Extraction", authors: ["J. V. Manjón", "J. E. Romero", "R. Vivo-Hernando", "G. Rubio-Navarro", "M. De la Iglesia-Vaya", "F. Aparici-Robles", "P. Coupé"], venue: "arXiv:2001.05720", url: "https://arxiv.org/abs/2001.05720"}
+  - {type: preprint, year: 2019, title: "MRI denoising using Deep Learning and Non-local averaging", authors: ["J. V. Manjón", "P. Coupé"], venue: "arXiv:1911.04798", url: "https://arxiv.org/abs/1911.04798"}
+  - {type: journal, year: 2017, title: "A patch-based framework for new ITK functionality: Joint fusion, denoising, and non-local super-resolution", authors: ["N. Tustison", "B. Avants", "H. Wang", "L. Xie", "P. Coupé", "P. Yushkevich", "J. V. Manjón"], venue: "Insight Journal", url: "https://www.insight-journal.org/browse/publication/982"}
   # Conference papers and abstracts that are not in ORCID (from the former Google Sites list)
   - {type: conference, year: 2026, title: "On the Stability and Robustness of Vision Transformers for Neurodegenerative Disease Classification", authors: ["E. Navet", "…", "P. Coupé"], venue: "Medical Imaging with Deep Learning (MIDL 2026)"}
   - {type: conference, year: 2025, title: "FLAIRBrainSeg: Fine-grained brain segmentation using FLAIR MRI only", authors: ["E. Le Bot", "…", "P. Coupé"], venue: "Medical Imaging with Deep Learning (MIDL)", url: "https://arxiv.org/abs/2504.03376"}
