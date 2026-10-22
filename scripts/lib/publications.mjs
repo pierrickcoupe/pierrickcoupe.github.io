@@ -17,7 +17,9 @@ const normDoi = (d = '') => d.trim().toLowerCase().replace(/^https?:\/\/(dx\.)?d
 /** Map ORCID work types to the site's categories. */
 function classify(orcidType, doi, title, venue) {
   const t = (orcidType || '').toLowerCase();
-  if (t === 'journal-article' || t === 'review' || t === 'journal-issue') return 'journal';
+  // Conference proceedings indexed as "journal" (MICCAI/LNCS, ISBI, IFMBE...) are papers in proceedings.
+  const PROCEEDINGS = /medical image computing|computer-assisted intervention|lecture notes|proceedings|ifmbe|symposium on biomedical imaging|miccai|workshop/i;
+  if (t === 'journal-article' || t === 'review' || t === 'journal-issue') return PROCEEDINGS.test(venue || '') ? 'conference' : 'journal';
   if (t === 'conference-paper' || t === 'conference-abstract' || t === 'conference-poster') return 'conference';
   if (t === 'preprint' || t === 'working-paper') return 'preprint';
   if (t === 'book-chapter') return 'chapter';

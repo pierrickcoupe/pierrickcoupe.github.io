@@ -25,6 +25,15 @@ corrections:
   - title: "Abstracts from the Fifth Conference of the International Multiple Sclerosis Cognition Society"
     hide: true
 
+  # --- Conference abstracts indexed as journal articles ---
+  - doi: 10.1016/j.jalz.2014.05.156        # AAIC 2014 abstract (Alzheimer's & Dementia supplement)
+    type: conference
+  - doi: 10.1016/j.jalz.2019.06.2775       # AAIC 2019 abstract
+    type: conference
+  - title: "MRI denoising based on Sparseness and Self-Similarity"
+    type: conference
+    venue: OHBM 2011
+
   # --- Type fixes (examples) ---
   # - doi: 10.1007/978-3-030-87444-5_3
   #   type: conference
@@ -32,10 +41,26 @@ corrections:
   #   hide: true
 
 # Entries missing from ORCID can be added by hand:
-additions: []
-#  - title: "..."
-#    authors: ["P. Coupé", "..."]
-#    year: 2026
-#    venue: "..."
-#    type: journal
-#    doi: 10.xxxx/xxxx
+additions:
+  # Conference papers and abstracts that are not in ORCID (from the former Google Sites list)
+  - {type: conference, year: 2026, title: "On the Stability and Robustness of Vision Transformers for Neurodegenerative Disease Classification", authors: ["E. Navet", "…", "P. Coupé"], venue: "Medical Imaging with Deep Learning (MIDL 2026)"}
+  - {type: conference, year: 2025, title: "FLAIRBrainSeg: Fine-grained brain segmentation using FLAIR MRI only", authors: ["E. Le Bot", "…", "P. Coupé"], venue: "Medical Imaging with Deep Learning (MIDL)", url: "https://arxiv.org/abs/2504.03376"}
+  - {type: conference, year: 2025, title: "Age-related volume loss in thalamic nuclei: sex-specific patterns and blood pressure associations", authors: ["P. Sörös", "…", "P. Coupé"], venue: "OHBM 2025"}
+  - {type: conference, year: 2024, title: "Adapted nnU-Net: A Robust Baseline for Cross-Modality Synthesis and Medical Image Inpainting", authors: ["A. Longuefosse", "…", "P. Coupé"], venue: "SASHIMI workshop, MICCAI 2024", doi: "10.1007/978-3-031-73281-2_3"}
+  - {type: conference, year: 2024, title: "Unsupervised Deep Learning Method for Bias Correction", authors: ["M. Perez-Caballero", "…", "P. Coupé"], venue: "Medical Imaging with Deep Learning (MIDL 2024)"}
+  - {type: conference, year: 2024, title: "REMIX: Resolution Enhancement through Mixture of Experts", authors: ["S. Morell-Ortega", "…", "P. Coupé"], venue: "Medical Imaging with Deep Learning (MIDL 2024)", url: "https://openreview.net/forum?id=PGtCMchmdy"}
+  - {type: conference, year: 2023, title: "3D Transformer based on deformable patch location for differential diagnosis between Alzheimer's disease and Frontotemporal dementia", authors: ["H.-D. Nguyen", "…", "P. Coupé"], venue: "Machine Learning in Medical Imaging (MLMI 2023), pp. 53-63"}
+  - {type: conference, year: 2023, title: "Image Entropy and Numeric Representation for MRI Semantic Segmentation", authors: ["D. A. Di Giovanni", "…", "P. Coupé"], venue: "Medical Imaging with Deep Learning (MIDL 2023), short paper", url: "https://openreview.net/pdf?id=rfZokeg6UMV"}
+  - {type: conference, year: 2018, title: "Quantitative MRI of the Brain in Patients with Neurocysticercosis and Epilepsy", authors: ["G. Adan", "…", "P. Coupé"], venue: "Epilepsia 59, S131 (abstract)"}
+  - {type: conference, year: 2017, title: "Microstructural alterations precede subcortical deep grey matter volume loss in patients with clinically isolated syndrome", authors: ["I. Koubiyr", "…", "P. Coupé"], venue: "ECTRIMS 2017"}
+  - {type: conference, year: 2017, title: "Relationships between reorganization of functional brain network topology and cognition in clinically isolated syndrome", authors: ["I. Koubiyr", "…", "P. Coupé"], venue: "ECTRIMS 2017"}
+  - {type: conference, year: 2017, title: "Accuracy of MRI classification algorithms in a tertiary memory center clinical routine cohort (abstract)", authors: ["A. Morin", "…", "P. Coupé"], venue: "Alzheimer's & Dementia 13(7), 772-774 (AAIC 2017)"}
+  - {type: conference, year: 2016, title: "Lifetime antipsychotic use and brain structures in schizophrenia and other psychoses", authors: ["S. Huhtaniska", "…", "P. Coupé"], venue: "European Psychiatry 33, S102-S103 (abstract)"}
+  - {type: conference, year: 2015, title: "Hippocampal microstructural damage and memory impairment in clinically isolated syndrome", authors: ["V. Planche", "…", "P. Coupé"], venue: "ECTRIMS 2015, Multiple Sclerosis Journal 21, 363"}
+  - {type: conference, year: 2015, title: "Cerebellar sub-structures in cognitive impairment: volumetric and microstructural analyses at different stages of multiple sclerosis", authors: ["A. Moroso", "…", "P. Coupé"], venue: "ECTRIMS 2015, Multiple Sclerosis Journal 21, 365"}
+  - {type: conference, year: 2015, title: "A quantitative comparison between two manual hippocampal segmentation protocols", authors: ["A. Zandifar", "…", "P. Coupé"], venue: "AAIC 2015, Alzheimer's & Dementia 11, 797"}
+  - {type: conference, year: 2015, title: "volBrain: An online MRI brain volumetry system (OHBM)", authors: ["J. V. Manjón", "P. Coupé"], venue: "OHBM 2015", url: "https://hal.science/hal-01180069"}
+  - {type: conference, year: 2014, title: "Detecting Alzheimer's disease by morphological MRI using hippocampal grading and cortical thickness", authors: ["S. F. Eskildsen", "…", "P. Coupé"], venue: "CADDementia challenge, MICCAI 2014"}
+  - {type: conference, year: 2014, title: "Impact of DWI denoising on Track-Density Imaging", authors: ["P. Coupé", "…"], venue: "OHBM 2014", url: "https://hal.science/hal-00961150"}
+  - {type: conference, year: 2013, title: "Non-local MS MRI lesion inpainting method for image processing", authors: ["N. Guizard", "…", "P. Coupé"], venue: "endMS conference 2013"}
+  - {type: conference, year: 2013, title: "Particle Swarm Optimization in Multi-Tensor Imaging", authors: ["M. Paquette", "…", "P. Coupé"], venue: "ISBI 2013 HARDI Reconstruction Challenge", url: "https://hal.science/hal-00829323"}
