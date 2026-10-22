@@ -18,7 +18,7 @@ phd:
   - {name: Shiyan Hu, start: 2008, end: 2013, place: McGill / MNI, co: "D. L. Collins"}
 engineers:
   - {name: Etoile Galé, start: 2025, end: "", place: LaBRI UMR 5800}
-  - {name: Sarra Jbeli, start: 2025, end: "", place: LaBRI UMR 5800}
+  - {name: Sarra Jbeli, start: 2025, end: 2026, place: LaBRI UMR 5800}
   - {name: Léo Gallot, start: 2024, end: 2025, place: LaBRI UMR 5800}
   - {name: Hermann Courteille, start: 2023, end: 2024, place: PNRIA / LaBRI UMR 5800}
   - {name: Xavier Amorena, start: 2019, end: 2021, place: LaBRI UMR 5800}
