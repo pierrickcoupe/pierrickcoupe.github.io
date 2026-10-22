@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/data.js';
+---
+<Base title="Page not found">
+  <section class="container section" style="min-height: 50vh">
+    <p class="eyebrow">404</p>
+    <h1 class="h2">This page does not exist</h1>
+    <p class="lead">The page may have moved during the redesign of this website.</p>
+    <a class="btn btn--primary" href={url('')}>Back to the home page</a>
+  </section>
+</Base>

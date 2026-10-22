@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------------------
+#  Corrections applied on top of ORCID at each sync (ORCID itself is untouched)
+# ---------------------------------------------------------------------------
+# Match an entry by `doi`, `title` (case/punctuation-insensitive) or `hal` id,
+# then override any of: type, year, venue, title, authors, pdf, hide, featured.
+#
+# type: journal | conference | chapter | book | preprint | other
+# featured: true  -> shown in "Selected papers" on the home page (in this order)
+
+corrections:
+  # --- Selected papers (home page) ---
+  - doi: 10.1016/j.neuroimage.2020.117026      # AssemblyNet, NeuroImage 2020
+    featured: true
+  - doi: 10.1038/s41598-019-39809-8            # Lifespan changes in AD, Sci Rep 2019
+    featured: true
+    title: "Lifespan changes of the human brain in Alzheimer's disease"
+  - title: "Towards a unified analysis of brain maturation and aging across the entire lifespan: A MRI analysis"
+    featured: true
+  - title: "Patch-based segmentation using expert priors: application to hippocampus and ventricle segmentation"
+    featured: true
+  - title: "An optimized blockwise nonlocal means denoising filter for 3-D magnetic resonance images"
+    featured: true
+
+  # --- Hidden entries ---
+  - title: "Abstracts from the Fifth Conference of the International Multiple Sclerosis Cognition Society"
+    hide: true
+
+  # --- Type fixes (examples) ---
+  # - doi: 10.1007/978-3-030-87444-5_3
+  #   type: conference
+  # - title: "Some entry to hide"
+  #   hide: true
+
+# Entries missing from ORCID can be added by hand:
+additions: []
+#  - title: "..."
+#    authors: ["P. Coupé", "..."]
+#    year: 2026
+#    venue: "..."
+#    type: journal
+#    doi: 10.xxxx/xxxx

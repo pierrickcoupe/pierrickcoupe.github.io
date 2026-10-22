@@ -1,0 +1,26 @@
+# role: pi | wp | co      period: "start–end"      featured: shown on home page
+- {role: pi, name: ChatvolBrain, title: AI-powered companion for neurological diagnostics, funder: CNRS Prematuration, period: 2025–2026, featured: true, text: An AI-powered companion for neurological diagnostics.}
+- {role: pi, name: HoliBrain, title: Holistic brain anatomy analysis, funder: ANR PRC, period: 2024–2028, partners: IMB UMR 5152 · Neurocentre Magendie U1215 · UPV (Spain), featured: true, text: "Holistic analysis of brain anatomy across structures and scales, with an ensemble of collaborating deep networks."}
+- {role: pi, name: TumorBrain, title: Deep learning for brain tumor analysis, funder: University of Bordeaux, period: 2023–2026, partners: IMB UMR 5152}
+- {role: pi, name: DeepvolBrain, title: Deep learning for neuroimaging, funder: ANR JCJC, period: 2019–2023, partners: UPV (Spain) · McGill (Canada) · INCIA · Neurocentre Magendie, featured: true, text: Deep learning for neuroimaging, powering the next generation of volBrain.}
+- {role: pi, name: DeepMultiBrain, title: Deep learning for multiscale brain analysis, funder: CNRS, period: "2019", partners: INSERM U1215}
+- {role: pi, name: BigDataBrain, title: Towards big data in neuroscience, funder: LabEX TRAIL, period: 2018–2019, partners: INCIA UMR 5287 · Neurocentre Magendie U862}
+- {role: pi, name: NeoBrain, title: New architecture of the volBrain platform, funder: CNRS, period: "2017", partners: Universitat Politècnica de València (Spain)}
+- {role: pi, name: dtiBrain, title: Automatic analysis of diffusion-weighted images, funder: IDEX Bordeaux, period: 2015–2016, partners: RMSB UMR 5536 · Neurocentre Magendie U862}
+- {role: pi, name: MHS, title: Multimodal hippocampus subfields analysis, funder: CNRS Défi Image'In, period: 2015–2016, partners: INCIA UMR 5287 · ISC UMR 5229}
+- {role: pi, name: AbDetection, title: Morphological abnormality detection, funder: ClustEX CPU, period: 2014–2015, partners: IMB UMR 5251 · INCIA UMR 5287}
+- {role: pi, name: Fetal image analysis, title: Fetal image analysis using patch-based methods, funder: LaBRI emerging projects, period: "2013", partners: Children's National Medical Center (USA)}
+- {role: wp, name: PEPR PRODROM-ND, title: Prodromal stages of neurodegenerative diseases, funder: ANR (France 2030), period: 2026–2029, partners: Led by Université de Lille}
+- {role: wp, name: RRI IMPACT, title: Robust multiscale brain analysis, funder: University of Bordeaux, period: 2021–2026, partners: Led by Neurocentre Magendie}
+- {role: wp, name: FullBrain, title: Automatic analysis of pathological brain, funder: Spanish national grant, period: 2020–2024, partners: Led by UPV (Spain)}
+- {role: wp, name: HL-MRI, title: New hippocampus biomarkers for multiple sclerosis, funder: IDEX Bordeaux, period: 2015–2017, partners: Led by RMSB UMR 5536 · Neurocentre Magendie U862}
+- {role: wp, name: LaBRI imaging platform, title: Image processing platform of LaBRI UMR 5800, funder: CNRS, period: 2013–2015, partners: Led by LaBRI UMR 5800}
+- {role: wp, name: HR-DTI, title: Super-resolution for diffusion-weighted images, funder: LabEX TRAIL, period: 2013–2015, partners: Led by RMSB UMR 5536}
+- {role: co, name: "Sex, risk factors & AD", title: "Sex, risk factors and Alzheimer's disease pathology", funder: CIHR (Canada), period: 2026–2031, partners: Led by McGill University (Canada)}
+- {role: co, name: clinicBRAIN, title: Multimodal ultra-high-resolution brain MRI analysis software, funder: Spanish national grant, period: 2024–2027, partners: Led by UPV (Spain)}
+- {role: co, name: IHU VBHI, title: Precision and global Vascular Brain Health Institute, funder: ANR (France 2030), period: 2023–2033, partners: Led by Bordeaux Population Health}
+- {role: co, name: PEPR Santé Numérique, title: MRI harmonization, funder: ANR (France 2030), period: 2023–2026, partners: "Led by CEA–CATI, Paris"}
+- {role: co, name: MADA, title: "Modeling axonal density in Alzheimer's disease", funder: NIH (USA), period: 2017–2021, partners: Led by Indiana University Indianapolis (USA)}
+- {role: co, name: Vascular biomarkers, title: "New vascular biomarkers for Alzheimer's disease", funder: Danish national grant, period: 2013–2015, partners: Led by Aarhus University (Denmark)}
+- {role: co, name: Epilepsy plasticity, title: Brain plasticity in epilepsy, funder: RBIQ regional grant (Québec), period: 2012–2014, partners: "Led by CHUM, Hôpital Notre-Dame (Canada)"}
+- {role: co, name: Segmentation web platform, title: Web platform for brain structure segmentation, funder: Spanish national grant, period: 2010–2012, partners: Led by University of Valencia (Spain)}

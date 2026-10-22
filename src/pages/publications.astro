@@ -1,0 +1,163 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PubItem from '../components/PubItem.astro';
+import { load } from '../lib/data.js';
+
+const profile = load('profile.yaml');
+const { publications, updated } = load('publications.json');
+const patents = load('patents.yaml');
+const software = load('software.yaml');
+
+const TYPES = [
+  { id: 'journal', label: 'Journal papers' },
+  { id: 'conference', label: 'Conference papers' },
+  { id: 'chapter', label: 'Book chapters' },
+  { id: 'book', label: 'Edited volumes' },
+  { id: 'thesis', label: 'Theses' },
+  { id: 'preprint', label: 'Preprints' },
+];
+const counts = Object.fromEntries(TYPES.map((t) => [t.id, publications.filter((p) => p.type === t.id).length]));
+const types = TYPES.filter((t) => counts[t.id] > 0);
+const years = [...new Set(publications.map((p) => p.year).filter(Boolean))].sort((a, b) => b - a);
+const groups = years.map((y) => ({ year: y, items: publications.filter((p) => p.year === y) }));
+const updatedLabel = new Date(updated).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const halUrl = profile.profiles.find((p) => p.label === 'HAL')?.url;
+const orcidUrl = profile.profiles.find((p) => p.label === 'ORCID')?.url;
+const scholarUrl = profile.profiles.find((p) => p.label === 'Google Scholar')?.url;
+---
+<Base title="Publications" description={`Publications of ${profile.name}: journal papers, conference papers, patents and software.`} active="publications">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Publications</p>
+      <h1>Papers, patents and software</h1>
+      <p class="intro">This list is updated automatically from my ORCID record. Open-access versions are provided through the HAL archive whenever available.</p>
+      <div class="profiles">
+        <a href={orcidUrl}>ORCID {profile.orcid}</a>
+        <a href={halUrl}>HAL archive</a>
+        <a href={scholarUrl}>Google Scholar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section with-aside" style="padding-top: 48px">
+    <aside aria-label="Filters">
+      <div>
+        <label class="label" for="pub-search">Search</label>
+        <input id="pub-search" class="input" type="search" placeholder="Title, author, journal…" autocomplete="off" />
+      </div>
+      <div>
+        <div class="label" id="type-label">Type</div>
+        <div class="pills" role="group" aria-labelledby="type-label" data-filter="type">
+          <button class="pill" type="button" data-value="" aria-pressed="false">All</button>
+          {types.map((t) => (
+            <button class="pill" type="button" data-value={t.id} aria-pressed={t.id === 'journal' ? 'true' : 'false'}>{t.label} · {counts[t.id]}</button>
+          ))}
+        </div>
+      </div>
+      <div>
+        <label class="label" for="year-select">Year</label>
+        <select id="year-select" class="input">
+          <option value="">All years</option>
+          {years.map((y) => <option value={y}>{y}</option>)}
+        </select>
+      </div>
+      <div class="jump">
+        <div class="label">Also on this page</div>
+        <a href="#patents">Patents ({patents.length})</a>
+        <a href="#software">Registered software ({software.registered.length})</a>
+      </div>
+      <div class="sync">
+        <div class="sync__title"><Icon name="sync" size={16} color="#0B6B4F" /> Synced weekly from ORCID</div>
+        Last update: {updatedLabel}
+      </div>
+    </aside>
+
+    <div class="main">
+      <p class="status" aria-live="polite" id="pub-status"></p>
+      {groups.map((g) => (
+        <section class="year-group" data-year-group={g.year}>
+          <h2 class="year-h">{g.year}</h2>
+          {g.items.map((p) => <PubItem pub={p} />)}
+        </section>
+      ))}
+      <p id="pub-empty" class="status" hidden>No publication matches your filters.</p>
+
+      <h2 id="patents" class="h2 block-h">Patents</h2>
+      <div class="rows">
+        {patents.map((p) => (
+          <div class="row">
+            <div class="row__main">
+              <h3>{p.title}</h3>
+              <div style="font-size: 14px; color: var(--muted)">{p.inventors}</div>
+            </div>
+            <div class="row__side"><span class="tag tag--neutral" style="align-self: flex-start">{p.number}</span>{p.year && <span>{p.year}</span>}</div>
+          </div>
+        ))}
+      </div>
+
+      <h2 id="software" class="h2 block-h">Registered software</h2>
+      <p style="color: var(--muted); margin: -4px 0 16px">Software protected through the French APP (Agence pour la Protection des Programmes).</p>
+      <div class="rows">
+        {software.registered.map((s) => (
+          <div class="row" style="padding: 14px 0">
+            <div class="row__date" style="flex-basis: 64px">{s.year}</div>
+            <div class="row__main"><strong>{s.name}</strong> <span style="color: var(--muted)">— {s.text}</span></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .profiles { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 24px; font-size: 14px; font-weight: 600; }
+  .year-h { margin: 32px 0 0; padding-bottom: 10px; border-bottom: 2px solid var(--navy); font-family: var(--serif); font-size: 26px; font-weight: 600; }
+  .year-group:first-of-type .year-h { margin-top: 8px; }
+  .status { font-size: 14px; color: var(--muted); margin: 0 0 8px; }
+  .block-h { margin: 72px 0 16px; }
+  .jump { display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+  .sync { background: var(--bg-soft); border-radius: 12px; padding: 18px; font-size: 14px; color: var(--muted); }
+  .sync__title { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+</style>
+
+<script>
+  const search = document.getElementById('pub-search') as HTMLInputElement;
+  const yearSel = document.getElementById('year-select') as HTMLSelectElement;
+  const typeBtns = [...document.querySelectorAll<HTMLButtonElement>('[data-filter="type"] .pill')];
+  const items = [...document.querySelectorAll<HTMLElement>('.pub[data-type]')];
+  const groups = [...document.querySelectorAll<HTMLElement>('[data-year-group]')];
+  const status = document.getElementById('pub-status')!;
+  const empty = document.getElementById('pub-empty')!;
+  let type = 'journal';
+
+  // Restore state from the URL (?type=conference&year=2024&q=alzheimer)
+  const params = new URLSearchParams(location.search);
+  if (params.has('type')) type = params.get('type') || '';
+  if (params.get('year')) yearSel.value = params.get('year')!;
+  if (params.get('q')) search.value = params.get('q')!;
+
+  function apply() {
+    const q = search.value.trim().toLowerCase();
+    const y = yearSel.value;
+    let shown = 0;
+    for (const el of items) {
+      const ok = (!type || el.dataset.type === type) && (!y || el.dataset.year === y) && (!q || el.dataset.search!.includes(q));
+      el.hidden = !ok;
+      if (ok) shown++;
+    }
+    for (const g of groups) g.hidden = !g.querySelector('.pub:not([hidden])');
+    typeBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.value === type)));
+    status.textContent = `${shown} publication${shown === 1 ? '' : 's'} shown`;
+    empty.hidden = shown > 0;
+    const p = new URLSearchParams();
+    if (type !== 'journal') p.set('type', type);
+    if (y) p.set('year', y);
+    if (q) p.set('q', q);
+    history.replaceState(null, '', p.toString() ? `?${p}` : location.pathname);
+  }
+  typeBtns.forEach((b) => b.addEventListener('click', () => { type = b.dataset.value || ''; apply(); }));
+  search.addEventListener('input', apply);
+  yearSel.addEventListener('change', apply);
+  apply();
+</script>

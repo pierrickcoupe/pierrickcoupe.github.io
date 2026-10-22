@@ -1,0 +1,38 @@
+phd:
+  - {year: 2026, name: C. Winalai, role: Reviewer, inst: Grenoble Alpes University}
+  - {year: 2024, name: M. Hamzaoui, role: Examiner, inst: Sorbonne Université}
+  - {year: 2024, name: B. Lambert, role: Examiner, inst: Grenoble Institut des Neurosciences}
+  - {year: 2022, name: G. Reguig, role: Reviewer, inst: Sorbonne Université}
+  - {year: 2022, name: M. del Mar Álvarez-Torres, role: Examiner, inst: Universitat Politècnica de València}
+  - {year: 2022, name: P. Tran, role: Reviewer, inst: Sorbonne Université}
+  - {year: 2022, name: T. Zhou, role: Reviewer, inst: Normandie Université}
+  - {year: 2021, name: O. Petit, role: Examiner, inst: CNAM}
+  - {year: 2021, name: E. Thibeau-Sutre, role: Reviewer, inst: Sorbonne Université}
+  - {year: 2021, name: G. M. Juan, role: Reviewer, inst: Universitat Pompeu Fabra}
+  - {year: 2020, name: M. Guevara Olivares, role: Reviewer, inst: Université Paris-Saclay}
+  - {year: 2020, name: G. Pitteri, role: President, inst: University of Bordeaux}
+  - {year: 2020, name: W. Wei, role: Reviewer, inst: Université Côte d'Azur}
+  - {year: 2019, name: R. Sivera, role: Reviewer, inst: Université Côte d'Azur}
+  - {year: 2019, name: Y. Bihan Poudec, role: Examiner, inst: Université de Lyon}
+  - {year: 2019, name: L. Borne, role: Reviewer, inst: Université Paris-Saclay}
+  - {year: 2019, name: J. Wen, role: Reviewer, inst: Sorbonne Université}
+  - {year: 2019, name: S. González-Villà, role: Reviewer, inst: University of Girona}
+  - {year: 2019, name: H. Bertrand, role: Examiner, inst: Télécom ParisTech}
+  - {year: 2018, name: C. Laidi, role: Reviewer, inst: Université Paris-Est Créteil}
+  - {year: 2018, name: M. Benkarim, role: Reviewer, inst: Universitat Pompeu Fabra}
+  - {year: 2015, name: F. Munsch, role: Examiner, inst: University of Bordeaux}
+habilitation:
+  - {year: 2025, name: M.-E. Bellemare, role: Reviewer, inst: Aix-Marseille University}
+# Midterm PhD committees (comités de suivi). One line per student with the years.
+midterm:
+  - {name: M. Atay, inst: Université de Rennes, years: "2025, 2026"}
+  - {name: M. Gicquel, inst: Université de Rennes, years: "2025, 2026"}
+  - {name: J. Laval, inst: CEA, years: "2025, 2026"}
+  - {name: G. Ravelomanana, inst: Grenoble Alpes University, years: "2025"}
+  - {name: E. Giffard-Broudic, inst: Université de Rennes, years: "2023"}
+  - {name: B. Lambert, inst: Grenoble Institut des Neurosciences, years: "2022, 2023"}
+  - {name: T. Soulier, inst: Sorbonne Université, years: "2021, 2022, 2023"}
+  - {name: S. Thibault, inst: Sorbonne Université, years: "2021"}
+  - {name: M. Ramamonjisoa, inst: University of Bordeaux, years: "2019"}
+  - {name: A. Combes, inst: University of Bordeaux, years: "2018"}
+  - {name: L. Labache, inst: University of Bordeaux, years: "2018"}

@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import { load } from '../lib/data.js';
+
+const projects = load('projects.yaml')
+  .map((p) => {
+    const [start, end] = String(p.period).split('–').map((x) => parseInt(x, 10));
+    return { ...p, start, end: end || start };
+  })
+  .sort((a, b) => b.start - a.start || b.end - a.end);
+const thisYear = new Date().getFullYear();
+const ROLES = [
+  { id: '', label: 'All' },
+  { id: 'pi', label: 'Principal investigator' },
+  { id: 'wp', label: 'Work-package leader' },
+  { id: 'co', label: 'Partner' },
+];
+const roleLabel = { pi: 'Principal investigator', wp: 'WP leader', co: 'Partner' };
+const count = (id) => (id ? projects.filter((p) => p.role === id).length : projects.length);
+---
+<Base title="Projects" description="Collaborative research projects in AI and neuroimaging." active="projects">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Projects</p>
+      <h1>Collaborative research projects</h1>
+      <p class="intro">From brain development to neurodegeneration, these projects bring together computer scientists, neuroscientists and clinicians in France, Spain, Canada, Denmark and the USA.</p>
+    </div>
+  </section>
+
+  <section class="container section" style="padding-top: 48px">
+    <div class="toolbar">
+      <div class="pills" role="group" aria-label="Filter by role">
+        {ROLES.map((r) => (
+          <button class="pill" type="button" data-role={r.id} aria-pressed={r.id === '' ? 'true' : 'false'}>{r.label} · {count(r.id)}</button>
+        ))}
+      </div>
+      <p id="proj-status" class="status" aria-live="polite"></p>
+    </div>
+    <div class="rows">
+      {projects.map((p) => (
+        <article class="row" data-role={p.role}>
+          <div class="row__date">{p.period}</div>
+          <div class="row__main">
+            <div class="title-line">
+              <h2>{p.name}</h2>
+              {p.end >= thisYear && <span class="tag tag--ok">Ongoing</span>}
+            </div>
+            <div style="color: var(--ink-2); margin-bottom: 6px">{p.title}</div>
+            {p.partners && <div style="font-size: 14px; color: var(--subtle)">{p.partners}</div>}
+          </div>
+          <div class="row__side">
+            <span class="tag tag--accent" style="align-self: flex-start">{roleLabel[p.role]}</span>
+            <span>{p.funder}</span>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 24px; }
+  .status { font-size: 14px; color: var(--muted); margin: 0; }
+  .title-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 4px; }
+  .title-line h2 { margin: 0; }
+</style>
+
+<script>
+  const btns = [...document.querySelectorAll<HTMLButtonElement>('[data-role].pill')];
+  const rows = [...document.querySelectorAll<HTMLElement>('article[data-role]')];
+  const status = document.getElementById('proj-status')!;
+  function apply(role: string) {
+    let n = 0;
+    rows.forEach((r) => { const ok = !role || r.dataset.role === role; r.hidden = !ok; if (ok) n++; });
+    btns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.role === role)));
+    status.textContent = `${n} projects`;
+  }
+  btns.forEach((b) => b.addEventListener('click', () => apply(b.dataset.role || '')));
+  apply('');
+</script>

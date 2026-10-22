@@ -1,0 +1,148 @@
+---
+import Base from '../layouts/Base.astro';
+import { load } from '../lib/data.js';
+
+const profile = load('profile.yaml');
+const career = load('career.yaml');
+const awards = load('awards.yaml');
+const jury = load('jury.yaml');
+const team = load('team.yaml');
+const sections = [
+  { id: 'bio', label: 'Biography' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
+  { id: 'awards', label: 'Awards' },
+  { id: 'editorial', label: 'Editorial activities' },
+  { id: 'juries', label: 'Thesis committees' },
+];
+const supervised = team.alumni.phd.length + team.current.filter((m) => /PhD/.test(m.role)).length;
+---
+<Base title="CV" description={`Curriculum vitae of ${profile.name}.`} active="cv">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Curriculum vitae</p>
+      <h1>{profile.name}</h1>
+      <p class="intro">{profile.position} · {profile.roles.join(' · ')}</p>
+      <nav class="toc" aria-label="CV sections">{sections.map((s) => <a href={`#${s.id}`}>{s.label}</a>)}</nav>
+    </div>
+  </section>
+
+  <div class="container section cv" style="padding-top: 48px">
+    <section id="bio">
+      <h2>Biography</h2>
+      <p class="bio">{profile.bio}</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="rows">
+        {career.experience.map((e) => (
+          <div class="row">
+            <div class="row__date">{e.period}</div>
+            <div class="row__main">
+              <h3>{e.title}</h3>
+              <div class="org">{e.org}</div>
+              {e.notes && <div class="notes">{e.notes}</div>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="rows">
+        {career.education.map((e) => (
+          <div class="row">
+            <div class="row__date">{e.period}</div>
+            <div class="row__main">
+              <h3>{e.title}</h3>
+              <div class="org">{e.org}</div>
+              {e.notes && <div class="notes">{e.notes}</div>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="awards">
+      <h2>Awards and distinctions</h2>
+      <div class="rows">
+        {awards.map((a) => (
+          <div class="row" style="padding: 14px 0">
+            <div class="row__date" style="flex-basis: 64px">{a.year}</div>
+            <div class="row__main"><ul class="plain">{a.items.map((i) => <li>{i}</li>)}</ul></div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="editorial">
+      <h2>Editorial activities</h2>
+      <div class="rows">
+        {career.editorial.map((e) => (
+          <div class="row" style="padding: 14px 0">
+            <div class="row__date" style="flex-basis: 64px">{e.year}</div>
+            <div class="row__main">{e.title} <span class="org">— {e.venue}</span></div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section id="juries">
+      <h2>Thesis committees</h2>
+      <p class="org" style="margin: -8px 0 20px">{jury.phd.length} PhD juries, {jury.habilitation.length} habilitation, {jury.midterm.length} PhD monitoring committees · {supervised} PhD students supervised (see <a href="../team/">Team</a>).</p>
+
+      <details open>
+        <summary>PhD juries</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Year</th><th scope="col">Candidate</th><th scope="col">Role</th><th scope="col">Institution</th></tr></thead>
+            <tbody>
+              {jury.phd.map((j) => <tr><td>{j.year}</td><td>{j.name}</td><td>{j.role}</td><td>{j.inst}</td></tr>)}
+            </tbody>
+          </table>
+        </div>
+      </details>
+      <details>
+        <summary>Habilitation juries</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Year</th><th scope="col">Candidate</th><th scope="col">Role</th><th scope="col">Institution</th></tr></thead>
+            <tbody>{jury.habilitation.map((j) => <tr><td>{j.year}</td><td>{j.name}</td><td>{j.role}</td><td>{j.inst}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </details>
+      <details>
+        <summary>PhD monitoring committees</summary>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Years</th><th scope="col">PhD student</th><th scope="col">Institution</th></tr></thead>
+            <tbody>{jury.midterm.map((j) => <tr><td>{j.years}</td><td>{j.name}</td><td>{j.inst}</td></tr>)}</tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .toc { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 24px; font-size: 15px; font-weight: 600; }
+  .cv { max-width: 960px; }
+  .cv section { margin-bottom: 64px; scroll-margin-top: 24px; }
+  .cv h2 { font-family: var(--serif); font-size: 28px; font-weight: 600; margin: 0 0 20px; }
+  .bio { font-size: 17px; max-width: 760px; margin: 0; }
+  .org { color: var(--muted); font-size: 15px; }
+  .notes { color: var(--subtle); font-size: 14px; margin-top: 4px; }
+  .row__date { flex-basis: 130px; }
+  .plain { list-style: none; margin: 0; padding: 0; }
+  .plain li + li { margin-top: 4px; }
+  details { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; }
+  summary { cursor: pointer; padding: 16px 20px; font-weight: 600; min-height: 44px; }
+  details[open] summary { border-bottom: 1px solid var(--line); }
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 20px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-size: 13px; color: var(--ink-2); font-weight: 600; background: var(--bg-soft); }
+  tr:last-child td { border-bottom: 0; }
+</style>

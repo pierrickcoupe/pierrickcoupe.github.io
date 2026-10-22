@@ -1,0 +1,58 @@
+platform:
+  name: volBrain
+  url: https://volbrain.net
+  text: >-
+    Automated brain MRI analysis in the cloud: upload a scan from your browser and receive a
+    full structural report. Co-developed with the Universitat Politècnica de València,
+    volBrain has processed more than 800,000 MRI scans worldwide.
+# Pipelines available on volBrain
+pipelines:
+  - {name: AssemblyNet, text: Whole-brain segmentation with a large ensemble of CNNs}
+  - {name: vol2Brain, text: Complete brain MRI analysis pipeline}
+  - {name: DeepLesionBrain, text: White matter lesion segmentation}
+  - {name: HIPS, text: Hippocampal subfield segmentation}
+  - {name: CERES / DeepCERES, text: Cerebellar lobule segmentation}
+  - {name: DeepTHALAMUS, text: Thalamic nuclei segmentation}
+  - {name: pBrain, text: Segmentation of Parkinson's-related structures}
+  - {name: petBrain, text: "Amyloid, tau and neurodegeneration quantification from PET and MRI"}
+# Downloadable research code (links point to the legacy pages until migrated)
+toolboxes:
+  - {name: MRI denoising, text: Optimized blockwise non-local means and related filters for 3D MRI, url: "https://sites.google.com/site/pierrickcoupe/softwares/denoising/mri-denoising/mri-denoising-software"}
+  - {name: DWI denoising, text: Denoising of diffusion-weighted images, url: "https://sites.google.com/site/pierrickcoupe/softwares/denoising/dwi-denoising/dwi-denoising-software"}
+  - {name: Speckle reduction, text: Optimized Bayesian non-local means filter for ultrasound, url: "https://sites.google.com/site/pierrickcoupe/softwares/denoising/speckle-reduction/optimized-bayesian-non-local-means-filter"}
+  - {name: Multiphoton filtering, text: Non-local filtering for multiphoton microscopy, url: "https://sites.google.com/site/pierrickcoupe/softwares/denoising/multiphoton-image-filtering"}
+  - {name: Noise estimation, text: Robust Rician noise estimation for MR images, url: "https://sites.google.com/site/pierrickcoupe/softwares/noise-estimation"}
+  - {name: Brain extraction, text: Non-local intracranial cavity extraction, url: "https://sites.google.com/site/pierrickcoupe/softwares/segmentation/brain-extraction"}
+  - {name: Structure segmentation, text: Patch-based label fusion for brain structures, url: "https://sites.google.com/site/pierrickcoupe/softwares/segmentation/structure-segmentation"}
+  - {name: Super-resolution, text: Monomodal and multimodal MRI super-resolution, url: "https://sites.google.com/site/pierrickcoupe/softwares/super-resolution"}
+license: >-
+  Research code is provided for personal and academic use only; please cite the
+  corresponding papers. Commercial use of protected or patented methods requires a licence —
+  contact me.
+# Software registered with the APP (Agence pour la Protection des Programmes)
+registered:
+  - {year: 2025, name: petBrain, text: "AI-based estimation of A/T/N biomarker status"}
+  - {year: 2025, name: DeepCERES, text: Deep learning segmentation of cerebellar lobules}
+  - {year: 2025, name: DeepTHALAMUS, text: Segmentation of thalamic nuclei}
+  - {year: 2025, name: DiagnosticTree, text: Differential diagnosis of neurological disorders}
+  - {year: 2025, name: volBrain platform, text: Cloud platform for brain MRI analysis}
+  - {year: 2024, name: BrainDiseasisDiagnosis, text: Differential diagnosis using brain structure age estimation}
+  - {year: 2024, name: BrainStructureAges, text: Age estimation of brain structures}
+  - {year: 2024, name: AssemblyNet-AD-FTD, text: Differential diagnosis of dementia}
+  - {year: 2022, name: AssemblyNet-DB, text: Lifespan brain database}
+  - {year: 2022, name: vol2Brain, text: Complete brain MRI analysis pipeline}
+  - {year: 2022, name: AssemblyNet-AD, text: Automatic diagnosis of dementia}
+  - {year: 2022, name: DeepLesionBrain, text: Brain lesion segmentation}
+  - {year: 2021, name: Deep ICE, text: Deep learning brain extraction}
+  - {year: 2021, name: AssemblyNet, text: Whole-brain segmentation}
+  - {year: 2021, name: pBrain, text: "Segmentation for Parkinson's disease"}
+  - {year: 2021, name: RegQCNet, text: Automatic quality control of brain MRI registration}
+  - {year: 2021, name: volBrain v1.1, text: MRI processing platform}
+  - {year: 2021, name: LesionBrain, text: Brain lesion segmentation}
+  - {year: 2021, name: HIPS, text: Hippocampal subfield segmentation}
+  - {year: 2017, name: CERES, text: Cerebellar lobule segmentation}
+  - {year: 2016, name: dtiBrain, text: Diffusion tensor imaging processing}
+  - {year: 2015, name: volBrain v1.0, text: MRI processing platform}
+  - {year: 2008, name: INRIABrainshift, text: Brain shift compensation in image-guided neurosurgery}
+  - {year: 2007, name: MONADE, text: Multimodal image denoising using optimized non-local means}
+  - {year: 2006, name: TULIPE, text: 3D ultrasound reconstruction using probe trajectory}

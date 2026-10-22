@@ -1,0 +1,16 @@
+{
+  "name": "pierrickcoupe-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "sync": "node scripts/sync-publications.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.18.2",
+    "js-yaml": "^5.5.0"
+  }
+}
