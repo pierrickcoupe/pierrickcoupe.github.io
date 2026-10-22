@@ -18,12 +18,6 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
 <Base>
   <!-- HERO -->
   <section class="hero">
-    <svg class="hero__art" aria-hidden="true" viewBox="0 0 600 600" fill="none" stroke="#7FB2FF" stroke-width="1.2">
-      <ellipse cx="300" cy="300" rx="260" ry="220" /><ellipse cx="300" cy="300" rx="225" ry="188" />
-      <ellipse cx="300" cy="300" rx="190" ry="158" /><ellipse cx="300" cy="300" rx="155" ry="126" />
-      <ellipse cx="300" cy="300" rx="120" ry="96" /><ellipse cx="300" cy="300" rx="85" ry="66" />
-      <path d="M300 80 C 280 200, 320 400, 300 520" /><path d="M120 220 C 200 260, 220 340, 150 420" /><path d="M480 220 C 400 260, 380 340, 450 420" />
-    </svg>
     <div class="container hero__inner">
       <div class="hero__text">
         <p class="hero__eyebrow">{profile.position} · LaBRI, University of Bordeaux</p>
@@ -37,7 +31,8 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
           {profile.profiles.map((p) => <a href={p.url}>{p.label}</a>)}
         </div>
       </div>
-      <div class="hero__card">
+      <div class="hero__visual">
+        <div class="hero__card">
         <div class="hero__photo">
           {profile.portrait
             ? <img src={url('images/portrait.jpg')} alt={`Portrait of ${profile.name}`} width="300" height="375" />
@@ -46,6 +41,11 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
         <div class="hero__id">
           <div class="hero__name">{profile.name}</div>
           <div class="hero__roles">{profile.roles.join(' · ')}</div>
+          <a class="hero__vb" href={url('software/')}>
+            <img src={url('images/volbrain-light.svg')} alt="" aria-hidden="true" width="46" height="43" />
+            <span>Co-developer of the <strong>volBrain</strong> platform</span>
+          </a>
+        </div>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
     <div class="grid">
       {research.map((r) => (
         <article class="card card--soft">
-          <div class="icon-tile"><Icon name={r.icon} color="#2459C9" /></div>
+          <div class="icon-tile"><Icon name={r.icon} color="#2B455D" /></div>
           <h3>{r.title}</h3>
           <p style="margin-bottom: 16px">{r.short}</p>
           <a class="more" href={url(`research/#${r.id}`)}>Learn more →</a>
@@ -122,7 +122,8 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
       <h2 id="sw-h" class="h2" style="margin-bottom: 32px">Open tools for the community</h2>
       <div class="sw">
         <article class="sw__main">
-          <div class="card-meta" style="color: var(--on-navy-accent)">Online platform</div>
+          <img src={url('images/volbrain-light.svg')} alt="" aria-hidden="true" width="64" height="60" />
+          <div class="card-meta" style="color: var(--on-navy-accent); margin-bottom: 0">Online platform</div>
           <h3>{software.platform.name}</h3>
           <p>{software.platform.text}</p>
           <a class="btn btn--light" href={software.platform.url}>Open volBrain</a>
@@ -163,7 +164,7 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
 
 <style>
   .hero { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
-  .hero__art { position: absolute; right: -120px; top: -60px; width: 640px; height: 640px; opacity: .18; }
+  .hero__visual { flex: 1 1 280px; max-width: 360px; position: relative; }
   .hero__inner { display: flex; flex-wrap: wrap; gap: 56px; align-items: center; padding-block: 96px 104px; position: relative; }
   .hero__text { flex: 999 1 560px; min-width: 0; }
   .hero__eyebrow { margin: 0 0 20px; font-size: 14px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--on-navy-accent); }
@@ -172,16 +173,21 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
   .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
   .hero__profiles { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; font-weight: 500; }
   .hero__profiles a { color: var(--on-navy-accent); }
-  .hero__card { flex: 1 1 280px; max-width: 340px; background: #13263F; border: 1px solid var(--navy-line); border-radius: 16px; padding: 16px; }
-  .hero__photo { aspect-ratio: 4 / 5; border-radius: 10px; background: #1C3352; display: flex; align-items: center; justify-content: center; color: #8FA6C4; font-size: 14px; overflow: hidden; }
+  .hero__card { position: relative; background: #273D52; border: 1px solid var(--navy-line); border-radius: 16px; padding: 16px; }
+  .hero__photo { aspect-ratio: 4 / 5; border-radius: 10px; background: #33495E; display: flex; align-items: center; justify-content: center; color: #9FB1C2; font-size: 14px; overflow: hidden; }
   .hero__photo img { width: 100%; height: 100%; object-fit: cover; }
   .hero__id { padding: 16px 4px 4px; }
   .hero__name { font-weight: 600; font-size: 17px; }
-  .hero__roles { font-size: 14px; color: #A9B8CC; line-height: 1.5; }
+  .hero__roles { font-size: 14px; color: #B8C5D2; line-height: 1.5; }
+  .hero__vb { display: flex; align-items: center; gap: 12px; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--navy-line); color: #CBD5DF !important; font-size: 14px; text-decoration: none !important; }
+  .hero__vb img { flex: 0 0 46px; }
+  .hero__vb strong { color: #fff; }
+  .hero__vb:hover strong { text-decoration: underline; }
   @media (max-width: 640px) {
     .hero__inner { padding-block: 56px 64px; gap: 40px; }
     .hero__lead { font-size: 17px; }
-    .hero__card { max-width: none; display: flex; gap: 16px; align-items: center; }
+    .hero__visual { max-width: none; }
+      .hero__card { display: flex; gap: 16px; align-items: center; }
     .hero__photo { width: 96px; flex: 0 0 96px; }
     .hero__id { padding: 0; }
   }

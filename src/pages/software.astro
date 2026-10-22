@@ -17,7 +17,8 @@ const sw = load('software.yaml');
   <section class="container section" style="padding-top: 48px">
     <div class="platform">
       <div class="platform__text">
-        <div class="card-meta" style="color: var(--on-navy-accent)">Online platform</div>
+        <img src={url('images/volbrain-light.svg')} alt="" aria-hidden="true" width="80" height="74" />
+        <div class="card-meta" style="color: var(--on-navy-accent); margin-bottom: 0">Online platform</div>
         <h2>{sw.platform.name}</h2>
         <p>{sw.platform.text}</p>
         <a class="btn btn--light" href={sw.platform.url}>Open volBrain <Icon name="external" size={16} /></a>
@@ -54,7 +55,7 @@ const sw = load('software.yaml');
   .platform__list { flex: 1 1 380px; }
   .platform__list ul { list-style: none; margin: 0; padding: 0; }
   .platform__list li { display: flex; flex-wrap: wrap; gap: 2px 12px; padding: 10px 0; border-bottom: 1px solid var(--navy-line); font-size: 15px; }
-  .platform__list li strong { min-width: 150px; }
+  .platform__list li strong { min-width: 175px; }
   .platform__list li span { color: var(--on-navy); }
   @media (max-width: 640px) { .platform { padding: 24px; } }
   .note { margin-top: 24px; font-size: 14px; color: var(--muted); max-width: 760px; }

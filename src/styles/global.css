@@ -1,21 +1,21 @@
 /* ---------- Design tokens ---------- */
 :root {
-  --ink: #0D1B2A;
-  --ink-2: #3A4656;
+  --ink: #14212D;
+  --ink-2: #3B4856;
   --muted: #4A5668;
   --subtle: #6B7686;
   --line: #E6E9EF;
   --line-2: #D5DBE5;
   --bg: #FFFFFF;
-  --bg-soft: #F6F8FB;
-  --navy: #0B1A2E;
-  --navy-2: #10233A;
-  --navy-line: #24395A;
-  --on-navy: #C9D4E3;
-  --on-navy-accent: #9EC3FF;
-  --accent: #2459C9;
-  --accent-hover: #173F94;
-  --accent-soft: #EEF3FC;
+  --bg-soft: #F4F6F8;
+  --navy: #1E3143;
+  --navy-2: #273D52;
+  --navy-line: #3A546C;
+  --on-navy: #CBD5DF;
+  --on-navy-accent: #B3C7DA;
+  --accent: #2B455D;  /* volBrain blue-grey */
+  --accent-hover: #1B2D3E;
+  --accent-soft: #E8EEF3;
   --ok: #0B6B4F;
   --ok-soft: #E1F4EC;
   --radius: 14px;
@@ -66,9 +66,9 @@ h1, h2, h3 { line-height: 1.2; }
 .btn--primary { background: var(--accent); color: #fff; }
 .btn--primary:hover { background: var(--accent-hover); color: #fff; }
 .btn--light { background: #fff; color: var(--navy); }
-.btn--light:hover { background: #E8EEF8; color: var(--navy); }
-.btn--ghost { color: #fff; border-color: #3B5070; }
-.btn--ghost:hover { background: #13263F; color: #fff; }
+.btn--light:hover { background: #E6ECF1; color: var(--navy); }
+.btn--ghost { color: #fff; border-color: #4E677F; }
+.btn--ghost:hover { background: #273D52; color: #fff; }
 
 /* ---------- Grids & cards ---------- */
 .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
@@ -83,7 +83,7 @@ h1, h2, h3 { line-height: 1.2; }
 .card--dark .card-meta { color: var(--on-navy-accent); }
 a.card { color: var(--ink); display: block; }
 a.card:hover { text-decoration: none; border-color: var(--accent); }
-.icon-tile { width: 44px; height: 44px; border-radius: 10px; background: #E3ECFB; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.icon-tile { width: 44px; height: 44px; border-radius: 10px; background: #E1E8EF; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
 
 /* ---------- Page header ---------- */
 .page-head { background: var(--bg-soft); border-bottom: 1px solid var(--line); }

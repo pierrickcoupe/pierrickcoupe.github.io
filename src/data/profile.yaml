@@ -20,8 +20,8 @@ address:
   - Office 253, LaBRI
   - 351 cours de la Libération
   - 33405 Talence cedex, France
-# Put a portrait at public/images/portrait.jpg and set this to true
-portrait: false
+# Portrait: public/images/portrait.jpg (4:5 ratio). Set to false to hide it.
+portrait: true
 profiles:
   - label: Google Scholar
     url: https://scholar.google.com/citations?user=fKuAndgAAAAJ&hl=en
