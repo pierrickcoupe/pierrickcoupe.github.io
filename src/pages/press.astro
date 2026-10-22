@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import { load } from '../lib/data.js';
+
+const topics = load('press.yaml');
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const fmt = (d) => {
+  const [y, m] = String(d).split('-');
+  return m ? `${MONTHS[+m - 1]} ${y}` : y;
+};
+const LANG = { fr: 'FR', en: 'EN', es: 'ES', de: 'DE', it: 'IT', ca: 'CA' };
+const TYPE = { tv: 'TV', radio: 'Radio' };
+const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const total = topics.reduce((n, t) => n + t.items.length, 0);
+---
+<Base title="Press" description="Press coverage of the research of Pierrick Coupé." active="press">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Press</p>
+      <h1>In the media</h1>
+      <p class="intro">{total} articles, radio and TV pieces about our research, grouped by topic.</p>
+      <nav class="topics" aria-label="Topics">
+        {topics.map((t) => <a href={`#${slug(t.topic)}`}>{t.topic} <span>{t.items.length}</span></a>)}
+      </nav>
+    </div>
+  </section>
+
+  <div class="container section" style="padding-top: 48px; max-width: 1000px">
+    {topics.map((t) => (
+      <section id={slug(t.topic)} class="topic">
+        <h2 class="h2">{t.topic}</h2>
+        <div class="rows">
+          {t.items.map((i) => (
+            <div class="row item">
+              <div class="row__date">{fmt(i.date)}</div>
+              <div class="row__main">
+                <div class="title">
+                  {i.url ? <a href={i.url} lang={i.lang}>{i.title}</a> : <span lang={i.lang}>{i.title}</span>}
+                </div>
+                <div class="meta">
+                  <span>{i.outlet}</span>
+                  {TYPE[i.type] && <span class="tag tag--accent">{TYPE[i.type]}</span>}
+                  <span class="tag tag--neutral">{LANG[i.lang] || i.lang}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .topics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .topics a { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 14px; border: 1px solid var(--line-2); border-radius: 999px; background: #fff; color: var(--ink-2); font-size: 14px; font-weight: 600; text-decoration: none; }
+  .topics a:hover { border-color: var(--accent); color: var(--accent); }
+  .topics span { color: var(--subtle); font-weight: 500; }
+  .topic { margin-bottom: 56px; scroll-margin-top: 24px; }
+  .topic .h2 { font-size: 26px; margin-bottom: 12px; }
+  .item { padding: 16px 0; }
+  .row__date { flex-basis: 90px; }
+  .title { font-weight: 600; margin-bottom: 4px; }
+  .title a { color: var(--ink); }
+  .title a:hover { color: var(--accent); }
+  .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 14px; color: var(--muted); }
+  .meta .tag { font-size: 12px; padding: 1px 8px; }
+</style>

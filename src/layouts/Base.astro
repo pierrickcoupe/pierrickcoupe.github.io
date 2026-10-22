@@ -15,6 +15,7 @@ const nav = [
   { id: 'publications', label: 'Publications', href: 'publications/' },
   { id: 'projects', label: 'Projects', href: 'projects/' },
   { id: 'supervision', label: 'Supervision', href: 'supervision/' },
+  { id: 'press', label: 'Press', href: 'press/' },
   { id: 'team', label: 'Team ↗', href: profile.in2brainUrl, external: true },
   { id: 'cv', label: 'CV', href: 'cv/' },
 ];
@@ -120,7 +121,7 @@ const year = new Date().getFullYear();
   .main-nav a[aria-current='page'] { color: var(--ink); font-weight: 600; box-shadow: inset 0 -2px 0 var(--accent); }
   .nav-cta { min-height: 44px; padding: 10px 18px; }
   .menu-btn { display: none; font: inherit; font-weight: 600; font-size: 15px; align-items: center; gap: 8px; min-height: 44px; padding: 8px 14px; border: 1px solid var(--line-2); border-radius: 8px; background: #fff; color: var(--ink); cursor: pointer; }
-  @media (max-width: 860px) {
+  @media (max-width: 1100px) {
     .menu-btn { display: inline-flex; }
     .main-nav { display: none; width: 100%; flex-direction: column; align-items: stretch; gap: 0; padding-top: 8px; }
     .main-nav.is-open { display: flex; }

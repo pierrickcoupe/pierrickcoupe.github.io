@@ -1,0 +1,612 @@
+# Press coverage, grouped by research topic (newest first within each topic).
+# date: YYYY or YYYY-MM · type: article | tv | radio · lang: fr | en | es | de | it | ca
+- topic: Anatomical structure segmentation
+  items:
+  - date: 2025-03
+    outlet: National Spanish TV
+    title: 'DeepCERES: high resolution cerebellum segmentation'
+    type: tv
+    lang: es
+    url: https://hokcab01.almacen.api.auditmedia.es//api/Recortes/845ebcce-6bd8-4376-9552-de246a5264cc/tv.mp4
+  - date: '2019'
+    outlet: CNRS INS2I
+    title: Une assemblée d'intelligences artificielles au service de la médecine
+    type: article
+    lang: fr
+    url: https://www.ins2i.cnrs.fr/fr/cnrsinfo/une-assemblee-dintelligences-artificielles-au-service-de-la-medecine
+  - date: 2015-11
+    outlet: manip-info
+    title: Une plateforme en ligne pour analyser les IRM cérébrales en 3D
+    type: article
+    lang: fr
+    url: http://www.manip-info.com/actualites/produits/article/les-irm-cerebrales-en-3d-analysees
+  - date: 2015-09
+    outlet: Journal du CNRS
+    title: Les IRM cérébrales ont leur traducteur automatique
+    type: article
+    lang: fr
+    url: https://lejournal.cnrs.fr/articles/les-irm-cerebrales-ont-leur-traducteur-automatique
+  - date: '2015'
+    outlet: Medical Physics Web (review, issue 3)
+    title: Automatic brain image analysis
+    type: article
+    lang: en
+    url: http://iopp.fileburst.com/mpw/review/MPWreview-issue3-2015.pdf
+  - date: 2010-11
+    outlet: Sinc (Spain)
+    title: Desarrollan un nuevo software para el estudio del cerebro humano
+    type: article
+    lang: es
+    url: http://www.agenciasinc.es/Noticias/Desarrollan-un-nuevo-software-para-el-estudio-del-cerebro-humano
+  - date: 2010-11
+    outlet: 20 minutos (Spain)
+    title: Investigadores de la UPV desarrollan un nuevo software para el estudio del cerebro humano
+    type: article
+    lang: es
+    url: http://www.20minutos.es/noticia/880665/0/
+- topic: Automatic detection and prediction of neurodegenerative diseases
+  items:
+  - date: 2025-09
+    outlet: Fondation pour la Recherche Médicale
+    title: 'Aide au diagnostic : l''IA au service des maladies neurodégénératives'
+    type: article
+    lang: fr
+    url: https://www.frm.org/fr/actualites/l-ia-au-service-des-maladies-neurodegeneratives
+  - date: 2024-05
+    outlet: AuntMinnieEurope
+    title: AI promises to usher in new era for Alzheimer's patients
+    type: article
+    lang: en
+    url: https://www.auntminnieeurope.com/imaging-informatics/artificial-intelligence/article/15673621/ai-promises-to-usher-in-new-era-for-alzheimers-patients
+  - date: 2013-09
+    outlet: Zoomer Magazine
+    title: 'The devil is in the details: predicting Alzheimer''s'
+    type: article
+    lang: en
+    url: http://www.everythingzoomer.com/predicting-alzheimers/
+  - date: 2013-02
+    outlet: Doctor Tipster
+    title: New imaging tool diagnoses Alzheimer's with unprecedented accuracy
+    type: article
+    lang: en
+    url: http://www.doctortipster.com/12790-new-imaging-tool-diagnoses-alzheimers-with-unprecedented-accuracy.html
+  - date: 2013-02
+    outlet: MedicalXpress
+    title: Technology has unprecedented ability to detect and diagnose Alzheimer's disease
+    type: article
+    lang: en
+    url: http://medicalxpress.com/news/2013-02-technology-unprecedented-ability-alzheimer.html
+  - date: 2013-02
+    outlet: RTflash
+    title: Une technologie révolutionnaire pour le dépistage précoce de la maladie d'Alzheimer
+    type: article
+    lang: fr
+    url: http://www.rtflash.fr/technologie-revolutionnaire-pour-depistage-precoce-maladie-d-alzheimer/article
+  - date: 2013-02
+    outlet: CSSS
+    title: Nouvelle technologie pour dépister la maladie d'Alzheimer
+    type: article
+    lang: fr
+    url: http://bibliocsssl.wordpress.com/2013/02/19/nouvelle-technologie-pour-depister-la-maladie-dalzheimer/
+  - date: 2013-02
+    outlet: Smartplanet.fr
+    title: Une nouvelle méthode pour dépister plus précisément la maladie d'Alzheimer
+    type: article
+    lang: fr
+    url: http://www.smartplanet.fr/smart-technology/une-nouvelle-methode-pour-depister-plus-precisement-la-maladie-dalzheimer-22184/
+  - date: 2013-01
+    outlet: Alzheimer Tunisie
+    title: Une technologie sans précédent permet de dépister et de diagnostiquer la maladie d'Alzheimer
+    type: article
+    lang: fr
+    url: http://alzheimertunisie.blogspot.fr/2013/01/une-technologie-sans-precedent-permet.html
+- topic: Lifespan study of multiple sclerosis
+  items:
+  - date: 2023-11
+    outlet: Journal du CNRS
+    title: Une IA décèle les premiers signes de la sclérose en plaques
+    type: article
+    lang: fr
+    url: https://lejournal.cnrs.fr/articles/une-ia-decele-les-premiers-signes-de-la-sclerose-en-plaques
+  - date: 2023-11
+    outlet: Sciencepost
+    title: L'IA pourrait révolutionner le diagnostic de la sclérose en plaques
+    type: article
+    lang: fr
+    url: https://sciencepost.fr/ia-diagnostic-sclerose-en-plaques/
+  - date: 2023-11
+    outlet: Next INpact
+    title: Une IA décèle les premiers signes de la sclérose en plaques
+    type: article
+    lang: fr
+    url: https://www.nextinpact.com/lebrief/72841/une-ia-decele-premiers-signes-sclerose-en-plaques
+  - date: 2023-11
+    outlet: APF France Handicap
+    title: Une IA décèle les premiers signes de la sclérose en plaques
+    type: article
+    lang: fr
+    url: https://sep.apf-francehandicap.org/blog/une-ia-decele-les-premiers-signes-de-la-sclerose-en-plaques/
+  - date: 2023-08
+    outlet: The MS Blog
+    title: Imaging the thalamus as a way to monitor degeneration
+    type: article
+    lang: en
+    url: https://multiple-sclerosis-research.org/2023/08/imaging-the-thalamus-as-a-way-to-monitor-degeneration/
+- topic: Automatic detection and prediction of multiple sclerosis
+  items:
+  - date: 2022-06
+    outlet: Journal du CNRS
+    title: Quand l'IA s'attaque à la sclérose en plaques
+    type: article
+    lang: fr
+    url: https://lejournal.cnrs.fr/articles/quand-lia-sattaque-a-la-sclerose-en-plaques
+  - date: 2022-06
+    outlet: ScienceBlog
+    title: AI leads the charge against multiple sclerosis
+    type: article
+    lang: en
+    url: https://scienceblog.com/531302/ia-leads-the-charge-against-multiple-sclerosis/
+  - date: 2022-06
+    outlet: ActuIA
+    title: Diagnostiquer la sclérose en plaques grâce à l'intelligence artificielle
+    type: article
+    lang: fr
+    url: https://www.actuia.com/actualite/diagnostiquer-la-sclerose-en-plaques-grace-a-lintelligence-artificielle/
+- topic: Lifespan study of Alzheimer's disease
+  items:
+  - date: 2019-05
+    outlet: CQFD, RTS (Switzerland)
+    title: Les premiers signes d'Alzheimer visibles dès 40 ans
+    type: radio
+    lang: fr
+    url: https://www.rts.ch/play/radio/cqfd/audio/les-premiers-signes-dalzheimer-visibles-des-40-ans?id=10383567
+  - date: 2019-04
+    outlet: Pour la Science
+    title: Un modèle pour la dynamique d'Alzheimer
+    type: article
+    lang: fr
+    url: https://www.pourlascience.fr/sd/neurosciences/un-modele-pour-la-dynamique-dalzheimer-16699.php
+  - date: 2019-04
+    outlet: France Alzheimer
+    title: Reconstituer l'histoire du cerveau pour déceler au plus tôt la maladie
+    type: article
+    lang: fr
+    url: https://www.francealzheimer.org/reconstituer-lhistoire-du-cerveau-pour-deceler-au-plus-tot-la-maladie/
+  - date: 2019-04
+    outlet: ABC (Spain)
+    title: Una investigación abre la vía a fármacos que frenen el deterioro cerebral años antes del alzhéimer
+    type: article
+    lang: es
+    url: https://www.abc.es/espana/comunidad-valenciana/abci-investigacion-abre-farmacos-frenen-deterioro-cerebral-anos-antes-alzheimer-201904122008_noticia.html
+  - date: 2019-04
+    outlet: Europa Press (Spain)
+    title: Investigadores describen cómo cambia el cerebro años antes de los primeros síntomas del Alzheimer
+    type: article
+    lang: es
+    url: https://www.europapress.es/comunitat-valenciana/noticia-investigadores-describen-cambia-cerebro-anos-antes-primeros-sintomas-alzheimer-20190412113726.html
+  - date: 2019-04
+    outlet: 20minutos (Spain)
+    title: Investigadores describen cómo cambia el cerebro años antes de los primeros síntomas del Alzheimer
+    type: article
+    lang: es
+    url: https://www.20minutos.es/noticia/3613912/0/investigadores-describen-como-cambia-cerebro-anos-antes-primeros-sintomas-alzheimer/
+  - date: 2019-04
+    outlet: Las Provincias (Spain)
+    title: Investigadores describen cómo cambia el cerebro antes de sufrir alzhéimer
+    type: article
+    lang: es
+    url: https://www.lasprovincias.es/comunitat/descubrimiento-valenciano-alzheimer-deteccion-precoz-sintomas-20190412115217-nt.html
+  - date: 2019-04
+    outlet: La Opinión A Coruña (Spain)
+    title: Científicos describen el deterioro cerebral del alzhéimer décadas antes de sus síntomas
+    type: article
+    lang: es
+    url: https://www.laopinioncoruna.es/sociedad/2019/04/13/cientificos-describen-deterioro-cerebral-alzheimer/1392864.html
+  - date: 2019-04
+    outlet: Faro de Vigo (Spain)
+    title: Científicos describen el deterioro cerebral del alzhéimer décadas antes de sus síntomas
+    type: article
+    lang: es
+    url: https://www.farodevigo.es/sociedad/2019/04/13/cientificos-describen-deterioro-cerebral-alzheimer/2087080.html
+  - date: 2019-04
+    outlet: Noticias de la Ciencia (Spain)
+    title: Describen cómo cambia el cerebro años antes de los primeros síntomas del alzheimer
+    type: article
+    lang: es
+    url: https://noticiasdelaciencia.com/art/32322/describen-como-cambia-el-cerebro-anos-antes-de-los-primeros-sintomas-del-alzheimer
+  - date: 2019-04
+    outlet: Catalunya Press (Spain)
+    title: Investigadors espanyols ofereixen noves claus sobre les fases preliminars de l'Alzheimer
+    type: article
+    lang: ca
+    url: https://www.catalunyapress.es/texto-diario/mostrar/1386522/investigadores-espanoles-ofrecen-nuevas-claves-sobre-fases-preliminares-alzheimer
+  - date: 2019-04
+    outlet: Biermann Medizin (Germany)
+    title: Mit Big Data Alzheimer auf der Spur
+    type: article
+    lang: de
+    url: https://biermann-medizin.de/mit-big-data-alzheimer-auf-der-spur/
+  - date: 2019-04
+    outlet: Castellonplaza, Valenciaplaza, Alicanteplaza, 24espana, teinteresa, Diario del Alto Aragón (Spain)
+    title: Describen cómo cambia el cerebro años antes de los primeros síntomas del alzhéimer
+    type: article
+    lang: es
+  - date: 2019-03
+    outlet: CNRS News
+    title: Big data boosts Alzheimer's research
+    type: article
+    lang: en
+    url: https://news.cnrs.fr/articles/big-data-boosts-alzheimers-research
+  - date: 2019-03
+    outlet: ScienceDaily
+    title: 'Alzheimer''s: how does the brain change over the course of the disease?'
+    type: article
+    lang: en
+    url: https://www.sciencedaily.com/releases/2019/03/190308102129.htm
+  - date: 2019-03
+    outlet: Sciences et Avenir
+    title: 'Alzheimer : l''atrophie cérébrale est visible à l''IRM dès 40 ans'
+    type: article
+    lang: fr
+    url: https://www.sciencesetavenir.fr/sante/alzheimer-des-atrophies-cerebrales-visibles-a-40-ans_132051
+  - date: 2019-03
+    outlet: La Croix
+    title: Alzheimer, découvertes sur l'évolution du cerveau
+    type: article
+    lang: fr
+    url: https://www.la-croix.com/Sciences-et-ethique/Sante/Alzheimer-decouvertes-levolution-cerveau-2019-03-08-1201007408
+  - date: 2019-03
+    outlet: Futura Santé
+    title: 'Alzheimer : le cerveau se modifie avant l''apparition des premiers symptômes'
+    type: article
+    lang: fr
+    url: https://www.futura-sciences.com/sante/actualites/maladie-alzheimer-cerveau-modifie-avant-apparition-premiers-symptomes-75351/
+  - date: 2019-03
+    outlet: Le Quotidien du Médecin
+    title: 'Alzheimer : des chercheurs ont modélisé l''évolution du cerveau des patients avant l''apparition des symptômes'
+    type: article
+    lang: fr
+    url: https://www.lequotidiendumedecin.fr/actualites/article/2019/03/11/alzheimer-des-chercheurs-ont-modelise-levolution-du-cerveau-des-patients-avant-lapparition-des-symptomes_866806
+  - date: 2019-03
+    outlet: Senior Actu
+    title: Comment le cerveau évolue avec la maladie d'Alzheimer
+    type: article
+    lang: fr
+    url: https://www.senioractu.com/Comment-le-cerveau-evolue-avec-la-maladie-d-Alzheimer_a21652.html
+  - date: 2019-03
+    outlet: Maxisciences
+    title: 'Alzheimer : des chercheurs identifient comment le cerveau évolue au cours de la maladie'
+    type: article
+    lang: fr
+    url: https://www.maxisciences.com/cerveau/alzheimer-des-chercheurs-identifient-comment-le-cerveau-evolue-au-cours-de-la-maladie_art42923.html
+  - date: 2019-03
+    outlet: La Gazette du Laboratoire
+    title: Comment le cerveau évolue-t-il au cours de la maladie d'Alzheimer ?
+    type: article
+    lang: fr
+    url: https://www.gazettelabo.fr/breves/8545cerveau-evolue-maladie-Alzheimer.html
+  - date: 2019-03
+    outlet: myScience
+    title: Comment le cerveau évolue-t-il au cours de la maladie d'Alzheimer ?
+    type: article
+    lang: fr
+    url: https://www.myscience.fr/news/2019/comment_le_cerveau_evolue_t_il_au_cours_de_la_maladie_d_alzheimer_e-2019-u-bordeaux
+  - date: 2019-03
+    outlet: AuntMinnie (USA)
+    title: Algorithm builds model of Alzheimer's brain changes
+    type: article
+    lang: en
+    url: https://www.auntminnie.com/index.aspx?sec=abt&sub=cop
+  - date: 2019-03
+    outlet: DOTmed (USA)
+    title: AI maps out brain through course of Alzheimer's disease
+    type: article
+    lang: en
+    url: https://www.dotmed.com/news/story/46522
+  - date: 2019-03
+    outlet: ReliaWire (USA)
+    title: Early hippocampus atrophy at age 40 in Alzheimer's patients found
+    type: article
+    lang: en
+    url: https://reliawire.com/hippocampus-atrophy-alzheimers/
+  - date: 2019-03
+    outlet: ReachMD (USA)
+    title: How does the brain change over the course of the disease?
+    type: article
+    lang: en
+    url: https://reachmd.com/news/how-does-the-brain-change-over-the-course-of-alzheimers/1625318/
+  - date: 2019-03
+    outlet: Longroom (USA)
+    title: 'Alzheimer''s: how does the brain change over the course of the disease?'
+    type: article
+    lang: en
+    url: https://www.longroom.com/discussion/1399802/alzheimers-how-does-the-brain-change-over-the-course-of-alzheimers-disease
+  - date: 2019-03
+    outlet: ScienceBlog
+    title: 'Alzheimer''s: how does the brain change over the course of the disease?'
+    type: article
+    lang: en
+    url: https://scienceblog.com/506604/alzheimers-how-does-the-brain-change-over-the-course-of-the-disease/
+  - date: 2019-03
+    outlet: News Medical (UK)
+    title: Researchers explore how the brain changes over the course of Alzheimer's disease
+    type: article
+    lang: en
+    url: https://www.news-medical.net/news/20190309/Researchers-explore-how-the-brain-changes-over-the-course-of-Alzheimers-disease.aspx
+  - date: 2019-03
+    outlet: Technology Networks (UK)
+    title: How does the brain change over the course of Alzheimer's?
+    type: article
+    lang: en
+    url: https://www.technologynetworks.com/tn/news/how-does-the-brain-change-over-the-course-of-alzheimers-316640
+  - date: 2019-03
+    outlet: Gentside (UK)
+    title: Researchers have made a major breakthrough in their research into Alzheimer's
+    type: article
+    lang: en
+    url: https://www.gentside.co.uk/biology/researchers-have-made-a-major-breakthrough-in-their-research-into-alzheimer-s_art3037.html
+  - date: 2019-03
+    outlet: Sclate (Belgium)
+    title: How the brain develops with Alzheimer's disease
+    type: article
+    lang: en
+    url: https://sclate.com/belgium/how-the-brain-develops-with-alzheimers-disease/
+  - date: 2019-03
+    outlet: HumanBioscience
+    title: What changes in the brain are caused by Alzheimer's disease?
+    type: article
+    lang: en
+    url: https://www.humanbioscience.org/2019/03/what-changes-in-the-brain-are-caused-by-alzheimers-disease.html
+  - date: 2019-03
+    outlet: Scinexx (Germany)
+    title: Blick ins Alzheimer-Gehirn
+    type: article
+    lang: de
+    url: https://www.scinexx.de/news/medizin/blick-ins-alzheimer-gehirn/
+  - date: 2019-03
+    outlet: Alzheimer Riese (Italy)
+    title: 'Alzheimer: come cambia il cervello nel suo decorso?'
+    type: article
+    lang: it
+    url: https://www.alzheimer-riese.it/contributi-dal-mondo/ricerche/7880-alzheimer-come-cambia-il-cervello-nel-suo-decorso
+  - date: 2019-03
+    outlet: Medimagazine (Italy)
+    title: 'Alzheimer: come cambia il cervello nel corso della malattia?'
+    type: article
+    lang: it
+    url: https://www.medimagazine.it/alzheimer-come-cambia-il-cervello-nel-corso-della-malattia/
+  - date: 2019-03
+    outlet: ABC Valencia (Spain)
+    title: El Alzheimer causa atrofias cerebrales tempranas antes de los 40 años de edad
+    type: article
+    lang: es
+    url: https://www.abc.es/espana/comunidad-valenciana/abci-alzheimer-causa-atrofias-cerebrales-tempranas-antes-40-anos-edad-201903081741_noticia.html
+  - date: 2019-03
+    outlet: Infosalus (Spain)
+    title: Investigadores españoles demuestran que los pacientes con Alzheimer sufren ya atrofias en el cerebro a los 40 años
+    type: article
+    lang: es
+    url: https://www.infosalus.com/mayores/noticia-investigadores-espanoles-demuestran-pacientes-alzheimer-sufren-ya-atrofias-cerebro-40-anos-20190308165838.html
+  - date: 2019-03
+    outlet: Univadis (Spain)
+    title: Los pacientes con alzheimer sufren ya atrofias en el cerebro a los 40 años
+    type: article
+    lang: es
+    url: https://www.univadis.es/viewarticle/los-pacientes-con-alzheimer-sufren-ya-atrofias-en-el-cerebro-a-los-40-anos-sci-rep-660368
+  - date: 2019-03
+    outlet: República (Spain)
+    title: Los pacientes con alzheimer sufren ya atrofias en el cerebro a los 40 años
+    type: article
+    lang: es
+    url: https://www.republica.com/2019/03/08/pacientes-con-alzheimer-atrofias-cerebro/
+  - date: 2019-03
+    outlet: Periodista Digital (Spain)
+    title: Los pacientes con Alzheimer sufren ya atrofias en el cerebro a los 40 años
+    type: article
+    lang: es
+    url: https://www.periodistadigital.com/salud/nutricion-y-ejercicio/2019/03/08/los-pacientes-con-alzheimer-sufren-ya-atrofias-en-el-cerebro-a-los-40-anos.shtml
+  - date: 2019-03
+    outlet: Infotiti (Spain)
+    title: Los 40 años, una edad crítica en la aparición de alteraciones cerebrales relacionadas con el alzhéimer
+    type: article
+    lang: es
+    url: https://infotiti.com/2019/03/alzheimer-40-anos/
+- topic: Lifespan study of brain structures
+  items:
+  - date: 2018-03
+    outlet: The Talking Democrat
+    title: Female brains reach peak maturity before male brains
+    type: article
+    lang: en
+    url: https://www.thetalkingdemocrat.com/2018/03/female-brains-reach-peak-maturity-before-male-brains/
+  - date: 2018-01
+    outlet: Maxisciences
+    title: Des chercheurs dévoilent comment notre cerveau évolue au cours de notre vie
+    type: article
+    lang: fr
+    url: http://www.maxisciences.com/cerveau/des-chercheurs-devoilent-comment-notre-cerveau-evolue-au-cours-de-notre-vie_art40177.html
+  - date: 2018-01
+    outlet: Senda Senior (Spain)
+    title: El cerebro del hombre envejece peor y madura más tarde que el de la mujer
+    type: article
+    lang: es
+    url: https://www.sendasenior.com/El-cerebro-del-hombre-envejece-peor-y-madura-mas-tarde-que-el-de-la-mujer_a5304.html
+  - date: 2018-01
+    outlet: Mayor Actual (Spain)
+    title: El cerebro de los hombres madura después y envejece peor que el de las mujeres
+    type: article
+    lang: es
+    url: http://www.mayoractual.com/articulo/salud/cerebro-hombres-madura-despues-envejece-peor-mujeres/20180115113527001184.html
+  - date: 2017-12
+    outlet: Sud Radio
+    title: Chronique dans « Le grand matin »
+    type: radio
+    lang: fr
+    url: https://sites.google.com/site/pierrickcoupe/17_Dec%2015_SUD%20RADIO%20-%20116.mp4?attredirects=0&d=1
+  - date: 2017-12
+    outlet: À Punt Mèdia (Spain)
+    title: Interview
+    type: tv
+    lang: es
+    url: https://sites.google.com/site/pierrickcoupe/volBrain_spain.mp4?attredirects=0&d=1
+  - date: 2017-12
+    outlet: Ouest-France
+    title: Le cerveau féminin atteindrait la maturité avant celui des hommes
+    type: article
+    lang: fr
+    url: https://www.ouest-france.fr/sciences/le-cerveau-feminin-atteindrait-la-maturite-avant-celui-des-hommes-5441609
+  - date: 2017-12
+    outlet: 20 Minutes
+    title: Le cerveau des femmes arriverait à maturité plus tôt que celui des hommes
+    type: article
+    lang: fr
+    url: http://www.20minutes.fr/sante/2186515-20171212-cerveau-femmes-arriverait-maturite-plus-tot-celui-hommes
+  - date: 2017-12
+    outlet: LCI
+    title: D'après une étude, le cerveau féminin atteindrait la maturité avant celui des hommes
+    type: article
+    lang: fr
+    url: https://www.lci.fr/sciences/d-apres-une-etude-le-cerveau-feminin-atteindrait-la-maturite-avant-celui-des-hommes-2073119.html
+  - date: 2017-12
+    outlet: Sciences et Avenir
+    title: Comment notre cerveau change-t-il au cours de notre vie ?
+    type: article
+    lang: fr
+    url: https://www.sciencesetavenir.fr/sante/cerveau-et-psy/comment-notre-cerveau-change-t-il-au-cours-de-notre-vie_118992
+  - date: 2017-12
+    outlet: Futura Santé
+    title: Le cerveau des femmes atteint la maturité avant celui des hommes
+    type: article
+    lang: fr
+    url: http://www.futura-sciences.com/sante/actualites/medecine-cerveau-femmes-atteint-maturite-avant-celui-hommes-26203/
+  - date: 2017-12
+    outlet: Cité des sciences
+    title: 'Cerveau : une évolution asexuée'
+    type: article
+    lang: fr
+    url: http://www.cite-sciences.fr/fr/ressources/science-actualites/detail/news/cerveau-une-evolution-asexuee/
+  - date: 2017-12
+    outlet: Docteur Imago
+    title: 3 000 images d'IRM retracent l'évolution du cerveau
+    type: article
+    lang: fr
+    url: https://docteurimago.fr/actualites/medicale-et-technique/3-000-images-irm-retracent-levolution-cerveau/
+  - date: 2017-12
+    outlet: Top Santé
+    title: Notre cerveau change tout au long de la vie
+    type: article
+    lang: fr
+    url: https://www.topsante.com/medecine/troubles-neurologiques/troubles-cognitifs/notre-cerveau-change-tout-au-long-de-la-vie-622985
+  - date: 2017-12
+    outlet: France Soir
+    title: Le cerveau des femmes est mature plus tôt et plus longtemps
+    type: article
+    lang: fr
+    url: http://www.francesoir.fr/societe-sante/le-cerveau-des-femmes-hommes-mature-plus-tot-et-plus-longtemps-age-developpement-intelligence-matiere-grise-hormones
+  - date: 2017-12
+    outlet: Femme Actuelle
+    title: Les femmes atteignent la maturité avant les hommes
+    type: article
+    lang: fr
+    url: https://www.femmeactuelle.fr/sante/news-sante/femmes-matures-avant-les-hommes-45745
+  - date: 2017-12
+    outlet: Marie France
+    title: Le cerveau féminin arriverait à maturité avant celui des hommes
+    type: article
+    lang: fr
+    url: http://www.mariefrance.fr/equilibre/sante/lactu-au-scalpel/le-cerveau-feminin-arriverait-a-maturite-avant-celui-des-hommes-402310.html
+  - date: 2017-12
+    outlet: GQ Magazine
+    title: Le cerveau féminin arriverait à maturité plus tôt que celui des hommes
+    type: article
+    lang: fr
+    url: https://www.gqmagazine.fr/ego-beau/news/articles/le-cerveau-masculine-moins-rapidement-mature-que-celui-des-femmes/58727
+  - date: 2017-12
+    outlet: Public
+    title: Les femmes seraient matures avant les hommes selon la science
+    type: article
+    lang: fr
+    url: https://www.public.fr/News/Psycho-Les-femmes-seraient-matures-avant-les-hommes-selon-la-science-1452290
+  - date: 2017-12
+    outlet: Vivre Demain
+    title: Le cerveau des femmes pourrait atteindre la maturité avant celui des hommes
+    type: article
+    lang: fr
+    url: https://vivredemain.fr/2017/12/14/le-cerveau-des-femmes-pourrait-atteindre-la-maturite-avant-celui-des-hommes/
+  - date: 2017-12
+    outlet: 24 Matins
+    title: Le cerveau des femmes serait le premier à arriver à maturité
+    type: article
+    lang: fr
+    url: https://www.24matins.fr/cerveau-femmes-serait-premier-a-arriver-a-maturite-662777
+  - date: 2017-12
+    outlet: Sciencepost
+    title: Le cerveau des femmes devient mature avant celui des hommes
+    type: article
+    lang: fr
+    url: http://sciencepost.fr/2017/12/cerveau-femmes-devient-mature-celui-hommes/
+  - date: 2017-12
+    outlet: Senior Actu
+    title: Comment notre cerveau change-t-il au cours de notre vie ?
+    type: article
+    lang: fr
+    url: https://www.senioractu.com/Comment-notre-cerveau-change-t-il-au-cours-de-notre-vie_a20515.html
+  - date: 2017-12
+    outlet: Santé Mentale
+    title: Comment notre cerveau change-t-il au cours de notre vie ?
+    type: article
+    lang: fr
+    url: http://www.santementale.fr/actualites/comment-notre-cerveau-change-t-il-au-cours-de-notre-vie.html
+  - date: 2017-12
+    outlet: La Voz de Galicia (Spain)
+    title: Sí, el cerebro masculino envejece antes
+    type: article
+    lang: es
+    url: https://www.lavozdegalicia.es/noticia/extravozok/2017/12/31/cerebro-masculino-envejece/0003_201712SO31P32991.htm
+  - date: 2017-12
+    outlet: La República (Uruguay)
+    title: El cerebro del hombre envejece peor
+    type: article
+    lang: es
+    url: http://www.republica.com.uy/envejece-peor/
+  - date: 2017-11
+    outlet: Sinc (Spain)
+    title: ¿Cómo cambia nuestro cerebro a lo largo de la vida?
+    type: article
+    lang: es
+    url: http://www.agenciasinc.es/Noticias/Como-cambia-nuestro-cerebro-a-lo-largo-de-la-vida
+  - date: 2017-11
+    outlet: Levante (Spain)
+    title: El cerebro del hombre se atrofia antes que el de la mujer, según la UV y la UPV
+    type: article
+    lang: es
+    url: http://www.levante-emv.com/comunitat-valenciana/2017/11/27/cerebro-hombre-atrofia-mujer/1647416.html
+  - date: 2017-11
+    outlet: La Jornada (Mexico)
+    title: El cerebro de los hombres se atrofia más rápido que el de las mujeres
+    type: article
+    lang: es
+    url: http://www.jornada.unam.mx/2017/11/28/ciencias/a02n1cie
+  - date: '2017'
+    outlet: Fréquence Médicale
+    title: 'Avancée majeure dans la connaissance du cerveau : création d''une banque d''images de référence par IRM'
+    type: article
+    lang: fr
+    url: http://www.frequencemedicale.com/Actus-Medicale/2101-Avancee-majeure-dans-la-connaissance-du-cerveau-creation-d-une-banque-d-images-de-reference-par-IRM
+- topic: Image-guided neurosurgery
+  items:
+  - date: 2006-07
+    outlet: France 2 (national TV news)
+    title: Documentary on image-guided neurosurgery
+    type: tv
+    lang: fr
+  - date: 2006-07
+    outlet: Ouest-France
+    title: L'informatique guide le neurochirurgien
+    type: article
+    lang: fr
+  - date: 2006-05
+    outlet: Ouest-France
+    title: L'informatique au service de la chirurgie
+    type: article
+    lang: fr
