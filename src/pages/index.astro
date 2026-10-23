@@ -130,7 +130,7 @@ const roleLabel = { pi: 'PI', wp: 'WP leader', co: 'Partner' };
           <a class="btn btn--light" href={software.platform.url}>Open volBrain</a>
         </article>
         <div class="grid grid--sm sw__list">
-          {software.pipelines.slice(0, 4).map((s) => (
+          {software.pipelines.flatMap((g) => g.items).filter((p) => p.featured).slice(0, 4).map((s) => (
             <a class="card" href={url('software/')}>
               <div style="font-weight: 600; margin-bottom: 4px">{s.name}</div>
               <div style="font-size: 14px; color: var(--muted)">{s.text}</div>

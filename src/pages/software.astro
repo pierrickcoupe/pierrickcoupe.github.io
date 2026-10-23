@@ -4,6 +4,7 @@ import Icon from '../components/Icon.astro';
 import { load, url } from '../lib/data.js';
 
 const sw = load('software.yaml');
+const count = sw.pipelines.reduce((n, g) => n + g.items.length, 0);
 ---
 <Base title="Software" description="volBrain and open research software for MRI denoising, segmentation and super-resolution." active="software">
   <section class="page-head">
@@ -24,10 +25,13 @@ const sw = load('software.yaml');
         <a class="btn btn--light" href={sw.platform.url}>Open volBrain <Icon name="external" size={16} /></a>
       </div>
       <div class="platform__list">
-        <div class="label" style="color: var(--on-navy-accent)">Pipelines available</div>
-        <ul>
-          {sw.pipelines.map((p) => <li><strong>{p.name}</strong><span>{p.text}</span></li>)}
-        </ul>
+        <div class="label" style="color: var(--on-navy-accent)">{count} pipelines available</div>
+        {sw.pipelines.map((g) => (
+          <>
+            <h3 class="group">{g.group}</h3>
+            <ul>{g.items.map((p) => <li><strong>{p.name}</strong><span>{p.text}</span></li>)}</ul>
+          </>
+        ))}
       </div>
     </div>
 
@@ -37,7 +41,7 @@ const sw = load('software.yaml');
 
 <style>
   .platform { background: var(--navy); color: #fff; border-radius: var(--radius); padding: 40px; display: flex; flex-wrap: wrap; gap: 40px; }
-  .platform__text { flex: 1 1 340px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+  .platform__text { flex: 1 1 340px; align-self: flex-start; position: sticky; top: 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
   .platform__text h2 { margin: 0; font-size: 32px; font-family: var(--serif); }
   .platform__text p { margin: 0 0 8px; color: var(--on-navy); }
   .platform__text .btn { gap: 8px; }
@@ -45,6 +49,7 @@ const sw = load('software.yaml');
   .platform__list ul { list-style: none; margin: 0; padding: 0; }
   .platform__list li { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 2px 16px; padding: 10px 0; border-bottom: 1px solid var(--navy-line); font-size: 15px; }
   @media (max-width: 520px) { .platform__list li { grid-template-columns: 1fr; } }
+  .group { font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #fff; margin: 24px 0 4px; }
   .platform__list li span { color: var(--on-navy); }
   @media (max-width: 640px) { .platform { padding: 24px; } }
   .note { margin-top: 24px; font-size: 14px; color: var(--muted); max-width: 760px; }

@@ -6,15 +6,33 @@ platform:
     full structural report. Co-founded with the Universitat Politècnica de València,
     volBrain has processed more than 800,000 MRI scans worldwide.
 # Pipelines available on volBrain
+# Pipelines available on volBrain, grouped as on the Software page.
+# "featured: true" = shown in the 4 cards of the home page.
 pipelines:
-  - {name: AssemblyNet, text: Whole-brain segmentation (ensemble of CNNs)}
-  - {name: vol2Brain, text: Complete brain MRI analysis pipeline}
-  - {name: DeepLesionBrain, text: White matter lesion segmentation}
-  - {name: HIPS, text: Hippocampal subfield segmentation}
-  - {name: CERES / DeepCERES, text: Cerebellar lobule segmentation}
-  - {name: DeepTHALAMUS, text: Thalamic nuclei segmentation}
-  - {name: pBrain, text: Segmentation of Parkinson's-related structures}
-  - {name: petBrain, text: "A/T/N quantification from PET and MRI"}
+  - group: Whole-brain analysis
+    items:
+      - {name: volBrain, text: "The original flagship service: volumes of subcortical structures, cerebellum, brainstem, hemispheres, tissues and intracranial cavity from a T1w MRI"}
+      - {name: vol2Brain, featured: true, text: "Full-brain analysis from a single T1w MRI: parcellation into 135 structures, cortical thickness, tissues and white matter lesions"}
+      - {name: AssemblyNet, featured: true, text: "Whole-brain parcellation, tissues and intracranial cavity with an ensemble of deep neural networks"}
+  - group: Structure-specific segmentation
+    items:
+      - {name: CERES, text: "Cerebellum lobules and tissues from a T1w MRI"}
+      - {name: DeepCERES, text: "Ultra-high-resolution (0.125 mm³) cerebellum segmentation by deep learning from a standard T1w MRI"}
+      - {name: DeepThalamus, text: "Whole thalamus and 13 thalamic nuclei from a standard T1w MRI"}
+      - {name: HIPS, text: "Hippocampal subfields from T1w or T1w + T2w MRI"}
+      - {name: pBrain, text: "Deep and subthalamic nuclei (substantia nigra, red nucleus, subthalamic nucleus) from a T2w MRI"}
+  - group: White matter lesions
+    items:
+      - {name: lesionBrain, text: "White matter hyperintensity volumes and locations from T1w + FLAIR MRI"}
+      - {name: DeepLesionBrain, featured: true, text: "Deep-learning lesion segmentation from T1w + FLAIR MRI, with brain parcellation and disconnectome mapping"}
+  - group: Brain age and computer-aided diagnosis
+    items:
+      - {name: BrainStructureAges, text: "Biological brain age estimated for each structure from a T1w MRI"}
+      - {name: AssemblyNet-AD, text: "Alzheimer's disease prediction from a T1w MRI (structure grading and atrophy scores)"}
+      - {name: AssemblyNet-AD-FTD, text: "Differential diagnosis between Alzheimer's disease and frontotemporal dementia from a T1w MRI"}
+      - {name: cognitiveTree, text: "Differential diagnosis across cognitive disorders (AD, bvFTD, SD, PNFA, PSP, DLB) from a T1w MRI"}
+      - {name: motorTree, text: "Differential diagnosis across motor disorders (PD, DLB, MSA, PSP) from a T1w MRI"}
+      - {name: petBrain, featured: true, text: "Amyloid / Tau / Neurodegeneration (A/T/N) status from T1w MRI with amyloid- and tau-PET"}
 # Downloadable research code (links point to the legacy pages until migrated)
 toolboxes:
   - {name: MRI denoising, text: Optimized blockwise non-local means and related filters for 3D MRI, url: "https://sites.google.com/site/pierrickcoupe/softwares/denoising/mri-denoising/mri-denoising-software"}
