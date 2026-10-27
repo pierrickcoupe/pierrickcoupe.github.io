@@ -6,7 +6,7 @@ postdocs:
   - {name: José Enrique Romero, start: 2018, end: 2021, place: UPV / ITACA, co: "J. V. Manjón"}
   - {name: Thach Thao Duong, start: 2014, end: 2015, place: LaBRI UMR 5800}
 phd:
-  - {name: Noura Osman, start: 2026, end: "", place: ToNIC UMR 1214, co: "P. Péran"}
+  - {name: Noura Osman, start: 2026, end: "", place: ToNIC UMR 1214 / LaBRI UMR 5800, co: "P. Péran"}
   - {name: Corentin Seutin, start: 2025, end: "", place: LaBRI UMR 5800, co: "M. Clément"}
   - {name: Eloi Navet, start: 2024, end: "", place: LaBRI UMR 5800 / IMS, co: "R. Giraud"}
   - {name: Andrew Zamai, start: 2024, end: "", place: LaBRI UMR 5800, co: "L. Simon, N. Fijalkow"}
